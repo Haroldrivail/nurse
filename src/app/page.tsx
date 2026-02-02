@@ -91,7 +91,7 @@ export default function Home() {
           </p>
         </div>
         <div className="actions">
-          <a className="cta" href="#don">
+          <a className="cta" href="mailto:contact@nurse-hilfe.org">
             Je fais un don maintenant
           </a>
           <a className="ghost" href="#projets">
