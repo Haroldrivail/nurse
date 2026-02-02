@@ -4,7 +4,8 @@ export default function Home() {
       <section className="hero">
         <p className="badge">Fondation solidaire</p>
         <h1>
-          Nurse Hilfe Menschen Internationale : soigner, protéger et redonner
+          Nurse Hilfe Menschen Internationale&nbsp;: soigner, protéger et
+          redonner
           espoir.
         </h1>
         <p className="lede">
@@ -92,7 +93,7 @@ export default function Home() {
         </div>
         <div className="actions">
           <a className="cta" href="mailto:contact@nurse-hilfe.org">
-            Je fais un don maintenant
+            Je fais un don maintenant – contact@nurse-hilfe.org
           </a>
           <a className="ghost" href="#projets">
             Voir nos projets
