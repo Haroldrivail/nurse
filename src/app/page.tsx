@@ -4,7 +4,7 @@ export default function Home() {
       <section className="hero">
         <p className="badge">Fondation solidaire</p>
         <h1>
-          Nurse Hilfe Menschen Internationale&nbsp;: soigner, protéger et
+          Nurse Hilft Menschen Internationale&nbsp;: soigner, protéger et
           redonner
           espoir.
         </h1>
