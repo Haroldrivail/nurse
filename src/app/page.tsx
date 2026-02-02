@@ -93,7 +93,7 @@ export default function Home() {
         </div>
         <div className="actions">
           <a className="cta" href="mailto:contact@nurse-hilfe.org">
-            Je fais un don maintenant – contact@nurse-hilfe.org
+            Je fais un don maintenant
           </a>
           <a className="ghost" href="#projets">
             Voir nos projets
