@@ -54,7 +54,7 @@ export default function Home() {
               des vaccinations et des consultations dans les zones isolées.
             </p>
             <a href="#don" className="link">
-              Soutenir cette initiative →
+              Soutenir cette initiative
             </a>
           </article>
           <article className="card">
@@ -64,7 +64,7 @@ export default function Home() {
               sensibilisation pour réduire la mortalité infantile.
             </p>
             <a href="#don" className="link">
-              Agir pour les familles →
+              Agir pour les familles
             </a>
           </article>
           <article className="card">
@@ -74,7 +74,7 @@ export default function Home() {
               compétences des infirmier·ères et bénévoles locaux.
             </p>
             <a href="#don" className="link">
-              Former une équipe locale →
+              Former une équipe locale
             </a>
           </article>
         </div>
@@ -91,7 +91,7 @@ export default function Home() {
           </p>
         </div>
         <div className="actions">
-          <a className="cta" href="mailto:contact@nurse-hilfe.org">
+          <a className="cta" href="#don">
             Je fais un don maintenant
           </a>
           <a className="ghost" href="#projets">

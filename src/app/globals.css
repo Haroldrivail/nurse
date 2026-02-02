@@ -102,6 +102,18 @@ h1 {
   background: #f8fafc;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .cta,
+  .ghost {
+    transition: none;
+  }
+
+  .cta:hover {
+    transform: none;
+    box-shadow: 0 14px 30px rgba(37, 99, 235, 0.2);
+  }
+}
+
 .impact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
