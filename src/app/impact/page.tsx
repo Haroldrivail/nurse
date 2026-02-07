@@ -4,6 +4,7 @@ import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Link from "next/link";
+import Image from "next/image";
 import { GlobeScene, FloatingParticles } from "@/components/three";
 
 const kpis = [
@@ -12,6 +13,16 @@ const kpis = [
   { label: "Cliniques mobiles actives", value: "52" },
   { label: "Professionnels formés", value: "1 260" },
 ];
+
+const countryImages: Record<string, string> = {
+  "Burkina Faso":
+    "https://images.unsplash.com/photo-1590845947670-c009801ffa74?w=600&q=80",
+  "Côte d'Ivoire":
+    "https://images.unsplash.com/photo-1504457047772-27faf1c00561?w=600&q=80",
+  Cameroun:
+    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80",
+  RDC: "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80",
+};
 
 const impactByCountry = [
   {
@@ -64,6 +75,15 @@ export default function ImpactPage() {
       <Header />
 
       <section className="relative overflow-hidden bg-base-200/60">
+        <Image
+          src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1600&q=80"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-base-200/80 backdrop-blur-[2px]" />
         <FloatingParticles className="z-0 opacity-80" count={150} />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <div className="grid items-center gap-8 md:grid-cols-[1.2fr_0.8fr]">
@@ -123,6 +143,15 @@ export default function ImpactPage() {
           >
             {impactByCountry.map((item) => (
               <div key={item.country} className="card bg-base-200 shadow">
+                <figure className="relative h-40 w-full overflow-hidden">
+                  <Image
+                    src={countryImages[item.country] || ""}
+                    alt={`Intervention au ${item.country}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </figure>
                 <div className="card-body">
                   <h3 className="card-title">{item.country}</h3>
                   <div className="mt-4 grid gap-3 text-sm text-base-content/70">
@@ -244,13 +273,31 @@ export default function ImpactPage() {
           </Reveal>
           <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-3">
             {[
-              "Santé maternelle en zone rurale",
-              "Prévention des épidémies",
-              "Réponse rapide aux urgences",
-            ].map((title) => (
-              <div key={title} className="card bg-base-100 shadow">
+              {
+                title: "Santé maternelle en zone rurale",
+                img: "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80",
+              },
+              {
+                title: "Prévention des épidémies",
+                img: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?w=600&q=80",
+              },
+              {
+                title: "Réponse rapide aux urgences",
+                img: "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600&q=80",
+              },
+            ].map((item) => (
+              <div key={item.title} className="card bg-base-100 shadow">
+                <figure className="relative h-40 w-full overflow-hidden">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </figure>
                 <div className="card-body">
-                  <h3 className="card-title">{title}</h3>
+                  <h3 className="card-title">{item.title}</h3>
                   <p className="text-sm text-base-content/70">
                     Un aperçu des résultats obtenus grâce à vos soutiens.
                   </p>

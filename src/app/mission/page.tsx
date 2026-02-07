@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import Image from "next/image";
 import { FloatingCross } from "@/components/three";
 
 export default function MissionPage() {
@@ -11,6 +12,15 @@ export default function MissionPage() {
       <Header />
 
       <section className="relative overflow-hidden bg-base-200/60">
+        <Image
+          src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1600&q=80"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-base-200/80 backdrop-blur-[2px]" />
         <FloatingCross className="absolute right-0 top-0 z-0 h-full w-2/5 opacity-80" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <Reveal from="left">
@@ -126,6 +136,15 @@ export default function MissionPage() {
             </Reveal>
             <Reveal from="right">
               <div className="card bg-base-100 shadow">
+                <figure className="relative h-48 w-full overflow-hidden rounded-t-2xl">
+                  <Image
+                    src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?w=600&q=80"
+                    alt="Carte des zones d'intervention en Afrique"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </figure>
                 <div className="card-body">
                   <h3 className="card-title">Zones d&apos;intervention</h3>
                   <p className="text-sm text-base-content/70">
@@ -159,6 +178,15 @@ export default function MissionPage() {
           </Reveal>
           <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80"
+                  alt="Transparence et rapports"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h3 className="card-title">Transparence</h3>
                 <p className="text-sm text-base-content/70">
@@ -167,6 +195,15 @@ export default function MissionPage() {
               </div>
             </div>
             <div className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&q=80"
+                  alt="Dignité et soins centrés sur le patient"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h3 className="card-title">Dignité</h3>
                 <p className="text-sm text-base-content/70">
@@ -175,6 +212,15 @@ export default function MissionPage() {
               </div>
             </div>
             <div className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80"
+                  alt="Efficacité dans l'utilisation des fonds"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h3 className="card-title">Efficacité</h3>
                 <p className="text-sm text-base-content/70">

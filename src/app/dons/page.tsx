@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import Image from "next/image";
 import { PulsingHeart } from "@/components/three";
 
 export default function DonsPage() {
@@ -11,6 +12,15 @@ export default function DonsPage() {
       <Header />
 
       <section className="relative overflow-hidden bg-base-200/60">
+        <Image
+          src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=1600&q=80"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-base-200/80 backdrop-blur-[2px]" />
         <PulsingHeart className="absolute right-0 top-0 z-0 h-full w-2/5 opacity-80" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
@@ -194,6 +204,15 @@ export default function DonsPage() {
           </Reveal>
           <Stagger from="down" className="grid gap-6 md:grid-cols-3">
             <div className="card bg-base-200 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80"
+                  alt="Kit d'hygiène et soins de base"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-primary">Essentiel</div>
                 <h2 className="card-title mt-2">25€/mois</h2>
@@ -209,6 +228,15 @@ export default function DonsPage() {
               </div>
             </div>
             <div className="card bg-base-200 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80"
+                  alt="Équipe mobile de soins"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-primary">Impact</div>
                 <h2 className="card-title mt-2">50€/mois</h2>
@@ -223,6 +251,15 @@ export default function DonsPage() {
               </div>
             </div>
             <div className="card bg-base-200 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&q=80"
+                  alt="Formation d'un soignant local"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-primary">Ambassadeur</div>
                 <h2 className="card-title mt-2">100€/mois</h2>

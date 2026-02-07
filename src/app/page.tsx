@@ -4,6 +4,7 @@ import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Link from "next/link";
+import Image from "next/image";
 import { FloatingParticles, GlobeScene } from "@/components/three";
 
 export default function Home() {
@@ -12,6 +13,15 @@ export default function Home() {
       <Header />
 
       <section className="relative overflow-hidden bg-base-200/60">
+        <Image
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-base-200/80 backdrop-blur-[2px]" />
         <FloatingParticles className="z-0 opacity-90" count={200} />
         <div className="absolute inset-0 bg-linear-to-br from-primary/20 via-transparent to-base-200" />
         <div className="relative mx-auto grid w-full max-w-6xl gap-10 px-4 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
@@ -217,6 +227,15 @@ export default function Home() {
           </div>
           <Stagger from="down" className="mt-10 grid gap-6 md:grid-cols-3">
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80"
+                  alt="Clinique mobile dispensant des soins en zone rurale"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-primary">Santé rurale</div>
                 <h4 className="card-title mt-2">Cliniques mobiles</h4>
@@ -232,6 +251,15 @@ export default function Home() {
               </div>
             </article>
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80"
+                  alt="Accompagnement santé maternelle"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-primary">Maternité</div>
                 <h4 className="card-title mt-2">Santé maternelle</h4>
@@ -247,6 +275,15 @@ export default function Home() {
               </div>
             </article>
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600&q=80"
+                  alt="Formation aux premiers secours"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-primary">Urgence</div>
                 <h4 className="card-title mt-2">Premiers secours</h4>
@@ -382,6 +419,15 @@ export default function Home() {
           </Reveal>
           <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80"
+                  alt="Bénévoles en action sur le terrain"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h4 className="card-title">Bénévolat</h4>
                 <p className="text-sm text-base-content/70">
@@ -396,6 +442,15 @@ export default function Home() {
               </div>
             </div>
             <div className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80"
+                  alt="Formation et emploi humanitaire"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h4 className="card-title">Emploi & formation</h4>
                 <p className="text-sm text-base-content/70">
@@ -410,6 +465,15 @@ export default function Home() {
               </div>
             </div>
             <div className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=600&q=80"
+                  alt="Adhésion et participation communautaire"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h4 className="card-title">Adhésion</h4>
                 <p className="text-sm text-base-content/70">
@@ -459,12 +523,26 @@ export default function Home() {
             from="down"
             className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-4"
           >
-            {Array.from({ length: 8 }).map((_, index) => (
+            {[
+              { name: "OMS", initials: "OMS" },
+              { name: "Croix-Rouge", initials: "CR" },
+              { name: "UNICEF", initials: "UNI" },
+              { name: "MSF", initials: "MSF" },
+              { name: "Gavi Alliance", initials: "GAVI" },
+              { name: "Fondation Bill & Melinda Gates", initials: "BMG" },
+              { name: "Union Européenne", initials: "UE" },
+              { name: "Banque Mondiale", initials: "BM" },
+            ].map((partner) => (
               <div
-                key={index}
-                className="flex h-20 items-center justify-center rounded-xl border border-base-200 bg-base-200/60 text-sm text-base-content/60"
+                key={partner.name}
+                className="flex h-20 items-center justify-center gap-3 rounded-xl border border-base-200 bg-base-200/60 px-4 transition-shadow hover:shadow-md"
               >
-                Partenaire {index + 1}
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">
+                  {partner.initials}
+                </div>
+                <span className="text-sm font-medium text-base-content/70">
+                  {partner.name}
+                </span>
               </div>
             ))}
           </Stagger>
@@ -494,6 +572,15 @@ export default function Home() {
           </div>
           <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-3">
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1591522811280-a8759970b03f?w=600&q=80"
+                  alt="Forum de co-construction avec partenaires locaux"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-outline badge-primary">
                   Mars 2026
@@ -510,6 +597,15 @@ export default function Home() {
               </div>
             </article>
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&q=80"
+                  alt="Campagne de dépistage en zone rurale"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-outline badge-primary">
                   Avril 2026
@@ -526,6 +622,15 @@ export default function Home() {
               </div>
             </article>
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80"
+                  alt="Soirée de gala solidaire"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-outline badge-primary">
                   Juin 2026
@@ -559,6 +664,15 @@ export default function Home() {
           </Reveal>
           <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-3">
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=600&q=80"
+                  alt="Campagne de prévention en zone rurale"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-outline badge-primary badge-soft">
                   Mises à jour
@@ -573,6 +687,15 @@ export default function Home() {
               </div>
             </article>
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80"
+                  alt="Témoignage patient clinique mobile"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-outline badge-primary badge-soft">
                   Réussites
@@ -586,6 +709,15 @@ export default function Home() {
               </div>
             </article>
             <article className="card bg-base-100 shadow">
+              <figure className="relative h-40 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80"
+                  alt="Forum partenaires"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <div className="badge badge-outline badge-primary badge-soft">
                   Événements

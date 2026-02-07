@@ -2,6 +2,8 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import Image from "next/image";
+import { NetworkGraph } from "@/components/three";
 
 const PROJECTS = [
   {
@@ -9,36 +11,48 @@ const PROJECTS = [
     theme: "Santé rurale",
     region: "Afrique de l'Ouest",
     impact: "5 000 consultations",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80",
   },
   {
     title: "Santé maternelle",
     theme: "Maternité",
     region: "Afrique centrale",
     impact: "2 000 familles suivies",
+    image:
+      "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&q=80",
   },
   {
     title: "Premiers secours communautaires",
     theme: "Urgence",
     region: "Europe & Afrique",
     impact: "300 agents formés",
+    image:
+      "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600&q=80",
   },
   {
     title: "Nutrition & prévention",
     theme: "Nutrition",
     region: "Afrique de l'Est",
     impact: "1 200 enfants suivis",
+    image:
+      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80",
   },
   {
     title: "Centres de santé partenaires",
     theme: "Infrastructure",
     region: "Sahel",
     impact: "18 centres appuyés",
+    image:
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80",
   },
   {
     title: "Santé mentale & soutien psychosocial",
     theme: "Protection",
     region: "Zones urbaines",
     impact: "900 consultations",
+    image:
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80",
   },
 ];
 
@@ -47,8 +61,21 @@ export default function ProjectsPage() {
     <main className="min-h-screen bg-base-100 text-base-content">
       <Header />
 
-      <section className="bg-base-200/60">
-        <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
+      <section className="relative overflow-hidden bg-base-200/60">
+        <Image
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-base-200/80 backdrop-blur-[2px]" />
+        <NetworkGraph
+          className="absolute inset-0 z-0 opacity-60"
+          nodeCount={24}
+        />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <Reveal from="left">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
               Projets & causes
@@ -88,6 +115,15 @@ export default function ProjectsPage() {
           <Stagger from="down" className="grid gap-6 md:grid-cols-3">
             {PROJECTS.map((project) => (
               <article key={project.title} className="card bg-base-200 shadow">
+                <figure className="relative h-44 w-full overflow-hidden">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </figure>
                 <div className="card-body">
                   <div className="badge badge-primary">{project.theme}</div>
                   <h2 className="card-title mt-2">{project.title}</h2>
@@ -119,7 +155,15 @@ export default function ProjectsPage() {
                   Visualisez les projets par pays, thématique et niveau
                   d&apos;urgence.
                 </p>
-                <div className="mt-4 h-60 w-full rounded-xl bg-base-200" />
+                <div className="relative mt-4 h-60 w-full overflow-hidden rounded-xl">
+                  <Image
+                    src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800&q=80"
+                    alt="Carte des interventions par pays"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 60vw"
+                  />
+                </div>
               </div>
             </div>
           </Reveal>

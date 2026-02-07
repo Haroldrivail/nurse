@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import Image from "next/image";
 import { NetworkGraph } from "@/components/three";
 
 export default function SimpliquerPage() {
@@ -11,6 +12,15 @@ export default function SimpliquerPage() {
       <Header />
 
       <section className="relative overflow-hidden bg-base-200/60">
+        <Image
+          src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80"
+          alt=""
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-base-200/80 backdrop-blur-[2px]" />
         <NetworkGraph
           className="absolute inset-0 z-0 opacity-70"
           nodeCount={30}
@@ -88,6 +98,15 @@ export default function SimpliquerPage() {
         <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <Stagger from="down" className="grid gap-6 md:grid-cols-3">
             <div className="card bg-base-200 shadow">
+              <figure className="relative h-44 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80"
+                  alt="Équipe de bénévoles en mission"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h2 className="card-title">Bénévolat</h2>
                 <p className="text-sm text-base-content/70">
@@ -103,6 +122,15 @@ export default function SimpliquerPage() {
               </div>
             </div>
             <div className="card bg-base-200 shadow">
+              <figure className="relative h-44 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80"
+                  alt="Partenariat entre organisations"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h2 className="card-title">Partenariats</h2>
                 <p className="text-sm text-base-content/70">
@@ -117,6 +145,15 @@ export default function SimpliquerPage() {
               </div>
             </div>
             <div className="card bg-base-200 shadow">
+              <figure className="relative h-44 w-full overflow-hidden">
+                <Image
+                  src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80"
+                  alt="Collecte de fonds solidaire"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </figure>
               <div className="card-body">
                 <h2 className="card-title">Collectes solidaires</h2>
                 <p className="text-sm text-base-content/70">
