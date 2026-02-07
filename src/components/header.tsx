@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const DesktopNavItem = ({ href, label }: { href: string; label: string }) => (
   <motion.li whileHover={{ y: -2 }} transition={{ duration: 0.18 }}>
-    <Link href={href} className="hover:bg-primary-content">
+    <Link href={href} className="hover:bg-primary-content bg-soft text-primary">
       {label}
     </Link>
   </motion.li>

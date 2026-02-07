@@ -3,14 +3,16 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import { PulsingHeart } from "@/components/three";
 
 export default function DonsPage() {
   return (
     <main className="min-h-screen bg-base-100 text-base-content">
       <Header />
 
-      <section className="bg-base-200/60">
-        <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
+      <section className="relative overflow-hidden bg-base-200/60">
+        <PulsingHeart className="absolute right-0 top-0 z-0 h-full w-2/5 opacity-80" />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <div className="grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
             <div>
               <Reveal from="left">

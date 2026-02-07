@@ -3,14 +3,16 @@ import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import { FloatingCross } from "@/components/three";
 
 export default function MissionPage() {
   return (
     <main className="min-h-screen bg-base-100 text-base-content">
       <Header />
 
-      <section className="bg-base-200/60">
-        <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
+      <section className="relative overflow-hidden bg-base-200/60">
+        <FloatingCross className="absolute right-0 top-0 z-0 h-full w-2/5 opacity-80" />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <Reveal from="left">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
               Mission
@@ -30,8 +32,7 @@ export default function MissionPage() {
             </p>
           </Reveal>
           <Stagger
-            from="left"
-            alternate
+            from="down"
             className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
           >
             <div className="card bg-base-100 shadow">
@@ -156,11 +157,7 @@ export default function MissionPage() {
               Valeurs & engagements éthiques
             </h2>
           </Reveal>
-          <Stagger
-            from="left"
-            alternate
-            className="mt-8 grid gap-6 md:grid-cols-3"
-          >
+          <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="card bg-base-100 shadow">
               <div className="card-body">
                 <h3 className="card-title">Transparence</h3>

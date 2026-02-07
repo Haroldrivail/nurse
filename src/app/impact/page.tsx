@@ -4,6 +4,7 @@ import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Link from "next/link";
+import { GlobeScene, FloatingParticles } from "@/components/three";
 
 const kpis = [
   { label: "Patients accompagnés", value: "132 480" },
@@ -62,31 +63,34 @@ export default function ImpactPage() {
     <main className="min-h-screen bg-base-100 text-base-content">
       <Header />
 
-      <section className="bg-base-200/60">
-        <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
-          <Reveal from="left">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-              Impact
-            </p>
-          </Reveal>
-          <Reveal from="left" delay={0.05}>
-            <h1 className="mt-3 text-4xl font-semibold">
-              Des résultats mesurables et transparents
-            </h1>
-          </Reveal>
-          <Reveal from="right" delay={0.1}>
-            <p className="mt-4 max-w-3xl text-base text-base-content/70">
-              Nos indicateurs sont suivis chaque trimestre et partagés dans nos
-              rapports pour garantir une totale transparence.
-            </p>
-          </Reveal>
-          <div className="mt-6 text-sm text-base-content/60">
-            Dernière mise à jour : février 2026
+      <section className="relative overflow-hidden bg-base-200/60">
+        <FloatingParticles className="z-0 opacity-80" count={150} />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
+          <div className="grid items-center gap-8 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <Reveal from="left">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+                  Impact
+                </p>
+              </Reveal>
+              <Reveal from="left" delay={0.05}>
+                <h1 className="mt-3 text-4xl font-semibold">
+                  Des résultats mesurables et transparents
+                </h1>
+              </Reveal>
+              <Reveal from="right" delay={0.1}>
+                <p className="mt-4 max-w-3xl text-base text-base-content/70">
+                  Nos indicateurs sont suivis chaque trimestre et partagés dans
+                  nos rapports pour garantir une totale transparence.
+                </p>
+              </Reveal>
+              <div className="mt-6 text-sm text-base-content/60">
+                Dernière mise à jour : février 2026
+              </div>
+            </div>
+            <GlobeScene className="hidden h-72 md:block" />
           </div>
-          <Stagger
-            from="down"
-            className="mt-8 grid gap-6 md:grid-cols-4"
-          >
+          <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-4">
             {kpis.map((item) => (
               <div key={item.label} className="card bg-base-100 shadow">
                 <div className="card-body">
@@ -150,10 +154,7 @@ export default function ImpactPage() {
               d&apos;action pour mesurer l&apos;efficacité des interventions.
             </p>
           </Reveal>
-          <Stagger
-            from="down"
-            className="mt-8 grid gap-6 md:grid-cols-3"
-          >
+          <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-3">
             {impactByProgram.map((item) => (
               <div key={item.program} className="card bg-base-100 shadow">
                 <div className="card-body">

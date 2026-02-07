@@ -3,14 +3,19 @@ import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import { NetworkGraph } from "@/components/three";
 
 export default function SimpliquerPage() {
   return (
     <main className="min-h-screen bg-base-100 text-base-content">
       <Header />
 
-      <section className="bg-base-200/60">
-        <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
+      <section className="relative overflow-hidden bg-base-200/60">
+        <NetworkGraph
+          className="absolute inset-0 z-0 opacity-70"
+          nodeCount={30}
+        />
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <Reveal from="left">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
               S&apos;impliquer
@@ -28,8 +33,7 @@ export default function SimpliquerPage() {
             </p>
           </Reveal>
           <Stagger
-            from="left"
-            alternate
+            from="down"
             className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
           >
             <div className="card bg-base-100 shadow">

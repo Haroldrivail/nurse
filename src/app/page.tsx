@@ -4,6 +4,7 @@ import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Link from "next/link";
+import { FloatingParticles, GlobeScene } from "@/components/three";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
 
       <section className="relative overflow-hidden bg-base-200/60">
+        <FloatingParticles className="z-0 opacity-90" count={200} />
         <div className="absolute inset-0 bg-linear-to-br from-primary/20 via-transparent to-base-200" />
         <div className="relative mx-auto grid w-full max-w-6xl gap-10 px-4 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
           <div>
@@ -337,7 +339,7 @@ export default function Home() {
                   <p className="text-sm text-base-content/70">
                     Visualisez nos interventions par pays et par thématique.
                   </p>
-                  <div className="mt-4 h-56 w-full rounded-xl bg-base-100/80" />
+                  <GlobeScene className="mt-4 h-64 w-full rounded-xl" />
                 </div>
               </div>
             </Reveal>

@@ -3,6 +3,8 @@ import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
+import { ExternalLinkIcon } from "lucide-react";
+import Link from "next/link";
 
 const posts = [
   {
@@ -12,6 +14,7 @@ const posts = [
     category: "Terrain",
     date: "20 janv. 2026",
     readTime: "4 min",
+    href: "https://example.com/articles/sante-maternelle",
   },
   {
     title: "Urgences humanitaires : comment nous intervenons",
@@ -20,6 +23,7 @@ const posts = [
     category: "Urgence",
     date: "12 janv. 2026",
     readTime: "5 min",
+    href: "https://example.com/articles/urgences-humanitaires",
   },
   {
     title: "Transparence & impact : rapport 2025",
@@ -28,6 +32,7 @@ const posts = [
     category: "Rapport",
     date: "05 janv. 2026",
     readTime: "6 min",
+    href: "https://example.com/articles/rapport-2025",
   },
 ];
 
@@ -81,7 +86,7 @@ export default function BlogPage() {
             <article key={post.title} className="card bg-base-200 shadow">
               <div className="card-body">
                 <div className="flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-primary">
-                  <span>{post.category}</span>``
+                  <span>{post.category}</span>
                   <span className="text-base-content/40">•</span>
                   <span className="normal-case text-base-content/60">
                     {post.date} · {post.readTime}
@@ -90,9 +95,15 @@ export default function BlogPage() {
                 <h2 className="card-title mt-3 text-xl">{post.title}</h2>
                 <p className="text-sm text-base-content/70">{post.excerpt}</p>
                 <div className="card-actions mt-4">
-                  <button className="btn btn-outline btn-primary btn-sm">
-                    Lire l&apos;article
-                  </button>
+                  <Link
+                    href={post.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-primary btn-sm"
+                  >
+                    Lire l&apos;article{" "}
+                    <ExternalLinkIcon className="w-4 h-4 ml-1" />
+                  </Link>
                 </div>
               </div>
             </article>
