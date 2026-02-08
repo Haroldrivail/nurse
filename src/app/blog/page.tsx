@@ -1,5 +1,3 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
@@ -7,6 +5,17 @@ import { ExternalLinkIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { FloatingParticles } from "@/components/three";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog — Nurse Hilfe Menschen Internationale",
+  description:
+    "Actualités, témoignages et rapports du terrain. Suivez les missions et l'impact de la fondation.",
+  openGraph: {
+    title: "Blog — Nurse Hilfe Menschen Internationale",
+    description: "Actualités, témoignages et rapports du terrain.",
+  },
+};
 
 const posts = [
   {
@@ -46,9 +55,7 @@ const posts = [
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1504711434969-e33886168d9c?w=1600&q=80"
@@ -145,8 +152,6 @@ export default function BlogPage() {
         buttonText="S'abonner"
         note="En vous inscrivant, vous acceptez notre politique de confidentialité."
       />
-
-      <Footer />
-    </main>
+    </>
   );
 }

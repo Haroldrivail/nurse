@@ -1,17 +1,28 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Link from "next/link";
 import Image from "next/image";
 import { GlobeScene, FloatingParticles } from "@/components/three";
+import AnimatedCounter from "@/components/animated-counter";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Impact — Nurse Hilfe Menschen Internationale",
+  description:
+    "Nos indicateurs d'impact : patients accompagnés, consultations, cliniques mobiles et professionnels formés. Transparence totale sur nos résultats.",
+  openGraph: {
+    title: "Impact — Nurse Hilfe Menschen Internationale",
+    description:
+      "Indicateurs d'impact et transparence totale sur nos résultats.",
+  },
+};
 
 const kpis = [
-  { label: "Patients accompagnés", value: "132 480" },
-  { label: "Consultations 2025", value: "49 200" },
-  { label: "Cliniques mobiles actives", value: "52" },
-  { label: "Professionnels formés", value: "1 260" },
+  { label: "Patients accompagnés", value: 132480 },
+  { label: "Consultations 2025", value: 49200 },
+  { label: "Cliniques mobiles actives", value: 52 },
+  { label: "Professionnels formés", value: 1260 },
 ];
 
 const countryImages: Record<string, string> = {
@@ -71,9 +82,7 @@ const impactByProgram = [
 
 export default function ImpactPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1600&q=80"
@@ -117,7 +126,9 @@ export default function ImpactPage() {
                   <p className="text-xs uppercase tracking-[0.3em] text-primary">
                     {item.label}
                   </p>
-                  <h2 className="mt-2 text-3xl font-semibold">{item.value}</h2>
+                  <h2 className="mt-2 text-3xl font-semibold">
+                    <AnimatedCounter value={item.value} />
+                  </h2>
                 </div>
               </div>
             ))}
@@ -249,15 +260,15 @@ export default function ImpactPage() {
                     <li>• Publication annuelle et synthèses trimestrielles.</li>
                   </ul>
                   <div className="mt-6 flex flex-wrap gap-3">
-                    <a className="btn btn-primary btn-sm" href="/dons">
+                    <Link className="btn btn-primary btn-sm" href="/dons">
                       Soutenir nos actions
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="btn btn-outline btn-primary btn-sm"
                       href="/s-impliquer"
                     >
                       Devenir partenaire
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -326,8 +337,6 @@ export default function ImpactPage() {
         description="Des chiffres clairs et des résultats concrets, chaque mois."
         note="En vous inscrivant, vous acceptez notre politique de confidentialité."
       />
-
-      <Footer />
-    </main>
+    </>
   );
 }

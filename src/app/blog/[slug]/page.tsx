@@ -1,18 +1,27 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import type { Metadata } from "next";
 import Reveal from "@/components/motion/reveal";
 
 type BlogDetailProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function BlogDetailPage({ params }: BlogDetailProps) {
-  const title = decodeURIComponent(params.slug).replace(/-/g, " ");
+export async function generateMetadata({
+  params,
+}: BlogDetailProps): Promise<Metadata> {
+  const { slug } = await params;
+  const title = decodeURIComponent(slug).replace(/-/g, " ");
+  return {
+    title: `${title} — Blog | Nurse Hilfe Menschen Internationale`,
+    description: `Article : ${title}. Actualités et témoignages du terrain.`,
+  };
+}
+
+export default async function BlogDetailPage({ params }: BlogDetailProps) {
+  const { slug } = await params;
+  const title = decodeURIComponent(slug).replace(/-/g, " ");
 
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="bg-base-200/60">
         <div className="mx-auto w-full max-w-4xl px-4 py-16 md:py-20">
           <Reveal from="left">
@@ -52,8 +61,6 @@ export default function BlogDetailPage({ params }: BlogDetailProps) {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </>
   );
 }

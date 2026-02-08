@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 import "./globals.css";
 import BackToTop from "@/components/back-to-top";
 
@@ -15,9 +17,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nurse Hilfe Menschen Internationale",
+  title: {
+    default: "Nurse Hilfe Menschen Internationale",
+    template: "%s | NHMI",
+  },
   description:
     "Fondation humanitaire dédiée aux soins, à la dignité et au soutien des communautés vulnérables.",
+  metadataBase: new URL("https://nurseinternationale.com"),
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: "Nurse Hilfe Menschen Internationale",
+  },
 };
 
 export default function RootLayout({
@@ -26,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" suppressHydrationWarning data-lt-installed>
+    <html lang="fr" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -44,15 +55,12 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-base-100 text-base-content`}
       >
         <ThemeProvider>
-          <main
-            id="main-content"
-            className="min-h-screen bg-white text-slate-900"
-          >
-              {children}
-          </main>
+          <Header />
+          <main id="main-content">{children}</main>
+          <Footer />
           <BackToTop />
         </ThemeProvider>
       </body>

@@ -1,16 +1,26 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Image from "next/image";
 import { FloatingCross } from "@/components/three";
+import AnimatedCounter from "@/components/animated-counter";
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Notre mission — Nurse Hilfe Menschen Internationale",
+  description:
+    "Découvrez la mission de Nurse Hilfe Menschen Internationale : soins de santé primaires, cliniques mobiles, formation de soignants et résilience communautaire.",
+  openGraph: {
+    title: "Notre mission — Nurse Hilfe Menschen Internationale",
+    description:
+      "Soins de santé primaires, cliniques mobiles et résilience communautaire.",
+  },
+};
 
 export default function MissionPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=1600&q=80"
@@ -50,7 +60,9 @@ export default function MissionPage() {
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
                   2025
                 </p>
-                <h2 className="mt-2 text-2xl font-semibold">52 cliniques</h2>
+                <h2 className="mt-2 text-2xl font-semibold">
+                  <AnimatedCounter value={52} /> cliniques
+                </h2>
                 <p className="text-sm text-base-content/70">
                   Missions mobiles actives.
                 </p>
@@ -61,7 +73,9 @@ export default function MissionPage() {
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
                   4 pays
                 </p>
-                <h2 className="mt-2 text-2xl font-semibold">310 communautés</h2>
+                <h2 className="mt-2 text-2xl font-semibold">
+                  <AnimatedCounter value={310} /> communautés
+                </h2>
                 <p className="text-sm text-base-content/70">
                   Couvertes par nos équipes.
                 </p>
@@ -70,7 +84,7 @@ export default function MissionPage() {
             <div className="card bg-base-100 shadow">
               <div className="card-body">
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
-                  12 400
+                  <AnimatedCounter value={12400} />
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">consultations</h2>
                 <p className="text-sm text-base-content/70">
@@ -81,7 +95,7 @@ export default function MissionPage() {
             <div className="card bg-base-100 shadow">
               <div className="card-body">
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
-                  1 200
+                  <AnimatedCounter value={1200} />
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">
                   soignants formés
@@ -230,12 +244,12 @@ export default function MissionPage() {
             </div>
           </Stagger>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="btn btn-primary" href="/impact">
+            <Link className="btn btn-primary" href="/impact">
               Voir notre impact
-            </a>
-            <a className="btn btn-outline btn-primary" href="/s-impliquer">
+            </Link>
+            <Link className="btn btn-outline btn-primary" href="/s-impliquer">
               S&apos;impliquer
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -247,8 +261,6 @@ export default function MissionPage() {
         description="Rapports, missions et témoignages dans votre boîte mail."
         note="En vous inscrivant, vous acceptez notre politique de confidentialité."
       />
-
-      <Footer />
-    </main>
+    </>
   );
 }

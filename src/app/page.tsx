@@ -1,17 +1,27 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Link from "next/link";
 import Image from "next/image";
 import { FloatingParticles, GlobeScene } from "@/components/three";
+import AnimatedCounter from "@/components/animated-counter";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nurse Hilfe Menschen Internationale — Soins, dignité et espoir",
+  description:
+    "Fondation humanitaire dédiée aux soins de santé, à la prévention et au soutien des communautés vulnérables. Découvrez nos missions, projets et impact.",
+  openGraph: {
+    title: "Nurse Hilfe Menschen Internationale",
+    description:
+      "Soigner, protéger et redonner espoir aux communautés vulnérables.",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&q=80"
@@ -67,9 +77,9 @@ export default function Home() {
             </Reveal>
             <Reveal from="left" delay={0.2}>
               <div className="mt-6 flex flex-wrap gap-4">
-                <a className="btn btn-primary " href="/dons">
+                <Link className="btn btn-primary " href="/dons">
                   Faire un don
-                </a>
+                </Link>
                 <a className="btn btn-outline btn-primary" href="#impliquer">
                   Devenir bénévole
                 </a>
@@ -81,15 +91,26 @@ export default function Home() {
             >
               <div className="stat">
                 <div className="stat-title">Personnes accompagnées</div>
-                <div className="stat-value text-primary">12K+</div>
+                <div className="stat-value text-primary">
+                  <AnimatedCounter value={12} suffix="K+" />
+                </div>
               </div>
               <div className="stat">
                 <div className="stat-title">Programmes actifs</div>
-                <div className="stat-value text-primary">48</div>
+                <div className="stat-value text-primary">
+                  <AnimatedCounter value={48} />
+                </div>
               </div>
               <div className="stat">
                 <div className="stat-title">Fonds mobilisés</div>
-                <div className="stat-value text-primary">€1,2M</div>
+                <div className="stat-value text-primary">
+                  <AnimatedCounter
+                    value={1.2}
+                    decimals={1}
+                    prefix="€"
+                    suffix="M"
+                  />
+                </div>
               </div>
             </Stagger>
           </div>
@@ -103,12 +124,12 @@ export default function Home() {
                     d&apos;hygiène et la formation d&apos;équipes locales.
                   </p>
                   <div className="card-actions">
-                    <a
+                    <Link
                       className="btn btn-primary text-shadow-primary-content btn-soft"
                       href="/dons"
                     >
                       Soutenir une cause
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -128,9 +149,9 @@ export default function Home() {
                     <span className="badge badge-primary">100€</span>
                   </div>
                   <div className="card-actions mt-4">
-                    <a className="btn btn-outline btn-primary" href="/dons">
+                    <Link className="btn btn-outline btn-primary" href="/dons">
                       Choisir un montant
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -327,9 +348,9 @@ export default function Home() {
               </Reveal>
             </div>
             <Reveal from="right" delay={0.1}>
-              <a className="btn btn-outline btn-primary" href="/about">
+              <Link className="btn btn-outline btn-primary" href="/about">
                 Voir nos rapports
-              </a>
+              </Link>
             </Reveal>
           </div>
           <Stagger from="down" className="mt-10 grid gap-6 md:grid-cols-3">
@@ -338,7 +359,9 @@ export default function Home() {
                 <p className="text-sm text-base-content/70">
                   Taux d&apos;accès aux soins
                 </p>
-                <p className="text-3xl font-semibold text-primary">+34%</p>
+                <p className="text-3xl font-semibold text-primary">
+                  <AnimatedCounter value={34} prefix="+" suffix="%" />
+                </p>
                 <p className="text-sm text-base-content/70">
                   Amélioration moyenne observée dans nos zones
                   d&apos;intervention.
@@ -350,7 +373,9 @@ export default function Home() {
                 <p className="text-sm text-base-content/70">
                   Urgences prises en charge
                 </p>
-                <p className="text-3xl font-semibold text-primary">1 240</p>
+                <p className="text-3xl font-semibold text-primary">
+                  <AnimatedCounter value={1240} />
+                </p>
                 <p className="text-sm text-base-content/70">
                   Cas traités grâce aux cliniques mobiles et aux postes avancés.
                 </p>
@@ -361,7 +386,9 @@ export default function Home() {
                 <p className="text-sm text-base-content/70">
                   Partenaires locaux
                 </p>
-                <p className="text-3xl font-semibold text-primary">78</p>
+                <p className="text-3xl font-semibold text-primary">
+                  <AnimatedCounter value={78} />
+                </p>
                 <p className="text-sm text-base-content/70">
                   ONG, centres de santé et collectivités accompagnés.
                 </p>
@@ -388,15 +415,15 @@ export default function Home() {
                     Synthèse financière, indicateurs et études de cas.
                   </p>
                   <div className="card-actions mt-4">
-                    <a
+                    <Link
                       className="btn btn-primary text-shadow-primary-content"
                       href="/about"
                     >
                       Télécharger le rapport
-                    </a>
-                    <a className="btn btn-outline btn-primary" href="/about">
+                    </Link>
+                    <Link className="btn btn-outline btn-primary" href="/about">
                       Gouvernance
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -435,9 +462,9 @@ export default function Home() {
                   missions ponctuelles.
                 </p>
                 <div className="card-actions">
-                  <a className="link link-primary" href="/about">
+                  <Link className="link link-primary" href="/about">
                     Voir les opportunités →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -458,9 +485,9 @@ export default function Home() {
                   certifiants.
                 </p>
                 <div className="card-actions">
-                  <a className="link link-primary" href="/about">
+                  <Link className="link link-primary" href="/about">
                     Découvrir les postes →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -480,9 +507,9 @@ export default function Home() {
                   Devenez membre et participez aux décisions de la fondation.
                 </p>
                 <div className="card-actions">
-                  <a className="link link-primary" href="/about">
+                  <Link className="link link-primary" href="/about">
                     Devenir membre →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -497,9 +524,9 @@ export default function Home() {
                   campagnes ou offrir du mécénat de compétences.
                 </p>
                 <div className="card-actions">
-                  <a className="btn btn-outline btn-primary" href="/about">
+                  <Link className="btn btn-outline btn-primary" href="/about">
                     Proposer un partenariat
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -740,8 +767,6 @@ export default function Home() {
           buttonText="S'abonner"
         />
       </Reveal>
-
-      <Footer />
-    </main>
+    </>
   );
 }

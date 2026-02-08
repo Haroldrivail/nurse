@@ -1,9 +1,20 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Image from "next/image";
 import { NetworkGraph } from "@/components/three";
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nos projets — Nurse Hilfe Menschen Internationale",
+  description:
+    "Découvrez nos programmes : cliniques mobiles, santé maternelle, premiers secours communautaires, nutrition et prévention.",
+  openGraph: {
+    title: "Nos projets — Nurse Hilfe Menschen Internationale",
+    description:
+      "Cliniques mobiles, santé maternelle, premiers secours et nutrition.",
+  },
+};
 
 const PROJECTS = [
   {
@@ -58,9 +69,7 @@ const PROJECTS = [
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80"
@@ -134,9 +143,9 @@ export default function ProjectsPage() {
                     Objectif: {project.impact}
                   </p>
                   <div className="card-actions">
-                    <a className="btn btn-outline btn-primary" href="/dons">
+                    <Link className="btn btn-outline btn-primary" href="/dons">
                       Soutenir ce projet
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -180,9 +189,9 @@ export default function ProjectsPage() {
                   <li>• Résilience communautaire</li>
                 </ul>
                 <div className="card-actions mt-6">
-                  <a className="btn btn-primary" href="/about">
+                  <Link className="btn btn-primary" href="/about">
                     Voir les rapports
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -207,19 +216,17 @@ export default function ProjectsPage() {
                 </p>
               </div>
               <div className="mt-4 flex gap-2 md:mt-0">
-                <a className="btn btn-primary" href="/dons">
+                <Link className="btn btn-primary" href="/dons">
                   Faire un don
-                </a>
-                <a className="btn btn-outline btn-primary" href="/dons">
+                </Link>
+                <Link className="btn btn-outline btn-primary" href="/dons">
                   Don mensuel
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </>
   );
 }

@@ -1,16 +1,25 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Newsletter from "@/components/newsletter";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Image from "next/image";
 import { NetworkGraph } from "@/components/three";
+import AnimatedCounter from "@/components/animated-counter";
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "S'impliquer — Nurse Hilfe Menschen Internationale",
+  description:
+    "Devenez bénévole, partenaire ou ambassadeur. Découvrez toutes les façons de soutenir nos actions humanitaires.",
+  openGraph: {
+    title: "S'impliquer — Nurse Hilfe Menschen Internationale",
+    description: "Bénévolat, partenariats et engagement humanitaire.",
+  },
+};
 
 export default function SimpliquerPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1600&q=80"
@@ -49,7 +58,7 @@ export default function SimpliquerPage() {
             <div className="card bg-base-100 shadow">
               <div className="card-body">
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
-                  120+
+                  <AnimatedCounter value={120} suffix="+" />
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">
                   bénévoles actifs
@@ -62,7 +71,7 @@ export default function SimpliquerPage() {
             <div className="card bg-base-100 shadow">
               <div className="card-body">
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
-                  38
+                  <AnimatedCounter value={38} />
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">partenaires</h2>
                 <p className="text-sm text-base-content/70">
@@ -73,7 +82,7 @@ export default function SimpliquerPage() {
             <div className="card bg-base-100 shadow">
               <div className="card-body">
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
-                  26
+                  <AnimatedCounter value={26} />
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">collectes</h2>
                 <p className="text-sm text-base-content/70">Lancées en 2025.</p>
@@ -82,7 +91,7 @@ export default function SimpliquerPage() {
             <div className="card bg-base-100 shadow">
               <div className="card-body">
                 <p className="text-xs uppercase tracking-[0.3em] text-primary">
-                  72h
+                  <AnimatedCounter value={72} suffix="h" />
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold">délai moyen</h2>
                 <p className="text-sm text-base-content/70">
@@ -183,15 +192,15 @@ export default function SimpliquerPage() {
                   des soins et la planification sur le long terme.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <a className="btn btn-primary" href="/dons">
+                  <Link className="btn btn-primary" href="/dons">
                     Faire un don
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="btn btn-outline btn-primary"
                     href="/dons#niveaux"
                   >
                     Voir les niveaux d&apos;impact
-                  </a>
+                  </Link>
                 </div>
                 <div className="mt-4 text-sm text-base-content/60">
                   Besoin d&apos;un échange direct ? Utilisez le formulaire
@@ -303,8 +312,6 @@ export default function SimpliquerPage() {
         description="Appels à bénévoles, partenariats et actions de terrain."
         note="En vous inscrivant, vous acceptez notre politique de confidentialité."
       />
-
-      <Footer />
-    </main>
+    </>
   );
 }

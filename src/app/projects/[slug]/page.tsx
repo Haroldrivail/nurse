@@ -1,18 +1,29 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import type { Metadata } from "next";
 import Reveal from "@/components/motion/reveal";
 
 type ProjectDetailProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
-export default function ProjectDetailPage({ params }: ProjectDetailProps) {
-  const title = decodeURIComponent(params.slug).replace(/-/g, " ");
+export async function generateMetadata({
+  params,
+}: ProjectDetailProps): Promise<Metadata> {
+  const { slug } = await params;
+  const title = decodeURIComponent(slug).replace(/-/g, " ");
+  return {
+    title: `${title} — Projets | Nurse Hilfe Menschen Internationale`,
+    description: `Détails du projet : ${title}. Objectifs, activités et indicateurs d'impact.`,
+  };
+}
+
+export default async function ProjectDetailPage({
+  params,
+}: ProjectDetailProps) {
+  const { slug } = await params;
+  const title = decodeURIComponent(slug).replace(/-/g, " ");
 
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="bg-base-200/60">
         <div className="mx-auto w-full max-w-4xl px-4 py-16 md:py-20">
           <Reveal from="left">
@@ -62,8 +73,6 @@ export default function ProjectDetailPage({ params }: ProjectDetailProps) {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </>
   );
 }

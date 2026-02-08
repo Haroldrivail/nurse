@@ -1,16 +1,25 @@
 import DonationAmounts from "@/components/donation-amounts";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Image from "next/image";
 import { PulsingHeart } from "@/components/three";
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Faire un don — Nurse Hilfe Menschen Internationale",
+  description:
+    "Soutenez nos programmes de santé avec un don ponctuel ou mensuel. Chaque contribution sauve des vies et renforce les communautés.",
+  openGraph: {
+    title: "Faire un don — Nurse Hilfe Menschen Internationale",
+    description:
+      "Chaque contribution sauve des vies et renforce les communautés.",
+  },
+};
 
 export default function DonsPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=1600&q=80"
@@ -221,9 +230,9 @@ export default function DonsPage() {
                   base.
                 </p>
                 <div className="card-actions">
-                  <a className="btn btn-outline btn-primary" href="/dons">
+                  <Link className="btn btn-outline btn-primary" href="/dons">
                     Choisir ce niveau
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -244,9 +253,9 @@ export default function DonsPage() {
                   Soutien continu aux équipes mobiles et suivi des patients.
                 </p>
                 <div className="card-actions">
-                  <a className="btn btn-outline btn-primary" href="/dons">
+                  <Link className="btn btn-outline btn-primary" href="/dons">
                     Choisir ce niveau
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -267,9 +276,9 @@ export default function DonsPage() {
                   Formation des soignants locaux et investissements durables.
                 </p>
                 <div className="card-actions">
-                  <a className="btn btn-outline btn-primary" href="/dons">
+                  <Link className="btn btn-outline btn-primary" href="/dons">
                     Choisir ce niveau
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -311,9 +320,9 @@ export default function DonsPage() {
                   <li>• Témoignages et histoires de terrain.</li>
                 </ul>
                 <div className="card-actions mt-4">
-                  <a className="btn btn-primary" href="/dons">
+                  <Link className="btn btn-primary" href="/dons">
                     Mettre en place mon don
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -366,8 +375,6 @@ export default function DonsPage() {
           </Stagger>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </>
   );
 }

@@ -1,15 +1,23 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Reveal from "@/components/motion/reveal";
 import Stagger from "@/components/motion/stagger";
 import Image from "next/image";
+import Link from "next/link";
 import { FloatingParticles } from "@/components/three";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "À propos — Nurse Hilfe Menschen Internationale",
+  description:
+    "Gouvernance, transparence et engagement humain. Découvrez l'équipe, les valeurs et les rapports annuels de la fondation.",
+  openGraph: {
+    title: "À propos — Nurse Hilfe Menschen Internationale",
+    description: "Gouvernance, transparence et engagement humain.",
+  },
+};
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="relative overflow-hidden bg-base-200/60">
         <Image
           src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=1600&q=80"
@@ -44,9 +52,9 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={0.15}>
                 <div className="mt-6 flex flex-wrap gap-4">
-                  <a className="btn btn-primary" href="/dons">
+                  <Link className="btn btn-primary" href="/dons">
                     Soutenir la mission
-                  </a>
+                  </Link>
                   <a className="btn btn-outline btn-primary" href="#rapports">
                     Voir les rapports
                   </a>
@@ -139,9 +147,9 @@ export default function AboutPage() {
                 Une gouvernance responsable
               </h2>
             </div>
-            <a className="btn btn-outline btn-primary" href="/dons">
+            <Link className="btn btn-outline btn-primary" href="/dons">
               Devenir membre
-            </a>
+            </Link>
           </div>
           <Stagger from="down" className="mt-8 grid gap-6 md:grid-cols-4">
             {[
@@ -258,16 +266,14 @@ export default function AboutPage() {
                 <li>• Mécanismes de signalement confidentiels.</li>
               </ul>
               <div className="card-actions mt-4">
-                <a className="btn btn-outline btn-primary" href="/dons">
+                <Link className="btn btn-outline btn-primary" href="/dons">
                   Consulter la charte
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </>
   );
 }

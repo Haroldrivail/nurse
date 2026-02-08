@@ -1,12 +1,16 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import Reveal from "@/components/motion/reveal";
+import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mentions légales — Nurse Hilfe Menschen Internationale",
+  description:
+    "Mentions légales, politique de confidentialité et conditions d'utilisation de Nurse Hilfe Menschen Internationale.",
+};
 
 export default function LegalPage() {
   return (
-    <main className="min-h-screen bg-base-100 text-base-content">
-      <Header />
-
+    <>
       <section className="bg-base-200/60">
         <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
           <Reveal from="left">
@@ -81,14 +85,12 @@ export default function LegalPage() {
             >
               Contacter le responsable
             </a>
-            <a className="btn btn-outline btn-primary" href="/about">
+            <Link className="btn btn-outline btn-primary" href="/about">
               Gouvernance & transparence
-            </a>
+            </Link>
           </div>
         </div>
       </section>
-
-      <Footer />
-    </main>
+    </>
   );
 }
