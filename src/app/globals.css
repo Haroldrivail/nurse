@@ -6,6 +6,21 @@
     dark --prefersdark;
 }
 
+@theme {
+  --animate-text-slide: text-slide 10s cubic-bezier(0.83, 0, 0.17, 1) infinite;
+
+  @keyframes text-slide {
+    /* Mot 1 */
+    0%, 25% { transform: translateY(0%); }
+    /* Transition vers Mot 2 */
+    30%, 55% { transform: translateY(-33.33%); }
+    /* Transition vers Mot 3 */
+    60%, 85% { transform: translateY(-66.66%); }
+    /* Retour fluide au Mot 1 */
+    100% { transform: translateY(0%); }
+  }
+}
+
 /* Footer collapses: smooth open/close on mobile */
 .footer-collapse > ul {
   max-height: 0;
@@ -28,3 +43,7 @@
 .footer-collapse[open] .footer-plus {
   transform: rotate(45deg);
 }
+
+/* *{
+  outline: 1px solid red;
+} */

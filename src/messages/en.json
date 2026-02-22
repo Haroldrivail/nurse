@@ -1,0 +1,933 @@
+{
+  "metadata": {
+    "title": "Nurse Hilfe Menschen Internationale",
+    "titleTemplate": "%s | NHMI",
+    "description": "Humanitarian foundation dedicated to healthcare, dignity and support for vulnerable communities.",
+    "ogDescription": "Heal, protect and restore hope to vulnerable communities."
+  },
+  "nav": {
+    "mission": "Mission",
+    "about": "About",
+    "projects": "Causes/Projects",
+    "impact": "Impact",
+    "getInvolved": "Get Involved",
+    "donate": "Donate",
+    "blog": "News",
+    "search": "Search",
+    "openMenu": "Open menu",
+    "foundation": "Foundation"
+  },
+  "home": {
+    "heroEyebrow": "Together for accessible healthcare",
+    "heroTitle": "Heal, protect and restore hope to vulnerable communities.",
+    "heroActFor": "We act for",
+    "heroCommunities": "communities",
+    "heroCaregivers": "caregivers",
+    "heroVolunteers": "volunteers",
+    "heroDescription": "We fund health, prevention and local resilience programs with transparent impact monitoring.",
+    "donateBtn": "Donate",
+    "volunteerBtn": "Become a volunteer",
+    "statPeople": "People supported",
+    "statPrograms": "Active programs",
+    "statFunds": "Funds raised",
+    "ctaTitle": "Call to action",
+    "ctaDesc": "Each contribution funds essential care, hygiene kits and the training of local teams.",
+    "supportCause": "Support",
+    "quickDonate": "Quick donation",
+    "quickDonateDesc": "€30 funds a mobile medical visit. €100 supports the training of a local caregiver.",
+    "chooseAmount": "Choose an amount",
+    "missionEyebrow": "Vision • Mission • Values",
+    "missionTitle": "Dignified care, sustainable local action.",
+    "missionDescription": "We work with communities to strengthen local capacities, improve access to care and respond to emergencies effectively.",
+    "missionApproach": "Our approach",
+    "missionApproachDesc": "Community health, prevention and targeted actions based on local needs.",
+    "missionValues": "Values",
+    "missionValuesDesc": "Compassion, inclusion, integrity and measurable impact.",
+    "priorities2026": "2026 Priorities",
+    "priority1": "Strengthen 12 mobile clinics in rural areas.",
+    "priority2": "Deploy 4 maternal health hubs.",
+    "priority3": "Train 300 community health workers.",
+    "prioritiesNote": "Our roadmaps and indicators are published in our annual reports.",
+    "projectsEyebrow": "Causes / Projects",
+    "projectsTitle": "Ongoing programs",
+    "projectsExplore": "Explore all projects",
+    "seeProject": "See project",
+    "supportProject": "Support",
+    "impactAlert": "92% of beneficiaries report better access to care, and 75% of partner communities have established local health committees.",
+    "impactEyebrow": "Impact & transparency",
+    "impactTitle": "Measurable results",
+    "seeReports": "See our reports",
+    "impactAccessRate": "Healthcare access rate",
+    "impactAccessDesc": "Average improvement observed in our intervention areas.",
+    "impactEmergencies": "Emergencies handled",
+    "impactEmergenciesDesc": "Cases treated through mobile clinics and forward posts.",
+    "impactPartners": "Local partners",
+    "impactPartnersDesc": "NGOs, health centers and local authorities supported.",
+    "impactMap": "Impact map",
+    "impactMapDesc": "Visualize our interventions by country and theme.",
+    "report2025": "2025 Report",
+    "report2025Desc": "Financial summary, indicators and case studies.",
+    "downloadReport": "Download report",
+    "governance": "Governance",
+    "involveEyebrow": "Get involved",
+    "involveTitle": "Join our movement",
+    "volunteeringDesc": "Give your time in the field, remotely or for one-time missions.",
+    "seeOpportunities": "See opportunities →",
+    "employment": "Jobs & training",
+    "employmentDesc": "Access our offers, internships and certified training modules.",
+    "discoverPositions": "Discover positions →",
+    "membership": "Membership",
+    "becomeMember": "Become a member →",
+    "partnerships": "Partnerships & sponsorships",
+    "partnershipsDesc": "Companies, institutions and organizations can co-create impact programs, sponsor campaigns or offer skills-based volunteering.",
+    "proposePartnership": "Propose a partnership",
+    "partnersEyebrow": "Partners",
+    "partnersTitle": "Alliances that strengthen impact",
+    "eventsEyebrow": "Events",
+    "eventsTitle": "Mobilizing communities",
+    "subscribe": "Subscribe",
+    "blogEyebrow": "Blog / News",
+    "blogTitle": "Our latest news",
+    "newsletterDesc": "One email per month with key figures, stories and engagement opportunities.",
+    "newsletterBtn": "Subscribe",
+    "projectObjective": "Objective",
+    "projectRegion": "Region",
+    "readBlog": "Read the article",
+    "newsletterTitle": "Receive our reports as soon as available",
+    "volunteering": "Active volunteering",
+    "membershipDesc": "Become a member and don't miss any of our news, reports and engagement opportunities."
+  },
+  "footer": {
+    "explore": "Explore",
+    "ourMission": "Our mission",
+    "governanceTransparency": "Governance & transparency",
+    "projectsCauses": "Projects & causes",
+    "impact": "Impact",
+    "news": "News",
+    "connect": "Connect",
+    "contactUs": "Contact us",
+    "donate": "Donate",
+    "faqGovernance": "FAQ & governance",
+    "give": "Give",
+    "becomeVolunteer": "Become a volunteer",
+    "recurringDonation": "Recurring donation",
+    "newsletterTitle": "Subscribe to E-News",
+    "newsletterDesc": "Receive our latest news, reports and calls to action.",
+    "newsletterBtn": "Subscribe",
+    "newsletterNote": "By subscribing, you agree to our privacy policy.",
+    "social": "Social",
+    "theme": "Theme",
+    "tagline": "Together, for accessible and humane healthcare. Transparency, dignity and measurable impact guide all our actions.",
+    "orgDescription": "Non-profit humanitarian organization. Donations fund our health, dignity and community support programs.",
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy",
+    "termsOfUse": "Terms of use",
+    "copyright": "© 2026 Nurse Hilfe Menschen Internationale. All rights reserved."
+  },
+  "search": {
+    "title": "Search",
+    "heading": "Find content",
+    "close": "Close search",
+    "placeholder": "Search...",
+    "ariaLabel": "Search for content",
+    "noResults": "No results for \"{query}\"."
+  },
+  "cookie": {
+    "title": "Cookie management (GDPR)",
+    "description": "We use essential cookies for the proper functioning of the site. Optional cookies help us measure traffic and improve the experience.",
+    "learnMore": "Learn more",
+    "rejectAll": "Reject all",
+    "essentialOnly": "Essential only",
+    "acceptAll": "Accept all",
+    "preferencesTitle": "Cookie preferences",
+    "detailsHeading": "Category details",
+    "essentialTitle": "Essential cookies (required)",
+    "essentialDesc": "Required for security, display and site functionality.",
+    "analyticsTitle": "Analytics cookies (optional)",
+    "analyticsDesc": "Help us understand site usage to improve our content and experience."
+  },
+  "newsletter": {
+    "defaultButton": "Subscribe",
+    "loading": "Processing...",
+    "emailError": "Enter a valid email address",
+    "successMessage": "Thank you for subscribing.",
+    "errorMessage": "An error occurred. Please try again."
+  },
+  "contact": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "engagementType": "Type of engagement",
+    "volunteering": "Volunteering",
+    "partnership": "Partnership",
+    "fundraising": "Fundraising",
+    "messagePlaceholder": "Describe your project or availability",
+    "submit": "Send request",
+    "fillAllFields": "Please fill in all fields.",
+    "sendError": "Error sending message.",
+    "success": "Your request has been sent! We will contact you within 72 hours.",
+    "connectionError": "Connection error. Please try again.",
+    "consent": "By submitting this form, you agree to be contacted by our team."
+  },
+  "donation": {
+    "yourInfo": "Your information",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "country": "Country",
+    "paymentMethod": "Payment method",
+    "card": "Credit card",
+    "orangeMoney": "Orange Money",
+    "mtnMomo": "MTN MoMo",
+    "phonePlaceholder": "Phone number (e.g.: +237 6XX XXX XXX)",
+    "phoneNotice": "You will receive a {method} notification to confirm payment.",
+    "amount": "Amount",
+    "other": "Other",
+    "donationType": "Donation type",
+    "oneTime": "One-time",
+    "monthly": "Monthly",
+    "supportedProject": "Supported project",
+    "payByCard": "Pay by card",
+    "payByMobile": "Pay by mobile money",
+    "cardAccepted": "Visa, Mastercard and other cards accepted",
+    "orangeNotice": "Orange Money — notification sent to your mobile",
+    "mtnNotice": "MTN Mobile Money — notification sent to your mobile",
+    "fillRequired": "Please fill in all required fields.",
+    "phoneRequired": "Phone number required for mobile payment.",
+    "invalidAmount": "Invalid amount.",
+    "paymentError": "Error initializing payment.",
+    "connectionError": "Connection error. Please try again.",
+    "paymentAccepted": "Accepted payments: credit card (Visa, Mastercard), Orange Money, MTN Mobile Money.",
+    "total": "",
+    "statuses": {
+      "cancelled": "",
+      "failed": "",
+      "pending": "",
+      "successful": ""
+    }
+  },
+  "confirmation": {
+    "verifying": "Verifying…",
+    "success": "Thank you for your donation!",
+    "cancelled": "Payment cancelled",
+    "pending": "Payment pending",
+    "backHome": "Back to home",
+    "retry": "Try again",
+    "seeImpact": "See our impact",
+    "loading": "Loading…"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Page not found",
+    "description": "The page you are looking for may have been moved or deleted.",
+    "backHome": "Back to home",
+    "search": "Search"
+  },
+  "error": {
+    "code": "500",
+    "title": "An error occurred",
+    "description": "Our teams have been notified. Please try again or come back later.",
+    "retry": "Try again",
+    "backHome": "Back to home"
+  },
+  "admin": {
+    "nav": {
+      "dashboard": "Dashboard",
+      "posts": "Posts",
+      "projects": "Projects",
+      "contacts": "Contacts",
+      "donations": "Donations",
+      "space": "Administration area",
+      "backToSite": "Back to site",
+      "theme": "Theme",
+      "openSidebar": "Open sidebar",
+      "closeSidebar": "Close sidebar"
+    },
+    "auth": {
+      "title": "Administration",
+      "description": "Sign in to access the administration panel.",
+      "signIn": "Log in",
+      "loginBtn": "Sign in",
+      "logout": "Log out",
+      "password": "Password",
+      "connectedAs": "Connected as {email}",
+      "error": "Login error. Please try again."
+    },
+    "common": {
+      "actions": "Actions",
+      "multilingual": "Multilingual content",
+      "slugHint": "Lowercase letters, numbers and hyphens only",
+      "backToDashboard": "← Dashboard",
+      "noEntries": "No entries found."
+    },
+    "locales": {
+      "fr": "Français",
+      "en": "English",
+      "de": "Deutsch"
+    },
+    "actions": {
+      "add": "Add",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "update": "To update",
+      "cancel": "Cancel",
+      "confirmDelete": "Confirm deletion?",
+      "markRead": "Mark as read"
+    },
+    "status": {
+      "published": "Published",
+      "unpublished": "Unpublished",
+      "read": "Read",
+      "unread": "Unread",
+      "updatedAt": "Updated on"
+    },
+    "feedback": {
+      "success": {
+        "saved": "Saved successfully.",
+        "deleted": "Deleted successfully.",
+        "markedRead": "Contact marked as read."
+      },
+      "error": {
+        "save": "Error saving.",
+        "delete": "Error deleting.",
+        "markRead": "Error updating contact."
+      }
+    },
+    "fields": {
+      "title": "Title",
+      "slug": "Slug",
+      "content": "Content",
+      "excerpt": "Excerpt",
+      "category": "Category",
+      "ttr": "Read time",
+      "image": "Image URL",
+      "region": "Region",
+      "theme": "Theme",
+      "impact": "Impact",
+      "description": "Description",
+      "objectives": "Objectives",
+      "activities": "Activities",
+      "budget": "Budget",
+      "date": "Date",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "profile": "Profile",
+      "amount": "Amount",
+      "method": "Method",
+      "recurring": "Recurrent",
+      "donor": "Donor",
+      "project": "Project",
+      "status": "Status",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "post": {
+      "categories": {
+        "ground": "Ground",
+        "emergency": "Emergency",
+        "report": "Report",
+        "partnership": "Partnership",
+        "training": "Training"
+      },
+      "addTitle": "New article",
+      "editTitle": "Edit article"
+    },
+    "donations": {
+      "total": "Total collected",
+      "statuses": {
+        "successful": "Successful",
+        "pending": "Pending",
+        "failed": "Failed",
+        "cancelled": "Cancelled"
+      }
+    }
+  },
+  "common": {
+    "backHome": "Back to home",
+    "learnMore": "Learn more",
+    "seeAll": "See all",
+    "loading": "Loading…"
+  },
+  "searchIndex": {
+    "mission": {
+      "title": "Mission",
+      "excerpt": "Accessible, humane care through mobile clinics, training and prevention.",
+      "tags": ["care", "clinics", "prevention"]
+    },
+    "about": {
+      "title": "About",
+      "excerpt": "Governance, transparency and the foundation's human commitment.",
+      "tags": ["governance", "transparency"]
+    },
+    "projects": {
+      "title": "Causes & Projects",
+      "excerpt": "Programs rooted in local needs: rural health, maternity, emergencies.",
+      "tags": ["projects", "rural health", "maternity", "emergency"]
+    },
+    "impact": {
+      "title": "Impact",
+      "excerpt": "Indicators, countries of intervention, and detailed impact reports.",
+      "tags": ["indicators", "reports", "countries"]
+    },
+    "s-impliquer": {
+      "title": "Get involved",
+      "excerpt": "Volunteering, partnerships and solidarity fundraisers to support the mission.",
+      "tags": ["volunteering", "partnerships", "fundraisers"]
+    },
+    "dons": {
+      "title": "Donate",
+      "excerpt": "A lasting impact, one-time or monthly. Choose your level of commitment.",
+      "tags": ["donation", "monthly", "impact"]
+    },
+    "donate": {
+      "title": "Donate",
+      "excerpt": "A lasting impact, one-time or monthly. Choose your level of commitment.",
+      "tags": ["donation", "monthly", "impact"]
+    },
+    "blog": {
+      "title": "News",
+      "excerpt": "Field stories, humanitarian emergencies, and annual reports.",
+      "tags": ["blog", "news", "reports"]
+    },
+    "involve": {
+      "title": "Get involved",
+      "excerpt": "Volunteering, partnerships and solidarity fundraisers to support the mission.",
+      "tags": ["volunteering", "partnerships", "fundraisers"]
+    },
+    "legal": {
+      "title": "Legal notice",
+      "excerpt": "Legal information, privacy, and terms of use.",
+      "tags": ["legal", "privacy"]
+    }
+  },
+  "mission": {
+    "eyebrow": "Mission",
+    "title": "Accessible, humane, and sustainable care",
+    "description": "We strengthen local health systems through mobile clinics, team training and prevention. Our approach is grounded in proximity, ethics and measurable impact.",
+    "stats": {
+      "clinics": "clinics",
+      "activeMissions": "Active mobile missions.",
+      "countries": "countries",
+      "communities": "communities",
+      "covered": "Covered by our teams.",
+      "consultations": "consultations",
+      "avgPerQuarter": "Per quarter on average.",
+      "trainedCaregivers": "trained caregivers",
+      "continuousTraining": "Continuous upskilling."
+    },
+    "approachTitle": "Our approach",
+    "approachDescription": "Each mission is designed with local communities to ensure continuity of care and lasting results.",
+    "approach": {
+      "mobileCare": {
+        "title": "Mobile care",
+        "desc": "30 to 45 mission days per quarter to reach remote areas."
+      },
+      "localTraining": {
+        "title": "Local training",
+        "desc": "Certified sessions and mentoring over 6 months."
+      },
+      "prevention": {
+        "title": "Prevention",
+        "desc": "Quarterly screening campaigns and family follow-up."
+      }
+    },
+    "zonesTitle": "Intervention areas",
+    "zonesDescription": "West and Central Africa: focus on rural, peri-urban and post-crisis areas.",
+    "zones": {
+      "maternal": "Maternal & neonatal health.",
+      "emergency": "Humanitarian emergencies & nutrition.",
+      "countries": "Senegal, Guinea Conakry, Cameroon."
+    },
+    "valuesTitle": "Values & ethical commitments",
+    "values": {
+      "transparency": {
+        "title": "Transparency",
+        "desc": "Quarterly reports and annual audit available."
+      },
+      "dignity": {
+        "title": "Dignity",
+        "desc": "Consent protocols and patient-centered approach."
+      },
+      "efficiency": {
+        "title": "Efficiency",
+        "desc": "90% of funds go directly to field programs."
+      }
+    },
+    "impactBtn": "See our impact",
+    "involveBtn": "Get involved",
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "title": "Receive our field updates",
+      "description": "Reports, missions and stories in your inbox.",
+      "note": "By subscribing, you agree to our privacy policy."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "Governance, transparency and human commitment",
+      "description": "Nurse Hilfe Menschen Internationale relies on clear governance, regular audits and accessible impact tracking to build donor trust and action relevance.",
+      "ctaPrimary": "Support the mission",
+      "ctaSecondary": "See reports",
+      "imageAlt": "Humanitarian team meeting"
+    },
+    "story": {
+      "eyebrow": "Our story",
+      "title": "A foundation born from field commitment",
+      "description": "Founded by health professionals and humanitarian actors, our organization builds durable local responses centered on real community needs.",
+      "visionTitle": "Vision",
+      "visionDesc": "A world where everyone has access to safe, humane care.",
+      "valuesTitle": "Values",
+      "valuesDesc": "Compassion, inclusion, integrity and measurable impact."
+    },
+    "principles": {
+      "title": "Action principles",
+      "items": [
+        "Co-construction with communities.",
+        "Accessible and verifiable impact data.",
+        "Priority to maternal and child health.",
+        "Strengthening local skills."
+      ]
+    },
+    "leadership": {
+      "eyebrow": "Leadership team",
+      "title": "Responsible governance",
+      "cta": "Become a member",
+      "roles": {
+        "president": "President • Humanitarian physician",
+        "secretary": "Secretary General • Programs",
+        "treasurer": "Treasurer • Partnerships & impact",
+        "fieldLead": "Field lead • Community health"
+      }
+    },
+    "reports": {
+      "eyebrow": "Transparency",
+      "title": "Reports and audits",
+      "items": {
+        "annual2025": "Annual report 2025",
+        "annual2024": "Annual report 2024",
+        "financial2025": "Financial report 2025"
+      },
+      "cardDescription": "PDF download with key indicators and budgets.",
+      "download": "Download",
+      "auditNote": "Independent audits and legal documents are available upon request."
+    },
+    "ethics": {
+      "eyebrow": "Ethics & compliance",
+      "title": "Commitments to our donors",
+      "description": "We apply strict controls, data protection and accountability procedures.",
+      "items": [
+        "Ethics charter and code of conduct.",
+        "Data protection policy.",
+        "Fund and project traceability.",
+        "Confidential reporting mechanisms."
+      ],
+      "cta": "Review the charter"
+    }
+  },
+  "impact": {
+    "hero": {
+      "eyebrow": "Impact",
+      "title": "Measurable and transparent results",
+      "description": "Our indicators are tracked each quarter and shared in our reports to ensure full transparency."
+    },
+    "lastUpdated": "Last updated: {date}",
+    "kpis": {
+      "patients": "Patients supported",
+      "consultations": "Consultations 2025",
+      "mobileClinics": "Active mobile clinics",
+      "professionals": "Professionals trained"
+    },
+    "byCountry": {
+      "title": "Impact by country",
+      "description": "The figures below reflect our 2025 activity by main intervention area.",
+      "imageAlt": "Intervention in {country}",
+      "labels": {
+        "patients": "patients supported",
+        "clinics": "active mobile clinics",
+        "professionals": "professionals trained"
+      }
+    },
+    "countries": {
+      "burkinaFaso": {
+        "name": "Burkina Faso",
+        "patients": "32,400",
+        "clinics": "14",
+        "professionals": "280"
+      },
+      "coteIvoire": {
+        "name": "Cote d'Ivoire",
+        "patients": "28,700",
+        "clinics": "12",
+        "professionals": "240"
+      },
+      "cameroun": {
+        "name": "Cameroon",
+        "patients": "35,900",
+        "clinics": "16",
+        "professionals": "310"
+      },
+      "rdc": {
+        "name": "DRC",
+        "patients": "35,480",
+        "clinics": "10",
+        "professionals": "230"
+      },
+      "guinee_conakry": {
+        "clinics": "12",
+        "name": "Guinea Conakry",
+        "patients": "28,700",
+        "professionals": "240"
+      },
+      "senegal": {
+        "clinics": "14",
+        "name": "Senegal",
+        "patients": "32,400",
+        "professionals": "280"
+      }
+    },
+    "byProgram": {
+      "title": "Impact by program",
+      "description": "Our teams track specific indicators by action area to measure intervention effectiveness."
+    },
+    "programs": {
+      "maternal": {
+        "title": "Maternal health",
+        "focus": "9,600 prenatal consultations",
+        "teams": "18 mobile teams"
+      },
+      "emergency": {
+        "title": "Humanitarian emergencies",
+        "focus": "4,200 emergency interventions",
+        "teams": "12 rapid response cells"
+      },
+      "nutrition": {
+        "title": "Nutrition & prevention",
+        "focus": "18,500 screenings",
+        "teams": "22 community campaigns"
+      }
+    },
+    "reports": {
+      "title": "Impact reports",
+      "description": "Download our annual reports and financial statements to understand the use of funds.",
+      "items": {
+        "annual2025": "Report 2025 (PDF)",
+        "annual2024": "Report 2024 (PDF)",
+        "financial2025": "Financial report 2025"
+      }
+    },
+    "methodology": {
+      "title": "Methodology",
+      "items": [
+        "Monthly field data collection.",
+        "Cross-checks by external audits.",
+        "Annual publication and quarterly summaries."
+      ],
+      "ctaPrimary": "Support our actions",
+      "ctaSecondary": "Become a partner"
+    },
+    "stories": {
+      "title": "Impact stories",
+      "description": "A glimpse of the results achieved thanks to your support.",
+      "cta": "Read the story",
+      "ctaPrimary": "Read our news",
+      "ctaSecondary": "Donate",
+      "items": [
+        {
+          "desc": "Following a serious motorcycle accident resulting in multiple trauma, one of the victims was in critical condition. \nTo save his life, an amputation of his leg proved essential. \nThanks to the rapid intervention and professionalism of the Nurse Hilfe Menschen Internationale medical team, the operation was able to be carried out in conditions allowing her to preserve her life and give her a chance for a future.",
+          "title": "Maternal health in rural areas"
+        }
+      ]
+    },
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "title": "Follow our impact indicators",
+      "description": "Clear numbers and concrete results each month.",
+      "note": "By subscribing, you agree to our privacy policy."
+    }
+  },
+  "projects": {
+    "hero": {
+      "eyebrow": "Projects & causes",
+      "title": "Programs rooted in local needs",
+      "description": "Explore our interventions by theme and region. Each project is supported by impact indicators and clear objectives."
+    },
+    "labels": {
+      "region": "Region:",
+      "objective": "Objective:"
+    },
+    "cards": {
+      "viewProject": "View project",
+      "support": "Support"
+    },
+    "map": {
+      "title": "Intervention map",
+      "description": "Visualize projects by country, theme and urgency level.",
+      "imageAlt": "Intervention map by country"
+    },
+    "tracking": {
+      "title": "Impact tracking",
+      "description": "Dashboards, indicators and reports by project.",
+      "items": [
+        "Care coverage rate",
+        "Improved maternal indicators",
+        "Community resilience"
+      ],
+      "cta": "See reports"
+    },
+    "cta": {
+      "eyebrow": "Act now",
+      "title": "Support a high-impact project",
+      "description": "Each donation is assigned to a program and tracked with transparent indicators.",
+      "primary": "Donate",
+      "secondary": "Monthly donation"
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "News & stories",
+      "title": "The foundation journal",
+      "description": "Follow our missions, results and field testimonies. Each article highlights the impact of your donations."
+    },
+    "cards": {
+      "read": "Read the article"
+    },
+    "newsletter": {
+      "title": "Receive our news by email",
+      "description": "A monthly summary with our progress, needs and field actions.",
+      "button": "Subscribe",
+      "note": "By subscribing, you agree to our privacy policy."
+    }
+  },
+  "blogPost": {
+    "notFound": "Article not found",
+    "backToBlog": "<- Back to blog",
+    "cta": {
+      "title": "Support our missions",
+      "description": "Each contribution strengthens our field teams.",
+      "primary": "Donate",
+      "secondary": "View all articles"
+    }
+  },
+  "projectDetail": {
+    "notFound": "Project not found",
+    "backToProjects": "<- Back to projects",
+    "labels": {
+      "impact": "Impact",
+      "budget": "Budget"
+    },
+    "sections": {
+      "objectives": "Objectives",
+      "activities": "Activities"
+    },
+    "cta": {
+      "title": "Support this project",
+      "description": "Your contribution directly funds this program's activities.",
+      "primary": "Donate",
+      "secondary": "View all projects"
+    }
+  },
+  "involve": {
+    "hero": {
+      "eyebrow": "Get involved",
+      "title": "Take action with us on the ground",
+      "description": "Volunteering, partnerships and solidarity fundraisers: choose the engagement that fits you."
+    },
+    "stats": {
+      "volunteers": {
+        "label": "active volunteers",
+        "description": "On local and field missions."
+      },
+      "partners": {
+        "label": "partners",
+        "description": "Engaged institutions and companies."
+      },
+      "fundraisers": {
+        "label": "fundraisers",
+        "description": "Launched in 2025."
+      },
+      "responseTime": {
+        "label": "average response time",
+        "description": "To confirm an application."
+      }
+    },
+    "cards": {
+      "volunteering": {
+        "title": "Volunteering",
+        "description": "One-off missions, community health, logistics and admin support.",
+        "cta": "Discover roles",
+        "imageAlt": "Volunteer team on mission"
+      },
+      "partnerships": {
+        "title": "Partnerships",
+        "description": "Companies, institutions, local foundations and media.",
+        "cta": "Become a partner",
+        "imageAlt": "Partnership between organizations"
+      },
+      "fundraisers": {
+        "title": "Solidarity fundraisers",
+        "description": "Create a campaign, set a goal and mobilize your network.",
+        "cta": "Start a fundraiser",
+        "imageAlt": "Solidarity fundraising"
+      }
+    },
+    "support": {
+      "title": "Support sustainably",
+      "description": "Recurring donations ensure continuity of care and long-term planning.",
+      "ctaPrimary": "Donate",
+      "ctaSecondary": "See impact tiers",
+      "note": "Need a direct exchange? Use the form below or email info@nurseinternationale.com.",
+      "highlightsTitle": "What you enable",
+      "highlights": [
+        "Supply of medical kits.",
+        "Training local health workers.",
+        "Rapid response in emergencies."
+      ]
+    },
+    "contact": {
+      "title": "Let's discuss your engagement",
+      "description": "Share your profile and availability. Our team will respond within 72 business hours.",
+      "items": [
+        "Field volunteering or remote support.",
+        "Partnerships & corporate sponsorship.",
+        "Solidarity campaigns and events."
+      ]
+    },
+    "newsletter": {
+      "eyebrow": "Stay informed",
+      "title": "Receive our engagement opportunities",
+      "description": "Volunteer calls, partnerships and field actions.",
+      "note": "By subscribing, you agree to our privacy policy."
+    }
+  },
+  "donatePage": {
+    "hero": {
+      "eyebrow": "Donate",
+      "title": "Lasting impact, one-time or monthly",
+      "description": "Choose an amount, support a specific project and receive a tax receipt where applicable. Recurring giving ensures continuity of care, team training and rapid emergency response.",
+      "paymentNote": "Accepted payments: credit card (Visa, Mastercard), Orange Money, MTN Mobile Money.",
+      "ctaPrimary": "Go to the donation form",
+      "ctaSecondary": "See impact tiers"
+    },
+    "whyDonate": {
+      "title": "Why donate?",
+      "items": [
+        "EUR20 funds a family hygiene kit.",
+        "EUR50 supports a prenatal consultation.",
+        "EUR100 helps train a volunteer."
+      ],
+      "note": "Tax receipts are issued automatically according to local regulations."
+    },
+    "impact": {
+      "title": "Your impact",
+      "description": "Recurring donations stabilize programs and strengthen field teams.",
+      "items": [
+        "1 hygiene kit and family follow-up.",
+        "Prenatal consultation + screening.",
+        "Training a local health worker."
+      ],
+      "note": "90% of donations directly fund field programs."
+    },
+    "tiers": {
+      "eyebrow": "Recurring donation",
+      "title": "Lasting impact every month",
+      "description": "Recurring giving ensures continuity of care, local training and rapid emergency response.",
+      "badges": {
+        "essential": "Essential",
+        "impact": "Impact",
+        "ambassador": "Ambassador"
+      },
+      "cards": {
+        "essential": "Funds hygiene kits and basic consultations.",
+        "impact": "Ongoing support for mobile teams and patient follow-up.",
+        "ambassador": "Training local caregivers and durable investments."
+      },
+      "chooseLevel": "Choose this level",
+      "customAmount": "Need a custom amount? Choose a flexible tier."
+    },
+    "updates": {
+      "eyebrow": "Updates & transparency",
+      "title": "You receive concrete updates",
+      "description": "Each quarter, a simplified report on fund use and results achieved.",
+      "items": [
+        "Monthly updates on supported projects.",
+        "Priority access to our events.",
+        "Testimonials and field stories."
+      ],
+      "cta": "Set up my donation"
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "All about recurring giving",
+      "items": [
+        {
+          "q": "Can I stop my donation at any time?",
+          "a": "Yes, your contribution is commitment-free and can be changed at any time."
+        },
+        {
+          "q": "Are tax receipts available?",
+          "a": "We automatically send receipts according to local regulations."
+        },
+        {
+          "q": "How are funds used?",
+          "a": "Donations are allocated to priority programs with traceability."
+        },
+        {
+          "q": "Can I choose a specific project?",
+          "a": "Yes, you can direct your donation to a specific program."
+        }
+      ]
+    }
+  },
+  "legal": {
+    "hero": {
+      "eyebrow": "Legal information",
+      "title": "Legal notice & privacy",
+      "description": "Find regulatory information about the association, data protection and terms of use.",
+      "lastUpdated": "Last updated: {date}"
+    },
+    "legalNotice": {
+      "title": "Legal notice",
+      "description": "Legal name, address, publishing officers, registration numbers and official contacts.",
+      "items": [
+        "Organization: Nurse Hilfe Menschen Internationale.",
+        "Official contact: info@nurseinternationale.com",
+        "Hosting: to be completed."
+      ]
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "Collection, use, storage and user rights regarding personal data.",
+      "items": [
+        "Purpose: donation management and communications.",
+        "Duration: retained only as long as necessary.",
+        "Rights: access, correction, deletion."
+      ]
+    },
+    "terms": {
+      "title": "Terms of use",
+      "description": "Site usage rules, liability limitations and intellectual property.",
+      "items": [
+        "Personal, non-commercial use of content.",
+        "No reproduction without authorization.",
+        "Liability limited to published information."
+      ]
+    },
+    "cta": {
+      "primary": "Contact the responsible party",
+      "secondary": "Governance & transparency"
+    }
+  },
+  "flutterwave": {
+    "cancelled": "Payment canceled. \nYou have not been billed.",
+    "don": {
+      "fondation": "Donation to the foundation",
+      "project": "Donation for"
+    },
+    "error": "An error occurred during payment. \nPlease try again.",
+    "pending": "Payment pending. \nWe will notify you as soon as the status changes.",
+    "success": "Payment successful! \nThank you for your support."
+  }
+}

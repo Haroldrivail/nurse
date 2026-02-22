@@ -3,10 +3,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { MenuIcon, Search, X } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link, usePathname } from "@/i18n/navigation";
 import { useMemo, useState } from "react";
-import { usePathname } from "next/navigation";
-import { searchIndex } from "@/lib/search-index";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/language-switcher";
 
 const MobileNavItem = ({
   href,
@@ -32,12 +32,76 @@ const MobileNavItem = ({
   </motion.li>
 );
 
+export type SearchItem = {
+  title: string;
+  excerpt: string;
+  href: string;
+  tags?: string[];
+};
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mobileQuery, setMobileQuery] = useState("");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const pathname = usePathname();
+  const t = useTranslations("nav");
+  const ts = useTranslations("search");
+  const tIndex = useTranslations("searchIndex");
+
+  const searchIndex: SearchItem[] = useMemo(
+    () => [
+      {
+        title: tIndex("mission.title"),
+        excerpt: tIndex("mission.excerpt"),
+        href: "/mission",
+        tags: tIndex.raw("mission.tags") as string[],
+      },
+      {
+        title: tIndex("about.title"),
+        excerpt: tIndex("about.excerpt"),
+        href: "/about",
+        tags: tIndex.raw("about.tags") as string[],
+      },
+      {
+        title: tIndex("projects.title"),
+        excerpt: tIndex("projects.excerpt"),
+        href: "/projects",
+        tags: tIndex.raw("projects.tags") as string[],
+      },
+      {
+        title: tIndex("impact.title"),
+        excerpt: tIndex("impact.excerpt"),
+        href: "/impact",
+        tags: tIndex.raw("impact.tags") as string[],
+      },
+      {
+        title: tIndex("involve.title"),
+        excerpt: tIndex("involve.excerpt"),
+        href: "/s-impliquer",
+        tags: tIndex.raw("involve.tags") as string[],
+      },
+      {
+        title: tIndex("donate.title"),
+        excerpt: tIndex("donate.excerpt"),
+        href: "/dons",
+        tags: tIndex.raw("donate.tags") as string[],
+      },
+      {
+        title: tIndex("blog.title"),
+        excerpt: tIndex("blog.excerpt"),
+        href: "/blog",
+        tags: tIndex.raw("blog.tags") as string[],
+      },
+      {
+        title: tIndex("legal.title"),
+        excerpt: tIndex("legal.excerpt"),
+        href: "/legal",
+        tags: tIndex.raw("legal.tags") as string[],
+      },
+    ],
+    [tIndex],
+  );
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -78,7 +142,7 @@ export default function Header() {
         .replace(/\p{Diacritic}/gu, "");
       return haystack.includes(normalizedQuery);
     });
-  }, [normalizedQuery]);
+  }, [normalizedQuery, searchIndex]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-base-200 bg-base-100">
@@ -104,60 +168,61 @@ export default function Header() {
                 href="/mission"
                 className={`tab ${pathname === "/mission" ? "tab-active" : ""}`}
               >
-                Mission
+                {t("mission")}
               </Link>
               <Link
                 role="tab"
                 href="/about"
                 className={`tab ${pathname === "/about" ? "tab-active" : ""}`}
               >
-                À propos
+                {t("about")}
               </Link>
               <Link
                 role="tab"
                 href="/projects"
                 className={`tab ${pathname === "/projects" ? "tab-active" : ""}`}
               >
-                Causes/Projets
+                {t("projects")}
               </Link>
               <Link
                 role="tab"
                 href="/impact"
                 className={`tab ${pathname === "/impact" ? "tab-active" : ""}`}
               >
-                Impact
+                {t("impact")}
               </Link>
               <Link
                 role="tab"
                 href="/s-impliquer"
                 className={`tab ${pathname === "/s-impliquer" ? "tab-active" : ""}`}
               >
-                Impliquez-vous
+                {t("getInvolved")}
               </Link>
               <Link
                 role="tab"
                 href="/dons"
                 className={`tab ${pathname === "/dons" ? "tab-active" : ""}`}
               >
-                Faire un don
+                {t("donate")}
               </Link>
               <Link
                 role="tab"
                 href="/blog"
                 className={`tab ${pathname === "/blog" ? "tab-active" : ""}`}
               >
-                Actualités
+                {t("blog")}
               </Link>
             </div>
           </div>
           <div className="navbar-end flex items-center gap-3 lg:gap-4">
+            <LanguageSwitcher />
             <motion.div
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.18 }}
             >
               <button
                 type="button"
-                aria-label="Rechercher"
+                aria-label={t("search")}
                 onClick={() => openSearch()}
                 className="flex items-center"
               >
@@ -167,7 +232,7 @@ export default function Header() {
             <button
               type="button"
               className="btn btn-ghost btn-circle lg:hidden relative"
-              aria-label="Ouvrir le menu"
+              aria-label={t("openMenu")}
               onClick={() => setIsMenuOpen((value) => !value)}
             >
               <motion.div
@@ -191,15 +256,15 @@ export default function Header() {
                 <X />
               </motion.div>
             </button>
-            <motion.div
+            {/* <motion.div
               whileHover={{ y: -2 }}
               transition={{ duration: 0.18 }}
               className="hidden lg:block"
             >
               <Link className="btn btn-primary" href="/dons">
-                Faire un don
+                {t("donate")}
               </Link>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
@@ -241,7 +306,7 @@ export default function Header() {
                     />
                     <div>
                       <p className="text-xs uppercase tracking-[0.25em] text-primary">
-                        Fondation
+                        {t("foundation")}
                       </p>
                       <p className="text-sm font-semibold">
                         Nurse Hilfe Menschen Internationale
@@ -252,43 +317,43 @@ export default function Header() {
                 <ul className="menu gap-1 text-sm font-medium w-full">
                   <MobileNavItem
                     href="/mission"
-                    label="Mission"
+                    label={t("mission")}
                     onClick={closeMenu}
                     active={pathname === "/mission"}
                   />
                   <MobileNavItem
                     href="/about"
-                    label="À propos"
+                    label={t("about")}
                     onClick={closeMenu}
                     active={pathname === "/about"}
                   />
                   <MobileNavItem
                     href="/projects"
-                    label="Causes/Projets"
+                    label={t("projects")}
                     onClick={closeMenu}
                     active={pathname === "/projects"}
                   />
                   <MobileNavItem
                     href="/impact"
-                    label="Impact"
+                    label={t("impact")}
                     onClick={closeMenu}
                     active={pathname === "/impact"}
                   />
                   <MobileNavItem
                     href="/s-impliquer"
-                    label="Impliquez-vous"
+                    label={t("getInvolved")}
                     onClick={closeMenu}
                     active={pathname === "/s-impliquer"}
                   />
                   <MobileNavItem
                     href="/dons"
-                    label="Faire un don"
+                    label={t("donate")}
                     onClick={closeMenu}
                     active={pathname === "/dons"}
                   />
                   <MobileNavItem
                     href="/blog"
-                    label="Actualités"
+                    label={t("blog")}
                     onClick={closeMenu}
                     active={pathname === "/blog"}
                   />
@@ -299,8 +364,8 @@ export default function Header() {
                     <input
                       type="search"
                       required
-                      placeholder="Rechercher..."
-                      aria-label="Rechercher un contenu"
+                      placeholder={ts("placeholder")}
+                      aria-label={ts("ariaLabel")}
                       className="input w-full focus:outline-none bg-transparent shadow-none"
                       value={mobileQuery}
                       onChange={(event) => setMobileQuery(event.target.value)}
@@ -331,21 +396,21 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="fixed left-1/2 top-6 z-[60] w-[92%] max-w-2xl -translate-x-1/2 rounded-2xl bg-base-100 p-6 shadow-2xl"
+              className="fixed left-1/2 top-6 z-60 w-[92%] max-w-2xl -translate-x-1/2 rounded-2xl bg-base-100 p-6 shadow-2xl"
               onClick={(event) => event.stopPropagation()}
             >
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-                    Recherche
+                    {ts("title")}
                   </p>
                   <h2 className="mt-2 text-2xl font-semibold">
-                    Trouver un contenu
+                    {ts("heading")}
                   </h2>
                 </div>
                 <button
                   type="button"
-                  aria-label="Fermer la recherche"
+                  aria-label={ts("close")}
                   className="btn btn-ghost btn-circle"
                   onClick={closeSearch}
                 >
@@ -358,8 +423,8 @@ export default function Header() {
                   <Search className="h-5 w-5 text-primary" />
                   <input
                     type="search"
-                    placeholder="Rechercher..."
-                    aria-label="Rechercher un contenu"
+                    placeholder={ts("placeholder")}
+                    aria-label={ts("ariaLabel")}
                     className="input w-full focus:outline-none bg-transparent shadow-none"
                     value={searchQuery}
                     onChange={(event) => setSearchQuery(event.target.value)}
@@ -407,7 +472,7 @@ export default function Header() {
                   </div>
                 ) : (
                   <div className="alert alert-info">
-                    Aucun résultat pour « {searchQuery} ».
+                    {ts("noResults", { query: searchQuery })}
                   </div>
                 )}
               </div>

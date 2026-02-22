@@ -15,12 +15,23 @@ import {
   Youtube,
 } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useContext } from "react";
 import Stagger from "./motion/stagger";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const t = useTranslations("footer");
+  const tn = useTranslations("newsletter");
+
+  const newsletterMessages = {
+    defaultButton: tn("defaultButton"),
+    loading: tn("loading"),
+    emailError: tn("emailError"),
+    successMessage: tn("successMessage"),
+    errorMessage: tn("errorMessage"),
+  };
 
   const nextTheme = () => {
     if (theme === "light") return "dark";
@@ -39,7 +50,7 @@ export default function Footer() {
           <div className="hidden md:flex md:gap-3 md:flex-row md:items-start md:justify-evenly flex-1 lg:pr-4">
             <div className="text-sm">
               <div className="text-base font-bold cursor-pointer list-none flex items-center gap-1">
-                Explorer{" "}
+                {t("explore")}{" "}
                 <span className={`md:hidden`}>
                   <Plus className="h-4 w-4 font-bold" />
                 </span>
@@ -47,27 +58,27 @@ export default function Footer() {
               <ul className="mt-4 space-y-2 text-base-content/70">
                 <li>
                   <Link className="link link-hover" href="/mission">
-                    Notre mission
+                    {t("ourMission")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/about">
-                    Gouvernance & transparence
+                    {t("governanceTransparency")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/projects">
-                    Projets & causes
+                    {t("projectsCauses")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/impact">
-                    Impact
+                    {t("impact")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/blog">
-                    Actualités
+                    {t("news")}
                   </Link>
                 </li>
               </ul>
@@ -75,7 +86,7 @@ export default function Footer() {
 
             <div className="text-sm lg:open">
               <div className="text-base font-bold cursor-pointer list-none flex items-center gap-1">
-                Connecter{" "}
+                {t("connect")}{" "}
                 <span className={`md:hidden`}>
                   <Plus className="h-4 w-4 font-bold" />
                 </span>
@@ -86,12 +97,12 @@ export default function Footer() {
                     className="link link-hover"
                     href="mailto:info@nurseinternationale.com"
                   >
-                    Contactez-nous
+                    {t("contactUs")}
                   </a>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/about">
-                    FAQ & gouvernance
+                    {t("faqGovernance")}
                   </Link>
                 </li>
               </ul>
@@ -99,7 +110,7 @@ export default function Footer() {
 
             <div className="text-sm md:open">
               <div className="text-base font-bold cursor-pointer list-none flex items-center gap-1">
-                Donner{" "}
+                {t("give")}{" "}
                 <span className={`md:hidden`}>
                   <Plus className="h-4 w-4 font-bold" />
                 </span>
@@ -107,17 +118,17 @@ export default function Footer() {
               <ul className="mt-4 space-y-2 text-base-content/70">
                 <li>
                   <Link className="link link-hover" href="/dons">
-                    Faire un don
+                    {t("donate")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/s-impliquer">
-                    Devenir bénévole
+                    {t("becomeVolunteer")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/dons">
-                    Don récurrent
+                    {t("recurringDonation")}
                   </Link>
                 </li>
               </ul>
@@ -127,7 +138,7 @@ export default function Footer() {
           <div className="md:hidden flex gap-5 flex-col">
             <details className="text-sm footer-collapse">
               <summary className="text-base font-bold cursor-pointer list-none flex items-center gap-1">
-                Explorer{" "}
+                {t("explore")}{" "}
                 <span className={`md:hidden`}>
                   <Plus className="h-4 w-4 font-bold footer-plus" />
                 </span>
@@ -135,27 +146,27 @@ export default function Footer() {
               <ul className="mt-4 space-y-2 text-base-content/70">
                 <li>
                   <Link className="link link-hover" href="/mission">
-                    Notre mission
+                    {t("ourMission")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/about">
-                    Gouvernance & transparence
+                    {t("governanceTransparency")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/projects">
-                    Projets & causes
+                    {t("projectsCauses")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/impact">
-                    Impact
+                    {t("impact")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/blog">
-                    Actualités
+                    {t("news")}
                   </Link>
                 </li>
               </ul>
@@ -163,7 +174,7 @@ export default function Footer() {
 
             <details className="text-sm footer-collapse">
               <summary className="text-base font-bold cursor-pointer list-none flex items-center gap-1">
-                Connecter{" "}
+                {t("connect")}{" "}
                 <span className={`md:hidden`}>
                   <Plus className="h-4 w-4 font-bold footer-plus" />
                 </span>
@@ -174,12 +185,12 @@ export default function Footer() {
                     className="link link-hover"
                     href="mailto:info@nurseinternationale.com"
                   >
-                    Contactez-nous
+                    {t("contactUs")}
                   </a>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/about">
-                    FAQ & gouvernance
+                    {t("faqGovernance")}
                   </Link>
                 </li>
               </ul>
@@ -187,7 +198,7 @@ export default function Footer() {
 
             <details className="text-sm footer-collapse">
               <summary className="text-base font-bold cursor-pointer list-none flex items-center gap-1">
-                Donner{" "}
+                {t("give")}{" "}
                 <span className={`md:hidden`}>
                   <Plus className="h-4 w-4 font-bold footer-plus" />
                 </span>
@@ -195,17 +206,17 @@ export default function Footer() {
               <ul className="mt-4 space-y-2 text-base-content/70">
                 <li>
                   <Link className="link link-hover" href="/dons">
-                    Faire un don
+                    {t("donate")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/s-impliquer">
-                    Devenir bénévole
+                    {t("becomeVolunteer")}
                   </Link>
                 </li>
                 <li>
                   <Link className="link link-hover" href="/dons">
-                    Don récurrent
+                    {t("recurringDonation")}
                   </Link>
                 </li>
               </ul>
@@ -214,10 +225,11 @@ export default function Footer() {
 
           <Newsletter
             variant="split"
-            title="S'inscrire aux E-News"
-            description="Recevez nos dernières nouvelles, rapports et appels à l'action."
-            buttonText="S'abonner"
-            note="En vous inscrivant, vous acceptez notre politique de confidentialité."
+            title={t("newsletterTitle")}
+            description={t("newsletterDesc")}
+            buttonText={t("newsletterBtn")}
+            note={t("newsletterNote")}
+            messages={newsletterMessages}
             leadingIcon={<Mail className="h-4 w-4 text-base-content/50" />}
             buttonIcon={<SendHorizonalIcon className="h-4 w-4" />}
           />
@@ -228,7 +240,7 @@ export default function Footer() {
         <div className="flex flex-col gap-6 text-sm text-base-content/70 md:flex-row md:items-center md:justify-between">
           <div className="w-full flex flex-col md:flex-row items-center justify-between gap-5 md:gap-16">
             <span className="text-base font-semibold text-base-content">
-              Social
+              {t("social")}
             </span>
             <div>
               <Stagger
@@ -273,6 +285,9 @@ export default function Footer() {
               </Stagger>
             </div>
             <div>
+              <span className="text-sm text-base-content/70">
+                {t("theme")}:{" "}
+              </span>
               <label className="swap swap-rotate btn btn-ghost btn-circle">
                 <input
                   type="checkbox"
@@ -304,15 +319,8 @@ export default function Footer() {
               />
             </div>
             <div className="mt-3 text-base-content/70 text-justify md:mt-0 md:max-w-3xl">
-              <p>
-                Ensemble, pour des soins accessibles et humains. Transparence,
-                dignité et impact mesurable guident toutes nos actions.
-              </p>
-              <p>
-                Organisation humanitaire à but non lucratif. Les dons
-                contribuent au financement de nos programmes de santé, de
-                dignité et de soutien aux communautés vulnérables.
-              </p>
+              <p>{t("tagline")}</p>
+              <p>{t("orgDescription")}</p>
             </div>
           </Stagger>
         </div>
@@ -320,19 +328,17 @@ export default function Footer() {
         <div className="mt-6 text-xs text-base-content/60 flex flex-col gap-5 md:gap-0 md:flex-row items-center justify-between">
           <div className="mt-3 flex flex-wrap gap-4 text-center md:mt-0 justify-center">
             <Link className="link link-hover" href="/legal">
-              Mentions légales
+              {t("legalNotice")}
             </Link>
             <Link className="link link-hover" href="/legal">
-              Politique de confidentialité
+              {t("privacyPolicy")}
             </Link>
             <Link className="link link-hover" href="/legal">
-              Conditions d&apos;utilisation
+              {t("termsOfUse")}
             </Link>
           </div>
 
-          <div className="text-center md:text-right">
-            © 2026 Nurse Hilfe Menschen Internationale. Tous droits réservés.
-          </div>
+          <div className="text-center md:text-right">{t("copyright")}</div>
         </div>
       </div>
     </footer>

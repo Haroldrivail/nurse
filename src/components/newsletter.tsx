@@ -5,6 +5,15 @@ import { toast } from "react-toastify";
 
 type NewsletterVariant = "card" | "split" | "inline";
 
+type NewsletterMessages = {
+  defaultButton: string;
+  loading: string;
+  emailError: string;
+  successMessage: string;
+  errorMessage: string;
+  ariaLabel?: string;
+};
+
 type NewsletterProps = {
   variant?: NewsletterVariant;
   id?: string;
@@ -19,6 +28,16 @@ type NewsletterProps = {
   leadingIcon?: ReactNode;
   buttonIcon?: ReactNode;
   ariaLabel?: string;
+  messages?: Partial<NewsletterMessages>;
+};
+
+const DEFAULT_MESSAGES: NewsletterMessages = {
+  defaultButton: "Subscribe",
+  loading: "Processing...",
+  emailError: "Enter a valid email address",
+  successMessage: "Thank you for subscribing.",
+  errorMessage: "An error occurred. Please try again.",
+  ariaLabel: "Email newsletter",
 };
 
 export default function Newsletter({
@@ -30,12 +49,17 @@ export default function Newsletter({
   description,
   inputLabel,
   placeholder = "mail@example.com",
-  buttonText = "S'abonner",
+  buttonText,
   note,
   leadingIcon,
   buttonIcon,
-  ariaLabel = "Email pour la newsletter",
+  ariaLabel,
+  messages,
 }: NewsletterProps) {
+  const resolvedMessages = { ...DEFAULT_MESSAGES, ...messages };
+  const resolvedButtonText = buttonText ?? resolvedMessages.defaultButton;
+  const resolvedAriaLabel =
+    ariaLabel ?? resolvedMessages.ariaLabel ?? DEFAULT_MESSAGES.ariaLabel;
   const defaultLeadingIcon = <Mail className="h-4 w-4 text-base-content/50" />;
   const defaultButtonIcon = <SendHorizonalIcon className="h-4 w-4" />;
   leadingIcon = leadingIcon ?? defaultLeadingIcon;
@@ -63,19 +87,14 @@ export default function Newsletter({
       const data = await response.json();
 
       if (response.ok) {
-        toast.success(data?.message || "Merci pour votre inscription.");
+        toast.success(data?.message || resolvedMessages.successMessage);
         setEmail("");
       } else {
-        toast.error(
-          data?.error || "Une erreur est survenue. Veuillez réessayer.",
-        );
+        toast.error(data?.error || resolvedMessages.errorMessage);
       }
     } catch (error) {
-      console.error(
-        "Erreur de souscription Mailchimp lors de l'envoi de la requête :",
-        error,
-      );
-      toast.error("Une erreur est survenue. Veuillez réessayer.");
+      console.error("Newsletter subscription error:", error);
+      toast.error(resolvedMessages.errorMessage);
     } finally {
       setIsLoading(false);
     }
@@ -93,7 +112,7 @@ export default function Newsletter({
       }}
       onInvalid={(event) => {
         event.preventDefault();
-        setEmailError("Entrer une adresse email valide");
+        setEmailError(resolvedMessages.emailError);
       }}
       onInput={(event) => {
         if (
@@ -103,7 +122,7 @@ export default function Newsletter({
           setEmailError("");
         }
       }}
-      aria-label={ariaLabel}
+      aria-label={resolvedAriaLabel}
       required
       disabled={isLoading}
     />
@@ -114,10 +133,10 @@ export default function Newsletter({
       <span className="inline-block mr-2 animate-spin">
         <LoaderCircle className="inline-block rotate-0" />
       </span>
-      En cours...
+      {resolvedMessages.loading}
     </>
   ) : (
-    buttonText
+    resolvedButtonText
   );
 
   if (variant === "inline") {
@@ -143,7 +162,7 @@ export default function Newsletter({
               }}
               onInvalid={(event) => {
                 event.preventDefault();
-                setEmailError("Entrer une adresse email valide");
+                setEmailError(resolvedMessages.emailError);
               }}
               onInput={(event) => {
                 if (
@@ -153,7 +172,7 @@ export default function Newsletter({
                   setEmailError("");
                 }
               }}
-              aria-label={ariaLabel}
+              aria-label={resolvedAriaLabel}
               required
               disabled={isLoading}
             />
@@ -180,15 +199,15 @@ export default function Newsletter({
     return (
       <section className={`bg-base-200/60 ${className ?? ""}`.trim()}>
         <div className="w-full p-2 ">
-          <div className="flex flex-col gap-3 md:items-center md:justify-between">
+          <div className="flex flex-col gap-3 md:items-center md:justify-between w-full max-w-6xl mx-auto">
             <div>
               {eyebrow ? (
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary w-full">
                   {eyebrow}
                 </p>
               ) : null}
               {title ? (
-                <h2 className="mt-3 text-3xl font-semibold text-center">
+                <h2 className="mt-3 text-3xl font-semibold text-center w-full">
                   {title}
                 </h2>
               ) : null}
@@ -220,7 +239,7 @@ export default function Newsletter({
                           }}
                           onInvalid={(event) => {
                             event.preventDefault();
-                            setEmailError("Entrer une adresse email valide");
+                            setEmailError(resolvedMessages.emailError);
                           }}
                           onInput={(event) => {
                             if (
@@ -231,7 +250,7 @@ export default function Newsletter({
                               setEmailError("");
                             }
                           }}
-                          aria-label={ariaLabel}
+                          aria-label={resolvedAriaLabel}
                           required
                           disabled={isLoading}
                         />
@@ -302,7 +321,7 @@ export default function Newsletter({
                         }}
                         onInvalid={(event) => {
                           event.preventDefault();
-                          setEmailError("Entrer une adresse email valide");
+                          setEmailError(resolvedMessages.emailError);
                         }}
                         onInput={(event) => {
                           if (
@@ -313,7 +332,7 @@ export default function Newsletter({
                             setEmailError("");
                           }
                         }}
-                        aria-label={ariaLabel}
+                        aria-label={resolvedAriaLabel}
                         required
                         disabled={isLoading}
                       />

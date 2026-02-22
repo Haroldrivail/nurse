@@ -1,40 +1,28 @@
 import mailchimp from "@mailchimp/mailchimp_marketing";
 import { NextResponse } from "next/server";
 
-mailchimp.setConfig({
-  apiKey: process.env.MAILCHIMP_API_KEY!,
-  server: process.env.MAILCHIMP_API_SERVER!,
-});
+const MAILCHIMP_API_KEY = process.env.MAILCHIMP_API_KEY;
+const MAILCHIMP_API_SERVER = process.env.MAILCHIMP_API_SERVER;
+const MAILCHIMP_LIST_ID = process.env.MAILCHIMP_LIST_ID;
 
-type MailchimpError = {
-  status?: number;
-  response?: {
-    body?: {
-      title?: string;
-      detail?: string;
-      status?: number;
-      errors?: Array<{ field?: string; message?: string }>;
-    };
-  };
-};
+const isRecord = (value: unknown): value is Record<string, unknown> =>
+  typeof value === "object" && value !== null;
 
-const getMailchimpErrorMessage = (error: MailchimpError) => {
-  const detail = error.response?.body?.detail;
-  if (detail) return detail;
-  const title = error.response?.body?.title;
-  if (title) return title;
-  return "Une erreur est survenue. Veuillez réessayer.";
-};
+if (MAILCHIMP_API_KEY && MAILCHIMP_API_SERVER) {
+  mailchimp.setConfig({
+    apiKey: MAILCHIMP_API_KEY,
+    server: MAILCHIMP_API_SERVER,
+  });
+}
 
 export async function POST(request: Request) {
   try {
-    if (
-      !process.env.MAILCHIMP_API_KEY ||
-      !process.env.MAILCHIMP_API_SERVER ||
-      !process.env.MAILCHIMP_LIST_ID
-    ) {
+    if (!MAILCHIMP_API_KEY || !MAILCHIMP_API_SERVER || !MAILCHIMP_LIST_ID) {
       return NextResponse.json(
-        { error: "Configuration Mailchimp manquante." },
+        {
+          error:
+            "Service newsletter indisponible. Veuillez configurer Mailchimp.",
+        },
         { status: 500 },
       );
     }
@@ -43,30 +31,95 @@ export async function POST(request: Request) {
 
     if (!email || !email.includes("@")) {
       return NextResponse.json(
-        { error: "Adresse e-mail invalide" },
+        { error: "Cette adresse e-mail est invalide" },
         { status: 400 },
       );
     }
 
-    const response = await mailchimp.lists.addListMember(
-      process.env.MAILCHIMP_LIST_ID!,
-      {
-        email_address: email,
-        status: "subscribed",
-      },
-    );
+    const response = await mailchimp.lists.addListMember(MAILCHIMP_LIST_ID, {
+      email_address: email,
+      status: "subscribed",
+    });
 
     return NextResponse.json(
-      { message: "Abonné avec succès", data: response },
+      { message: "Vous êtes abonné à la newsletter", data: response },
       { status: 201 },
     );
-  } catch (error) {
-    const mailchimpError = error as MailchimpError;
-    const status =
-      mailchimpError.status || mailchimpError.response?.body?.status || 500;
-    const message = getMailchimpErrorMessage(mailchimpError);
+  } catch (error: unknown) {
+    const errorRecord = isRecord(error) ? error : {};
+    const response = isRecord(errorRecord.response) ? errorRecord.response : {};
+    const body = isRecord(response.body)
+      ? response.body
+      : isRecord(response.data)
+        ? response.data
+        : response;
 
-    console.error("Erreur de souscription Mailchimp :", mailchimpError);
-    return NextResponse.json({ error: message }, { status });
+    const status =
+      typeof errorRecord.status === "number"
+        ? errorRecord.status
+        : typeof response.status === "number"
+          ? response.status
+          : undefined;
+    const title =
+      typeof errorRecord.title === "string"
+        ? errorRecord.title
+        : typeof body.title === "string"
+          ? body.title
+          : "";
+    const detail =
+      typeof errorRecord.detail === "string"
+        ? errorRecord.detail
+        : typeof body.detail === "string"
+          ? body.detail
+          : "";
+
+    const alreadySubscribed =
+      status === 400 &&
+      (title.toLowerCase().includes("member exists") ||
+        detail.toLowerCase().includes("already a list member") ||
+        detail.toLowerCase().includes("déjà"));
+
+    if (alreadySubscribed) {
+      return NextResponse.json(
+        { message: "Cet email est déjà abonné à la newsletter" },
+        { status: 200 },
+      );
+    }
+
+    if (status === 401 || status === 403) {
+      return NextResponse.json(
+        {
+          error:
+            "Accès Mailchimp refusé. Vérifiez MAILCHIMP_API_KEY et MAILCHIMP_API_SERVER.",
+        },
+        { status: 502 },
+      );
+    }
+
+    if (status === 404) {
+      return NextResponse.json(
+        {
+          error: "Liste Mailchimp introuvable. Vérifiez MAILCHIMP_LIST_ID.",
+        },
+        { status: 502 },
+      );
+    }
+
+    console.error("Erreur de souscription Mailchimp :", error);
+    return NextResponse.json(
+      {
+        error: "Erreur serveur. Veuillez réessayer.",
+        ...(process.env.NODE_ENV !== "production"
+          ? {
+              debug: {
+                status,
+                title,
+                detail,
+              },
+            }
+          : {}),
+      },
+      { status: status ?? 500 },
+    );
   }
 }

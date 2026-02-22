@@ -1,0 +1,898 @@
+{
+  "metadata": {
+    "title": "Nurse Hilfe Menschen Internationale",
+    "titleTemplate": "%s | NHMI",
+    "description": "Fondation humanitaire dédiée aux soins, à la dignité et au soutien des communautés vulnérables.",
+    "ogDescription": "Soigner, protéger et redonner espoir aux communautés vulnérables."
+  },
+  "nav": {
+    "mission": "Mission",
+    "about": "À propos",
+    "projects": "Causes/Projets",
+    "impact": "Impact",
+    "getInvolved": "Impliquez-vous",
+    "donate": "Faire un don",
+    "blog": "Actualités",
+    "search": "Rechercher",
+    "openMenu": "Ouvrir le menu",
+    "foundation": "Fondation"
+  },
+  "home": {
+    "heroEyebrow": "Ensemble pour des soins accessibles",
+    "heroTitle": "Soigner, protéger et redonner espoir aux communautés vulnérables.",
+    "heroActFor": "Nous agissons pour",
+    "heroCommunities": "les communautés",
+    "heroCaregivers": "les soignants",
+    "heroVolunteers": "les bénévoles",
+    "heroDescription": "Nous finançons des programmes de santé, de prévention et de résilience locale avec un suivi d'impact transparent.",
+    "donateBtn": "Faire un don",
+    "volunteerBtn": "Devenir bénévole",
+    "statPeople": "Personnes accompagnées",
+    "statPrograms": "Programmes actifs",
+    "statFunds": "Fonds mobilisés",
+    "ctaTitle": "Appel à l'action",
+    "ctaDesc": "Chaque contribution finance des soins essentiels, des kits d'hygiène et la formation d'équipes locales.",
+    "supportCause": "Soutenir",
+    "quickDonate": "Don rapide",
+    "quickDonateDesc": "30€ financent une visite médicale mobile. 100€ soutiennent la formation d'un soignant local.",
+    "chooseAmount": "Choisir un montant",
+    "missionEyebrow": "Vision • Mission • Valeurs",
+    "missionTitle": "Des soins dignes, une action locale durable.",
+    "missionDescription": "Nous travaillons avec les communautés pour renforcer les capacités locales, améliorer l'accès aux soins et répondre aux urgences avec efficacité.",
+    "missionApproach": "Notre approche",
+    "missionApproachDesc": "Santé communautaire, prévention et actions ciblées selon les besoins locaux.",
+    "missionValues": "Valeurs",
+    "missionValuesDesc": "Compassion, inclusion, intégrité et impact mesurable.",
+    "priorities2026": "Priorités 2026",
+    "priority1": "Renforcer 12 cliniques mobiles en zones rurales.",
+    "priority2": "Déployer 4 hubs de santé maternelle.",
+    "priority3": "Former 300 agents de santé communautaires.",
+    "prioritiesNote": "Nos feuilles de route et indicateurs sont publiés dans nos rapports annuels.",
+    "projectsEyebrow": "Causes / Projets",
+    "projectsTitle": "Programmes en cours",
+    "projectsExplore": "Explorer tous les projets",
+    "projectRegion": "Région",
+    "projectObjective": "Objectif",
+    "seeProject": "Voir le projet",
+    "supportProject": "Soutenir",
+    "impactAlert": "92% des bénéficiaires déclarent un meilleur accès aux soins, et 75% des communautés partenaires ont mis en place des comités de santé locaux.",
+    "impactEyebrow": "Impact & transparence",
+    "impactTitle": "Des résultats mesurables",
+    "seeReports": "Voir nos rapports",
+    "impactAccessRate": "Taux d'accès aux soins",
+    "impactAccessDesc": "Amélioration moyenne observée dans nos zones d'intervention.",
+    "impactEmergencies": "Urgences prises en charge",
+    "impactEmergenciesDesc": "Cas traités grâce aux cliniques mobiles et aux postes avancés.",
+    "impactPartners": "Partenaires locaux",
+    "impactPartnersDesc": "ONG, centres de santé et collectivités accompagnés.",
+    "impactMap": "Carte d'impact",
+    "impactMapDesc": "Visualisez nos interventions par pays et par thématique.",
+    "report2025": "Rapport 2025",
+    "report2025Desc": "Synthèse financière, indicateurs et études de cas.",
+    "downloadReport": "Télécharger le rapport",
+    "governance": "Gouvernance",
+    "involveEyebrow": "Impliquez-vous",
+    "involveTitle": "Rejoignez notre mouvement",
+    "volunteering": "Bénévolat actif",
+    "volunteeringDesc": "Offrez votre temps sur le terrain, à distance ou pour des missions ponctuelles.",
+    "seeOpportunities": "Voir les opportunités →",
+    "employment": "Emploi & formation",
+    "employmentDesc": "Accédez à nos offres, stages et modules de formation certifiants.",
+    "discoverPositions": "Découvrir les postes →",
+    "membership": "Adhésion",
+    "membershipDesc": "Devenez membre et ne manquez aucune de nos actualités, rapports et opportunités d'engagement.",
+    "becomeMember": "Devenir membre →",
+    "partnerships": "Partenariats & parrainages",
+    "partnershipsDesc": "Entreprises, institutions et organisations peuvent co-construire des programmes d'impact, sponsoriser des campagnes ou offrir du mécénat de compétences.",
+    "proposePartnership": "Proposer un partenariat",
+    "partnersEyebrow": "Partenaires",
+    "partnersTitle": "Des alliances qui renforcent l'impact",
+    "eventsEyebrow": "Événements",
+    "eventsTitle": "Mobiliser les communautés",
+    "subscribe": "S'inscrire",
+    "blogEyebrow": "Blog / Actualités",
+    "blogTitle": "Nos dernières nouvelles",
+    "readBlog": "Lire l'article",
+    "newsletterTitle": "Recevez nos rapports dès que disponibles",
+    "newsletterDesc": "Un email par mois avec nos chiffres clés, histoires et opportunités d'engagement.",
+    "newsletterBtn": "S'abonner"
+  },
+  "footer": {
+    "explore": "Explorer",
+    "ourMission": "Notre mission",
+    "governanceTransparency": "Gouvernance & transparence",
+    "projectsCauses": "Projets & causes",
+    "impact": "Impact",
+    "news": "Actualités",
+    "connect": "Connecter",
+    "contactUs": "Contactez-nous",
+    "faqGovernance": "FAQ & gouvernance",
+    "give": "Donner",
+    "donate": "Faire un don",
+    "becomeVolunteer": "Devenir bénévole",
+    "recurringDonation": "Don récurrent",
+    "newsletterTitle": "S'inscrire aux E-News",
+    "newsletterDesc": "Recevez nos dernières nouvelles, rapports et appels à l'action.",
+    "newsletterBtn": "S'abonner",
+    "newsletterNote": "En vous inscrivant, vous acceptez notre politique de confidentialité.",
+    "social": "Social",
+    "theme": "Thème",
+    "tagline": "Ensemble, pour des soins accessibles et humains. Transparence, dignité et impact mesurable guident toutes nos actions.",
+    "orgDescription": "Organisation humanitaire à but non lucratif. Les dons contribuent au financement de nos programmes de santé, de dignité et de soutien aux communautés vulnérables.",
+    "legalNotice": "Mentions légales",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfUse": "Conditions d'utilisation",
+    "copyright": "© 2026 Nurse Hilfe Menschen Internationale. Tous droits réservés."
+  },
+  "search": {
+    "title": "Recherche",
+    "heading": "Trouver un contenu",
+    "close": "Fermer la recherche",
+    "placeholder": "Rechercher...",
+    "ariaLabel": "Rechercher un contenu",
+    "noResults": "Aucun résultat pour « {query} »."
+  },
+  "cookie": {
+    "title": "Gestion des cookies (RGPD)",
+    "description": "Nous utilisons des cookies essentiels pour le bon fonctionnement du site. Les cookies optionnels nous aident à mesurer l'audience et améliorer l'expérience.",
+    "learnMore": "En savoir plus",
+    "rejectAll": "Tout refuser",
+    "essentialOnly": "Essentiels seulement",
+    "acceptAll": "Tout accepter",
+    "preferencesTitle": "Préférences cookies",
+    "detailsHeading": "Détails des catégories",
+    "essentialTitle": "Cookies essentiels (obligatoires)",
+    "essentialDesc": "Nécessaires pour la sécurité, l'affichage et le fonctionnement du site.",
+    "analyticsTitle": "Cookies de mesure d'audience (optionnels)",
+    "analyticsDesc": "Nous aident à comprendre l'utilisation du site pour améliorer nos contenus et l'expérience."
+  },
+  "newsletter": {
+    "defaultButton": "S'abonner",
+    "loading": "En cours...",
+    "emailError": "Entrer une adresse email valide",
+    "successMessage": "Merci pour votre inscription.",
+    "errorMessage": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "contact": {
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "engagementType": "Type d'engagement",
+    "volunteering": "Bénévolat",
+    "partnership": "Partenariat",
+    "fundraising": "Collecte solidaire",
+    "messagePlaceholder": "Décrivez votre projet ou vos disponibilités",
+    "submit": "Envoyer la demande",
+    "fillAllFields": "Veuillez remplir tous les champs.",
+    "sendError": "Erreur lors de l'envoi.",
+    "success": "Votre demande a été envoyée ! Nous vous recontacterons sous 72h.",
+    "connectionError": "Erreur de connexion. Veuillez réessayer.",
+    "consent": "En envoyant ce formulaire, vous acceptez d'être recontacté par notre équipe."
+  },
+  "donation": {
+    "yourInfo": "Vos informations",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "Email",
+    "country": "Pays",
+    "paymentMethod": "Mode de paiement",
+    "card": "Carte bancaire",
+    "orangeMoney": "Orange Money",
+    "mtnMomo": "MTN MoMo",
+    "phonePlaceholder": "Numéro de téléphone (ex: +237 6XX XXX XXX)",
+    "phoneNotice": "Vous recevrez une notification {method} pour confirmer le paiement.",
+    "amount": "Montant",
+    "other": "Autre",
+    "donationType": "Type de don",
+    "oneTime": "Ponctuel",
+    "monthly": "Mensuel",
+    "supportedProject": "Projet soutenu",
+    "payByCard": "Payer par carte",
+    "payByMobile": "Payer par mobile money",
+    "cardAccepted": "Visa, Mastercard et autres cartes acceptées",
+    "orangeNotice": "Orange Money — notification envoyée sur votre mobile",
+    "mtnNotice": "MTN Mobile Money — notification envoyée sur votre mobile",
+    "fillRequired": "Veuillez remplir tous les champs obligatoires.",
+    "phoneRequired": "Numéro de téléphone requis pour le paiement mobile.",
+    "invalidAmount": "Montant invalide.",
+    "paymentError": "Erreur lors de l'initialisation du paiement.",
+    "connectionError": "Erreur de connexion. Veuillez réessayer.",
+    "paymentAccepted": "Paiements acceptés : carte bancaire (Visa, Mastercard), Orange Money, MTN Mobile Money."
+  },
+  "confirmation": {
+    "verifying": "Vérification en cours…",
+    "success": "Merci pour votre don !",
+    "cancelled": "Paiement annulé",
+    "pending": "Paiement en attente",
+    "backHome": "Retour à l'accueil",
+    "retry": "Réessayer",
+    "seeImpact": "Voir notre impact",
+    "loading": "Chargement…"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Cette page n'existe pas",
+    "description": "La page que vous recherchez a peut-être été déplacée ou supprimée.",
+    "backHome": "Retour à l'accueil",
+    "search": "Rechercher"
+  },
+  "error": {
+    "code": "500",
+    "title": "Une erreur est survenue",
+    "description": "Nos équipes ont été notifiées. Veuillez réessayer ou revenir plus tard.",
+    "retry": "Réessayer",
+    "backHome": "Retour à l'accueil"
+  },
+  "admin": {
+    "nav": {
+      "dashboard": "Tableau de bord",
+      "posts": "Articles",
+      "projects": "Projets",
+      "contacts": "Contacts",
+      "donations": "Dons",
+      "space": "Espace d'administration",
+      "backToSite": "Retour au site",
+      "theme": "Thème",
+      "openSidebar": "Ouvrir le menu",
+      "closeSidebar": "Fermer le menu"
+    },
+    "auth": {
+      "title": "Administration",
+      "description": "Connectez-vous pour accéder au panneau d'administration.",
+      "signIn": "Se connecter",
+      "loginBtn": "Se connecter",
+      "logout": "Déconnexion",
+      "password": "Mot de passe",
+      "connectedAs": "Connecté en tant que {email}",
+      "error": "Erreur de connexion. Veuillez réessayer."
+    },
+    "common": {
+      "actions": "Actions",
+      "multilingual": "Contenu multilingue",
+      "slugHint": "Lettres minuscules, chiffres et tirets uniquement",
+      "backToDashboard": "← Tableau de bord",
+      "noEntries": "Aucune entrée trouvée."
+    },
+    "locales": {
+      "fr": "Français",
+      "en": "Anglais",
+      "de": "Allemand"
+    },
+    "actions": {
+      "add": "Ajouter",
+      "edit": "Modifier",
+      "delete": "Supprimer",
+      "save": "Enregistrer",
+      "update": "Mettre à jour",
+      "cancel": "Annuler",
+      "confirmDelete": "Confirmer la suppression ?",
+      "markRead": "Marquer comme lu"
+    },
+    "status": {
+      "published": "Publié",
+      "unpublished": "Non publié",
+      "read": "Lu",
+      "unread": "Non lu(s)",
+      "updatedAt": "Mis à jour le"
+    },
+    "feedback": {
+      "success": {
+        "saved": "Enregistré avec succès.",
+        "deleted": "Supprimé avec succès.",
+        "markedRead": "Contact marqué comme lu."
+      },
+      "error": {
+        "save": "Erreur lors de l'enregistrement.",
+        "delete": "Erreur lors de la suppression.",
+        "markRead": "Erreur lors de la mise à jour du contact."
+      }
+    },
+    "fields": {
+      "title": "Titre",
+      "slug": "Slug",
+      "content": "Contenu",
+      "excerpt": "Extrait",
+      "category": "Catégorie",
+      "ttr": "Temps de lecture",
+      "image": "Image URL",
+      "region": "Région",
+      "theme": "Thème",
+      "impact": "Impact",
+      "description": "Description",
+      "objectives": "Objectifs",
+      "activities": "Activités",
+      "budget": "Budget",
+      "date": "Date",
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "profile": "Profil",
+      "amount": "Montant",
+      "method": "Méthode",
+      "recurring": "Récurrent",
+      "donor": "Donateur",
+      "project": "Projet",
+      "status": "Statut",
+      "yes": "Oui",
+      "no": "Non"
+    },
+    "post": {
+      "categories": {
+        "ground": "Terrain",
+        "emergency": "Urgence",
+        "report": "Rapport",
+        "partnership": "Partenariat",
+        "training": "Formation"
+      },
+      "addTitle": "Nouvel article",
+      "editTitle": "Modifier l'article"
+    },
+    "donations": {
+      "total": "Total collecté",
+      "statuses": {
+        "successful": "Réussi",
+        "pending": "En attente",
+        "failed": "Échec",
+        "cancelled": "Annulé"
+      }
+    }
+  },
+  "common": {
+    "backHome": "Retour à l'accueil",
+    "learnMore": "En savoir plus",
+    "seeAll": "Voir tout",
+    "loading": "Chargement…"
+  },
+  "searchIndex": {
+    "mission": {
+      "title": "Mission",
+      "excerpt": "Des soins accessibles, humains et durables via cliniques mobiles, formation et prévention.",
+      "tags": ["soins", "cliniques", "prévention"]
+    },
+    "about": {
+      "title": "À propos",
+      "excerpt": "Gouvernance, transparence et engagement humain de la fondation.",
+      "tags": ["gouvernance", "transparence"]
+    },
+    "projects": {
+      "title": "Causes & Projets",
+      "excerpt": "Programmes ancrés dans les besoins locaux : santé rurale, maternité, urgences.",
+      "tags": ["projets", "santé rurale", "maternité", "urgence"]
+    },
+    "impact": {
+      "title": "Impact",
+      "excerpt": "Indicateurs, pays d'intervention et rapports d'impact détaillés.",
+      "tags": ["indicateurs", "rapports", "pays"]
+    },
+    "involve": {
+      "title": "S'impliquer",
+      "excerpt": "Bénévolat, partenariats et collectes solidaires pour soutenir la mission.",
+      "tags": ["bénévolat", "partenariats", "collectes"]
+    },
+    "s-impliquer": {
+      "title": "S'impliquer",
+      "excerpt": "Bénévolat, partenariats et collectes solidaires pour soutenir la mission.",
+      "tags": ["bénévolat", "partenariats", "collectes"]
+    },
+    "dons": {
+      "title": "Faire un don",
+      "excerpt": "Un impact durable, ponctuel ou mensuel. Choisissez votre niveau d'engagement.",
+      "tags": ["don", "mensuel", "impact"]
+    },
+    "blog": {
+      "title": "Actualités",
+      "excerpt": "Articles terrain, urgences humanitaires et rapports annuels.",
+      "tags": ["blog", "actualités", "rapports"]
+    },
+    "donate": {
+      "title": "Faire un don",
+      "excerpt": "Un impact durable, ponctuel ou mensuel. Choisissez votre niveau d'engagement.",
+      "tags": ["don", "mensuel", "impact"]
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "excerpt": "Informations légales, confidentialité et conditions d'utilisation.",
+      "tags": ["légal", "confidentialité"]
+    }
+  },
+  "mission": {
+    "eyebrow": "Mission",
+    "title": "Des soins accessibles, humains et durables",
+    "description": "Nous renforçons les systèmes de santé locaux grâce à des cliniques mobiles, la formation des équipes et la prévention. Notre approche est fondée sur la proximité, l'éthique et l'impact mesurable.",
+    "stats": {
+      "clinics": "cliniques",
+      "activeMissions": "Missions mobiles actives.",
+      "countries": "pays",
+      "communities": "communautés",
+      "covered": "Couvertes par nos équipes.",
+      "consultations": "consultations",
+      "avgPerQuarter": "Par trimestre en moyenne.",
+      "trainedCaregivers": "soignants formés",
+      "continuousTraining": "Mise à niveau continue."
+    },
+    "approachTitle": "Notre approche",
+    "approachDescription": "Chaque mission est conçue avec les communautés locales pour assurer une continuité des soins et des résultats durables.",
+    "approach": {
+      "mobileCare": {
+        "title": "Soins mobiles",
+        "desc": "30 à 45 jours de missions par trimestre pour atteindre les zones isolées."
+      },
+      "localTraining": {
+        "title": "Formation locale",
+        "desc": "Sessions certifiantes et mentorat sur 6 mois."
+      },
+      "prevention": {
+        "title": "Prévention",
+        "desc": "Campagnes trimestrielles de dépistage et suivi familial."
+      }
+    },
+    "zonesTitle": "Zones d'intervention",
+    "zonesDescription": "Afrique de l'Ouest et centrale : focus sur les zones rurales, périurbaines et post-crise.",
+    "zones": {
+      "countries": "Sénégal, Guinée Conakry, Cameroun.",
+      "maternal": "Santé maternelle & néonatale.",
+      "emergency": "Urgences humanitaires & nutrition."
+    },
+    "valuesTitle": "Valeurs & engagements éthiques",
+    "values": {
+      "transparency": {
+        "title": "Transparence",
+        "desc": "Rapports trimestriels et audit annuel disponibles."
+      },
+      "dignity": {
+        "title": "Dignité",
+        "desc": "Protocoles de consentement et approche centrée patient."
+      },
+      "efficiency": {
+        "title": "Efficacité",
+        "desc": "90% des fonds dédiés directement aux programmes terrain."
+      }
+    },
+    "impactBtn": "Voir notre impact",
+    "involveBtn": "S'impliquer",
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "title": "Recevez nos avancées sur le terrain",
+      "description": "Rapports, missions et témoignages dans votre boîte mail.",
+      "note": "En vous inscrivant, vous acceptez notre politique de confidentialité."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "À propos",
+      "title": "Gouvernance, transparence et engagement humain",
+      "description": "Nurse Hilfe Menschen Internationale s'appuie sur une gouvernance claire, des audits réguliers et un suivi d'impact accessible pour garantir la confiance des donateurs et la pertinence des actions.",
+      "ctaPrimary": "Soutenir la mission",
+      "ctaSecondary": "Voir les rapports",
+      "imageAlt": "Équipe humanitaire en réunion"
+    },
+    "story": {
+      "eyebrow": "Notre histoire",
+      "title": "Une fondation née de l'engagement terrain",
+      "description": "Le 26 mars 2022, un groupe de professionnels infirmiers animés par un profond engagement humanitaire a fondé l'association Nurse Hilfe Menschen Internationale. Cette initiative est née du constat des profondes inégalités d'accès aux soins de santé entre les pays développés et de nombreux pays d'Afrique subsaharienne, où les populations restent confrontées à un manque criant d'infrastructures médicales, de personnel qualifié et de moyens diagnostiques. Forte de l'expérience de terrain de ses membres, l'association s'est donné pour mission de réduire ces disparités sanitaires en favorisant le transfert de compétences, le renforcement des capacités locales et le développement de projets médico-sociaux durables. Nurse Hilfe Menschen Internationale œuvre ainsi à promouvoir des soins de santé accessibles, de qualité et respectueux de la dignité humaine, tout en encourageant la coopération internationale entre professionnels de santé. Par son action, l'association entend contribuer à l'amélioration durable des systèmes de santé, à la prévention des maladies et à l'autonomisation des communautés locales, dans une approche fondée sur la solidarité, le respect et la responsabilité.",
+      "visionTitle": "Vision",
+      "visionDesc": "Un monde où chacun a accès à des soins sûrs et humains.",
+      "valuesTitle": "Valeurs",
+      "valuesDesc": "Compassion, inclusion, intégrité et impact mesurable."
+    },
+    "principles": {
+      "title": "Principes d'action",
+      "items": [
+        "Co-construction avec les communautés.",
+        "Données d'impact accessibles et vérifiables.",
+        "Priorité à la santé maternelle et infantile.",
+        "Renforcement des compétences locales."
+      ]
+    },
+    "leadership": {
+      "eyebrow": "Équipe dirigeante",
+      "title": "Une gouvernance responsable",
+      "cta": "Devenir membre",
+      "roles": {
+        "president": "Président",
+        "secretary": "Vice Président",
+        "treasurer": "Comptable/Trésorier"
+      }
+    },
+    "reports": {
+      "eyebrow": "Transparence",
+      "title": "Rapports et audits",
+      "items": {
+        "annual2025": "Rapport annuel 2025",
+        "annual2024": "Rapport annuel 2024",
+        "financial2025": "Bilan financier 2025"
+      },
+      "cardDescription": "Téléchargement PDF avec indicateurs clés et budgets.",
+      "download": "Télécharger",
+      "auditNote": "Les audits indépendants et documents juridiques sont disponibles sur demande."
+    },
+    "ethics": {
+      "eyebrow": "Éthique & conformité",
+      "title": "Engagements envers nos donateurs",
+      "description": "Nous appliquons des procédures strictes de contrôle, de protection des données et de redevabilité.",
+      "items": [
+        "Charte éthique et code de conduite.",
+        "Politique de protection des données.",
+        "Traçabilité des fonds et des projets.",
+        "Mécanismes de signalement confidentiels."
+      ],
+      "cta": "Consulter la charte"
+    }
+  },
+  "impact": {
+    "hero": {
+      "eyebrow": "Impact",
+      "title": "Des résultats mesurables et transparents",
+      "description": "Nos indicateurs sont suivis chaque trimestre et partagés dans nos rapports pour garantir une totale transparence."
+    },
+    "lastUpdated": "Dernière mise à jour : {date}",
+    "kpis": {
+      "patients": "Patients accompagnés",
+      "consultations": "Consultations 2025",
+      "mobileClinics": "Cliniques mobiles actives",
+      "professionals": "Professionnels formés"
+    },
+    "byCountry": {
+      "title": "Impact par pays",
+      "description": "Les chiffres ci-dessous reflètent nos activités 2025 par zone d'intervention principale.",
+      "imageAlt": "Intervention au {country}",
+      "labels": {
+        "patients": "patients accompagnés",
+        "clinics": "cliniques mobiles actives",
+        "professionals": "professionnels formés"
+      }
+    },
+    "countries": {
+      "senegal": {
+        "name": "Sénégal",
+        "patients": "32 400",
+        "clinics": "14",
+        "professionals": "280"
+      },
+      "guinee_conakry": {
+        "name": "Guinée Conakry",
+        "patients": "28 700",
+        "clinics": "12",
+        "professionals": "240"
+      },
+      "cameroun": {
+        "name": "Cameroun",
+        "patients": "35 900",
+        "clinics": "16",
+        "professionals": "310"
+      }
+    },
+    "byProgram": {
+      "title": "Impact par programme",
+      "description": "Nos équipes suivent des indicateurs spécifiques par domaine d'action pour mesurer l'efficacité des interventions."
+    },
+    "programs": {
+      "maternal": {
+        "title": "Santé maternelle",
+        "focus": "9 600 consultations prénatales",
+        "teams": "18 équipes mobiles"
+      },
+      "emergency": {
+        "title": "Urgences humanitaires",
+        "focus": "4 200 interventions d'urgence",
+        "teams": "12 cellules de réponse rapide"
+      },
+      "nutrition": {
+        "title": "Nutrition & prévention",
+        "focus": "18 500 dépistages",
+        "teams": "22 campagnes communautaires"
+      }
+    },
+    "methodology": {
+      "title": "Méthodologie",
+      "items": [
+        "Collecte de données terrain mensuelle.",
+        "Vérifications croisées par audits externes.",
+        "Publication annuelle et synthèses trimestrielles."
+      ],
+      "ctaPrimary": "Soutenir nos actions",
+      "ctaSecondary": "Devenir partenaire"
+    },
+    "stories": {
+      "title": "Histoires d'impact",
+      "items": [
+        {
+          "title": "Santé maternelle en zone rurale",
+          "desc": "À la suite d’un grave accident de moto ayant entraîné un polytraumatisme, l’une des victimes se trouvait dans un état critique. Pour lui sauver la vie, une amputation de la jambe s’est révélée indispensable. Grâce à l’intervention rapide et au professionnalisme de l’équipe médicale de Nurse Hilfe Menschen Internationale, l’opération a pu être réalisée dans des conditions permettant de préserver sa vie et de lui redonner une chance d’avenir."
+        }
+      ],
+      "description": "Un aperçu des résultats obtenus grâce à vos soutiens.",
+      "cta": "Lire l'histoire",
+      "ctaPrimary": "Lire nos actualités",
+      "ctaSecondary": "Faire un don"
+    },
+    "newsletter": {
+      "eyebrow": "Newsletter",
+      "title": "Suivez nos indicateurs d'impact",
+      "description": "Des chiffres clairs et des résultats concrets, chaque mois.",
+      "note": "En vous inscrivant, vous acceptez notre politique de confidentialité."
+    }
+  },
+  "projects": {
+    "hero": {
+      "eyebrow": "Projets & causes",
+      "title": "Des programmes ancrés dans les besoins locaux",
+      "description": "Explorez nos interventions par thématique et par région. Chaque projet est accompagné d'indicateurs d'impact et d'objectifs clairs."
+    },
+    "labels": {
+      "region": "Région:",
+      "objective": "Objectif:"
+    },
+    "cards": {
+      "viewProject": "Voir le projet",
+      "support": "Soutenir"
+    },
+    "map": {
+      "title": "Carte des interventions",
+      "description": "Visualisez les projets par pays, thématique et niveau d'urgence.",
+      "imageAlt": "Carte des interventions par pays"
+    },
+    "tracking": {
+      "title": "Suivi d'impact",
+      "description": "Tableaux de bord, indicateurs et rapports par projet.",
+      "items": [
+        "Taux de couverture des soins",
+        "Amélioration des indicateurs maternels",
+        "Résilience communautaire"
+      ],
+      "cta": "Voir les rapports"
+    },
+    "cta": {
+      "eyebrow": "Agir maintenant",
+      "title": "Soutenez un projet à fort impact",
+      "description": "Chaque don est affecté à un programme et suivi par des indicateurs transparents.",
+      "primary": "Faire un don",
+      "secondary": "Don mensuel"
+    }
+  },
+  "blog": {
+    "hero": {
+      "eyebrow": "Actualités & histoires",
+      "title": "Le journal de la fondation",
+      "description": "Suivez nos missions, nos résultats et les témoignages des équipes sur le terrain. Chaque article met en lumière l'impact de vos dons."
+    },
+    "cards": {
+      "read": "Lire l'article"
+    },
+    "newsletter": {
+      "title": "Recevez nos nouvelles directement par email",
+      "description": "Un résumé mensuel avec nos avancées, nos besoins et nos actions de terrain.",
+      "button": "S'abonner",
+      "note": "En vous inscrivant, vous acceptez notre politique de confidentialité."
+    }
+  },
+  "blogPost": {
+    "notFound": "Article introuvable",
+    "backToBlog": "← Retour au blog",
+    "cta": {
+      "title": "Soutenez nos missions",
+      "description": "Chaque contribution renforce nos équipes sur le terrain.",
+      "primary": "Faire un don",
+      "secondary": "Voir tous les articles"
+    }
+  },
+  "projectDetail": {
+    "notFound": "Projet introuvable",
+    "backToProjects": "← Retour aux projets",
+    "labels": {
+      "impact": "Impact",
+      "budget": "Budget"
+    },
+    "sections": {
+      "objectives": "Objectifs",
+      "activities": "Activités"
+    },
+    "cta": {
+      "title": "Soutenez ce projet",
+      "description": "Votre contribution finance directement les activités de ce programme.",
+      "primary": "Faire un don",
+      "secondary": "Voir tous les projets"
+    }
+  },
+  "involve": {
+    "hero": {
+      "eyebrow": "S'impliquer",
+      "title": "Agissez avec nous sur le terrain",
+      "description": "Bénévolat, partenariats et collectes solidaires : choisissez la forme d'engagement qui vous ressemble."
+    },
+    "stats": {
+      "volunteers": {
+        "label": "bénévoles actifs",
+        "description": "En missions locales et terrain."
+      },
+      "partners": {
+        "label": "partenaires",
+        "description": "Institutions & entreprises engagées."
+      },
+      "fundraisers": {
+        "label": "collectes",
+        "description": "Lancées en 2025."
+      },
+      "responseTime": {
+        "label": "délai moyen",
+        "description": "Pour confirmer une candidature."
+      }
+    },
+    "cards": {
+      "volunteering": {
+        "title": "Bénévolat",
+        "description": "Missions ponctuelles, santé communautaire, logistique et support administratif.",
+        "cta": "Découvrir les rôles",
+        "imageAlt": "Équipe de bénévoles en mission"
+      },
+      "partnerships": {
+        "title": "Partenariats",
+        "description": "Entreprises, institutions, fondations locales et médias.",
+        "cta": "Devenir partenaire",
+        "imageAlt": "Partenariat entre organisations"
+      },
+      "fundraisers": {
+        "title": "Collectes solidaires",
+        "description": "Créez une campagne, fixez un objectif et mobilisez votre réseau.",
+        "cta": "Lancer une collecte",
+        "imageAlt": "Collecte de fonds solidaire"
+      }
+    },
+    "support": {
+      "title": "Soutenir durablement",
+      "description": "Les dons récurrents permettent d'assurer la continuité des soins et la planification sur le long terme.",
+      "ctaPrimary": "Faire un don",
+      "ctaSecondary": "Voir les niveaux d'impact",
+      "note": "Besoin d'un échange direct ? Utilisez le formulaire ci-dessous ou écrivez-nous à info@nurseinternationale.com.",
+      "highlightsTitle": "Ce que vous activez",
+      "highlights": [
+        "Approvisionnement en kits médicaux.",
+        "Formation d'agents de santé locaux.",
+        "Réponse rapide en cas d'urgence."
+      ]
+    },
+    "contact": {
+      "title": "Échangeons sur votre engagement",
+      "description": "Indiquez votre profil et vos disponibilités. Notre équipe vous recontacte sous 72h ouvrées.",
+      "items": [
+        "Bénévolat terrain ou support à distance.",
+        "Partenariats & mécénat d'entreprise.",
+        "Campagnes solidaires et évènements."
+      ]
+    },
+    "newsletter": {
+      "eyebrow": "Rester informé",
+      "title": "Recevez nos opportunités d'engagement",
+      "description": "Appels à bénévoles, partenariats et actions de terrain.",
+      "note": "En vous inscrivant, vous acceptez notre politique de confidentialité."
+    }
+  },
+  "donatePage": {
+    "hero": {
+      "eyebrow": "Faire un don",
+      "title": "Un impact durable, ponctuel ou mensuel",
+      "description": "Choisissez un montant, soutenez un projet précis et recevez un reçu fiscal selon la législation applicable. Le don régulier assure la continuité des soins, la formation des équipes locales et la réponse rapide aux urgences.",
+      "paymentNote": "Paiements acceptés : carte bancaire (Visa, Mastercard), Orange Money, MTN Mobile Money.",
+      "ctaPrimary": "Accéder au formulaire de don",
+      "ctaSecondary": "Voir les niveaux d'impact"
+    },
+    "whyDonate": {
+      "title": "Pourquoi donner ?",
+      "items": [
+        "20€ financent un kit d'hygiène familiale.",
+        "50€ soutiennent une consultation prénatale.",
+        "100€ contribuent à former un bénévole."
+      ],
+      "note": "Les reçus fiscaux sont délivrés automatiquement selon les réglementations locales."
+    },
+    "impact": {
+      "title": "Votre impact",
+      "description": "Les dons réguliers stabilisent nos programmes et renforcent les équipes sur le terrain.",
+      "items": [
+        "1 kit d'hygiène et un suivi familial.",
+        "Consultation prénatale + dépistage.",
+        "Formation d'un agent de santé local."
+      ],
+      "note": "90% des dons financent directement les programmes terrain."
+    },
+    "tiers": {
+      "eyebrow": "Don récurrent",
+      "title": "Un impact durable chaque mois",
+      "description": "Le don régulier assure la continuité des soins, la formation des équipes locales et la réponse rapide aux urgences.",
+      "badges": {
+        "essential": "Essentiel",
+        "impact": "Impact",
+        "ambassador": "Ambassadeur"
+      },
+      "cards": {
+        "essential": "Financement de kits d'hygiène et de consultations de base.",
+        "impact": "Soutien continu aux équipes mobiles et suivi des patients.",
+        "ambassador": "Formation des soignants locaux et investissements durables."
+      },
+      "chooseLevel": "Choisir ce niveau",
+      "customAmount": "Besoin d'un montant personnalisé ? Choisissez un niveau libre."
+    },
+    "updates": {
+      "eyebrow": "Suivi & transparence",
+      "title": "Vous recevez des nouvelles concrètes",
+      "description": "Chaque trimestre, un rapport simplifié sur l'utilisation des fonds et les résultats atteints.",
+      "items": [
+        "Updates mensuels sur les projets soutenus.",
+        "Accès prioritaire à nos événements.",
+        "Témoignages et histoires de terrain."
+      ],
+      "cta": "Mettre en place mon don"
+    },
+    "faq": {
+      "eyebrow": "Questions fréquentes",
+      "title": "Tout savoir sur le don régulier",
+      "items": [
+        {
+          "q": "Puis-je arrêter mon don quand je veux ?",
+          "a": "Oui, votre contribution est sans engagement et modifiable à tout moment."
+        },
+        {
+          "q": "Les reçus fiscaux sont-ils disponibles ?",
+          "a": "Nous envoyons automatiquement les reçus selon la réglementation locale."
+        },
+        {
+          "q": "Comment sont utilisés les fonds ?",
+          "a": "Les dons sont affectés aux programmes prioritaires avec traçabilité."
+        },
+        {
+          "q": "Puis-je choisir un projet spécifique ?",
+          "a": "Oui, vous pouvez flécher votre don vers un programme précis."
+        }
+      ]
+    }
+  },
+  "legal": {
+    "hero": {
+      "eyebrow": "Informations légales",
+      "title": "Mentions légales & confidentialité",
+      "description": "Retrouvez ici les éléments réglementaires concernant l'association, la protection des données et les conditions d'utilisation.",
+      "lastUpdated": "Dernière mise à jour : {date}"
+    },
+    "legalNotice": {
+      "title": "Mentions légales",
+      "description": "Raison sociale, adresse, responsables de publication, numéros d'enregistrement et contacts officiels.",
+      "items": [
+        "Organisation : Nurse Hilfe Menschen Internationale.",
+        "Contact officiel : info@nurseinternationale.com",
+        "Hébergeur : à compléter."
+      ]
+    },
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Collecte, usage, stockage et droits des utilisateurs concernant leurs données personnelles.",
+      "items": [
+        "Finalité : gestion des dons et communications.",
+        "Durée : conservation limitée au strict nécessaire.",
+        "Droits : accès, rectification, suppression."
+      ]
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "description": "Règles d'usage du site, limitations de responsabilité et propriété intellectuelle.",
+      "items": [
+        "Usage personnel et non commercial du contenu.",
+        "Interdiction de reproduction sans autorisation.",
+        "Responsabilité limitée aux informations publiées."
+      ]
+    },
+    "cta": {
+      "primary": "Contacter le responsable",
+      "secondary": "Gouvernance & transparence"
+    }
+  },
+  "flutterwave": {
+    "don": {
+      "project": "Don pour",
+      "fondation": "Don à la fondation"
+    },
+    "success": "Paiement réussi ! Merci pour votre soutien.",
+    "cancelled": "Paiement annulé. Vous n'avez pas été facturé.",
+    "pending": "Paiement en attente. Nous vous informerons dès que le statut changera.",
+    "error": "Une erreur est survenue lors du paiement. Veuillez réessayer."
+  }
+}

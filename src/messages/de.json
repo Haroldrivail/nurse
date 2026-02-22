@@ -1,0 +1,972 @@
+{
+  "about": {
+    "ethics": {
+      "cta": "Konsultieren Sie die Charta",
+      "description": "Wir wenden strenge Überwachungs-, Datenschutz- und Rechenschaftspflichtverfahren an.",
+      "eyebrow": "Ethik",
+      "items": [
+        "Ethische Charta und Verhaltenskodex.",
+        "Datenschutzrichtlinie.",
+        "Rückverfolgbarkeit von Geldern und Projekten.",
+        "Vertrauliche Meldemechanismen."
+      ],
+      "title": "Verpflichtungen gegenüber unseren Spendern"
+    },
+    "hero": {
+      "ctaPrimary": "Unterstützen Sie die Mission",
+      "ctaSecondary": "Berichte anzeigen",
+      "description": "Nurse Hilfe Menschen Internationale setzt auf klare Governance, regelmäßige Audits und eine zugängliche Wirkungsüberwachung, um das Vertrauen der Spender und die Relevanz der Maßnahmen zu gewährleisten.",
+      "eyebrow": "Um",
+      "imageAlt": "Humanitäres Team trifft sich",
+      "title": "Governance, Transparenz und menschliches Engagement"
+    },
+    "leadership": {
+      "cta": "Werden Sie Mitglied",
+      "eyebrow": "Management-Team",
+      "roles": {
+        "fieldLead": "Field Manager • Community Health",
+        "president": "Präsident • Humanitärer Arzt",
+        "secretary": "Generalsekretär • Programme",
+        "treasurer": "Schatzmeister • Partnerschaften"
+      },
+      "title": "Verantwortungsvolle Regierungsführung"
+    },
+    "principles": {
+      "items": [
+        "Co-Konstruktion mit Gemeinden.",
+        "Zugängliche und überprüfbare Wirkungsdaten.",
+        "Priorität hat die Gesundheit von Mutter und Kind.",
+        "Stärkung lokaler Kompetenzen."
+      ],
+      "title": "Handlungsprinzipien"
+    },
+    "reports": {
+      "auditNote": "Unabhängige Audits und rechtliche Dokumente sind auf Anfrage erhältlich.",
+      "cardDescription": "PDF-Download mit Kennzahlen und Budgets.",
+      "download": "Herunterladen",
+      "eyebrow": "Transparenz",
+      "items": {
+        "annual2024": "Jahresbericht 2024",
+        "annual2025": "Jahresbericht 2025",
+        "financial2025": "Finanzbericht 2025"
+      },
+      "title": "Berichte und Audits"
+    },
+    "story": {
+      "description": "Unsere von Gesundheitsexperten und humanitären Akteuren gegründete Organisation entwickelt nachhaltige lokale Antworten, die sich an den tatsächlichen Bedürfnissen der Gemeinschaften orientieren.",
+      "eyebrow": "Unsere Geschichte",
+      "title": "Eine Stiftung, die aus Engagement vor Ort entstanden ist",
+      "valuesDesc": "Mitgefühl, Inklusion, Integrität und messbare Wirkung.",
+      "valuesTitle": "Werte",
+      "visionDesc": "Eine Welt, in der jeder Zugang zu sicherer und menschlicher Versorgung hat.",
+      "visionTitle": "Vision"
+    }
+  },
+  "admin": {
+    "nav": {
+      "dashboard": "Armaturenbrett",
+      "posts": "Artikel",
+      "projects": "Projekte",
+      "contacts": "Kontakte",
+      "donations": "Spenden",
+      "space": "Administrationsbereich",
+      "backToSite": "Zurück zur Website",
+      "theme": "Thema",
+      "openSidebar": "Seitenleiste öffnen",
+      "closeSidebar": "Seitenleiste schließen"
+    },
+    "auth": {
+      "title": "Verwaltung",
+      "description": "Melden Sie sich an, um auf das Admin-Panel zuzugreifen.",
+      "signIn": "Einloggen",
+      "loginBtn": "Einloggen",
+      "logout": "Trennen",
+      "password": "Passwort",
+      "connectedAs": "Angemeldet als {email}",
+      "error": "Verbindungsfehler. Bitte versuchen Sie es erneut."
+    },
+    "common": {
+      "actions": "Aktionen",
+      "multilingual": "Mehrsprachiger Inhalt",
+      "slugHint": "Nur Kleinbuchstaben, Zahlen und Bindestriche",
+      "backToDashboard": "← Dashboard",
+      "noEntries": "Keine Einträge gefunden."
+    },
+    "locales": {
+      "fr": "Franzosisch",
+      "en": "Englisch",
+      "de": "Deutsch"
+    },
+    "actions": {
+      "add": "Hinzufügen",
+      "edit": "Zu ändern",
+      "delete": "LÖSCHEN",
+      "save": "Speichern",
+      "update": "Zum Aktualisieren",
+      "cancel": "Stornieren",
+      "confirmDelete": "Löschen bestätigen?",
+      "markRead": "Als gelesen markieren"
+    },
+    "status": {
+      "published": "Veröffentlicht",
+      "unpublished": "Unveröffentlicht",
+      "read": "Lesen",
+      "unread": "Ungelesen",
+      "updatedAt": "Aktualisiert am"
+    },
+    "feedback": {
+      "success": {
+        "saved": "Erfolgreich registriert.",
+        "deleted": "Erfolgreich gelöscht.",
+        "markedRead": "Kontakt als gelesen markiert."
+      },
+      "error": {
+        "save": "Fehler beim Speichern.",
+        "delete": "Fehler beim Löschen.",
+        "markRead": "Fehler beim Aktualisieren des Kontakts."
+      }
+    },
+    "fields": {
+      "title": "Titel",
+      "slug": "Schnecke",
+      "content": "Inhalt",
+      "excerpt": "Extrakt",
+      "category": "Kategorie",
+      "ttr": "Lesezeit",
+      "image": "Bild-URL",
+      "region": "Region",
+      "theme": "Thema",
+      "impact": "Auswirkungen",
+      "description": "Beschreibung",
+      "objectives": "Ziele",
+      "activities": "Aktivitäten",
+      "budget": "Budget",
+      "date": "Datum",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachrichten",
+      "profile": "Profil",
+      "amount": "Menge",
+      "method": "Verfahren",
+      "recurring": "Wiederkehrend",
+      "donor": "Spender",
+      "project": "Projekt",
+      "status": "Status",
+      "yes": "Ja",
+      "no": "NEIN"
+    },
+    "post": {
+      "categories": {
+        "ground": "Boden",
+        "emergency": "Notfall",
+        "report": "Bericht",
+        "partnership": "Partnerschaft",
+        "training": "Ausbildung"
+      },
+      "addTitle": "Neuer Artikel",
+      "editTitle": "Artikel bearbeiten"
+    },
+    "donations": {
+      "total": "Insgesamt gesammelt",
+      "statuses": {
+        "cancelled": "Abgesagt",
+        "failed": "Versagen",
+        "pending": "In der Warteschleife",
+        "successful": "Erfolgreich"
+      }
+    }
+  },
+  "blog": {
+    "cards": {
+      "read": "Lesen Sie den Artikel"
+    },
+    "hero": {
+      "description": "Verfolgen Sie unsere Missionen, unsere Ergebnisse und die Aussagen der Teams vor Ort. Jeder Artikel hebt die Wirkung Ihrer Spenden hervor.",
+      "eyebrow": "Nachrichten",
+      "title": "Das Journal der Stiftung"
+    },
+    "newsletter": {
+      "button": "Abonnieren",
+      "description": "Eine monatliche Zusammenfassung unserer Fortschritte, unserer Bedürfnisse und unserer Aktionen vor Ort.",
+      "note": "Mit der Registrierung stimmen Sie unserer Datenschutzerklärung zu.",
+      "title": "Erhalten Sie unsere Neuigkeiten direkt per E-Mail"
+    }
+  },
+  "blogPost": {
+    "backToBlog": "← Zurück zum Blog",
+    "cta": {
+      "description": "Jeder Beitrag stärkt unsere Teams vor Ort.",
+      "primary": "Spenden Sie",
+      "secondary": "Alle Artikel ansehen",
+      "title": "Unterstützen Sie unsere Missionen"
+    },
+    "notFound": "Artikel nicht gefunden"
+  },
+  "common": {
+    "backHome": "Zurück nach Hause",
+    "learnMore": "Erfahren Sie mehr",
+    "loading": "Laden…",
+    "seeAll": "Alle anzeigen"
+  },
+  "confirmation": {
+    "backHome": "Zurück nach Hause",
+    "cancelled": "Zahlung storniert",
+    "loading": "Laden…",
+    "pending": "Zahlung ausstehend",
+    "retry": "Versuchen Sie es erneut",
+    "seeImpact": "Sehen Sie unsere Wirkung",
+    "success": "Vielen Dank für Ihre Spende!",
+    "verifying": "Verifizierung läuft…"
+  },
+  "contact": {
+    "connectionError": "Verbindungsfehler. Bitte versuchen Sie es erneut.",
+    "consent": "Mit dem Absenden dieses Formulars erklären Sie sich damit einverstanden, von unserem Team kontaktiert zu werden.",
+    "email": "E-Mail",
+    "engagementType": "Art des Engagements",
+    "fillAllFields": "Bitte füllen Sie alle Felder aus.",
+    "firstName": "Vorname",
+    "fundraising": "Solidaritätssammlung",
+    "lastName": "Name",
+    "messagePlaceholder": "Beschreiben Sie Ihr Projekt oder Ihre Verfügbarkeit",
+    "partnership": "Partnerschaft",
+    "sendError": "Fehler beim Senden.",
+    "submit": "Anfrage senden",
+    "success": "Ihre Anfrage wurde gesendet! Wir werden uns innerhalb von 72 Stunden bei Ihnen melden.",
+    "volunteering": "Freiwilligenarbeit"
+  },
+  "cookie": {
+    "acceptAll": "akzeptiere alles",
+    "analyticsDesc": "Helfen Sie uns, die Nutzung der Website zu verstehen, um unsere Inhalte und Erfahrungen zu verbessern.",
+    "analyticsTitle": "Cookies zur Zielgruppenmessung (optional)",
+    "description": "Wir verwenden wesentliche Cookies für das ordnungsgemäße Funktionieren der Website. Optionale Cookies helfen uns, Zielgruppen zu messen und das Erlebnis zu verbessern.",
+    "detailsHeading": "Kategoriedetails",
+    "essentialDesc": "Notwendig für die Sicherheit, Anzeige und den Betrieb der Website.",
+    "essentialOnly": "Nur das Nötigste",
+    "essentialTitle": "Wesentliche Cookies (erforderlich)",
+    "learnMore": "Erfahren Sie mehr",
+    "preferencesTitle": "Cookie-Einstellungen",
+    "rejectAll": "Alles ablehnen",
+    "title": "Cookie-Verwaltung (DSGVO)"
+  },
+  "donatePage": {
+    "faq": {
+      "eyebrow": "Häufig gestellte Fragen",
+      "items": [
+        {
+          "a": "Ja, Ihr Beitrag ist unverbindlich und kann jederzeit geändert werden.",
+          "q": "Kann ich meine Spende jederzeit stoppen?"
+        },
+        {
+          "a": "Wir versenden Belege automatisch gemäß den örtlichen Vorschriften.",
+          "q": "Sind Steuerbelege vorhanden?"
+        },
+        {
+          "a": "Spenden werden vorrangigen Programmen mit Rückverfolgbarkeit zugewiesen.",
+          "q": "Wie werden die Mittel verwendet?"
+        },
+        {
+          "a": "Ja, Sie können Ihre Spende einem bestimmten Programm zukommen lassen.",
+          "q": "Kann ich ein bestimmtes Projekt auswählen?"
+        }
+      ],
+      "title": "Alles, was Sie über regelmäßige Spenden wissen müssen"
+    },
+    "hero": {
+      "ctaPrimary": "Greifen Sie auf das Spendenformular zu",
+      "ctaSecondary": "Auswirkungsstufen anzeigen",
+      "description": "Wählen Sie einen Betrag, unterstützen Sie ein bestimmtes Projekt und erhalten Sie eine Steuerbescheinigung gemäß der geltenden Gesetzgebung. Regelmäßige Spenden gewährleisten die Kontinuität der Pflege, die Schulung der Teams vor Ort und eine schnelle Reaktion auf Notfälle.",
+      "eyebrow": "Spenden Sie",
+      "paymentNote": "Akzeptierte Zahlungen: Kreditkarte (Visa, Mastercard), Orange Money, MTN Mobile Money.",
+      "title": "Eine dauerhafte, einmalige oder monatliche Wirkung"
+    },
+    "impact": {
+      "description": "Regelmäßige Spenden stabilisieren unsere Programme und stärken die Teams vor Ort.",
+      "items": [
+        "1 Hygieneset und Familienunterstützung.",
+        "Beratung zum pränatalen Screening.",
+        "Ausbildung eines örtlichen Gesundheitspersonals."
+      ],
+      "note": "90 % der Spenden finanzieren direkt Feldprogramme.",
+      "title": "Ihre Wirkung"
+    },
+    "tiers": {
+      "badges": {
+        "ambassador": "Botschafter",
+        "essential": "Essentiell",
+        "impact": "Auswirkungen"
+      },
+      "cards": {
+        "ambassador": "Schulung lokaler Betreuer und nachhaltige Investitionen.",
+        "essential": "Finanzierung von Hygienesets und Basisberatungen.",
+        "impact": "Kontinuierliche Unterstützung für mobile Teams und Patientenüberwachung."
+      },
+      "chooseLevel": "Wählen Sie dieses Level",
+      "customAmount": "Benötigen Sie einen personalisierten Betrag? Wählen Sie ein kostenloses Level.",
+      "description": "Regelmäßige Spenden gewährleisten die Kontinuität der Pflege, die Schulung der Teams vor Ort und eine schnelle Reaktion auf Notfälle.",
+      "eyebrow": "Wiederkehrende Spende",
+      "title": "Jeden Monat eine nachhaltige Wirkung"
+    },
+    "updates": {
+      "cta": "Richten Sie meine Spende ein",
+      "description": "Quartalsweise ein vereinfachter Bericht über die Mittelverwendung und die erzielten Ergebnisse.",
+      "eyebrow": "Nachverfolgen",
+      "items": [
+        "Monatliche Updates zu unterstützten Projekten.",
+        "Vorrangiger Zugang zu unseren Veranstaltungen.",
+        "Zeugnisse und Geschichten aus der Praxis."
+      ],
+      "title": "Sie erhalten konkrete Neuigkeiten"
+    },
+    "whyDonate": {
+      "items": [
+        "20 € finanzieren ein Familienhygieneset.",
+        "50 € unterstützen eine vorgeburtliche Beratung.",
+        "100 € spenden für die Ausbildung eines Freiwilligen."
+      ],
+      "note": "Steuerbelege werden gemäß den örtlichen Vorschriften automatisch ausgestellt.",
+      "title": "Warum geben?"
+    }
+  },
+  "donation": {
+    "total": "Total gesammelt",
+    "statuses": {
+      "successful": "Erfolgreich",
+      "pending": "Ausstehend",
+      "failed": "Fehlgeschlagen",
+      "cancelled": "Storniert"
+    },
+    "card": "Bankkarte",
+    "cardAccepted": "Visa, Mastercard und andere Karten werden akzeptiert",
+    "connectionError": "Verbindungsfehler. Bitte versuchen Sie es erneut.",
+    "country": "Land",
+    "donationType": "Art der Spende",
+    "email": "E-Mail",
+    "fillRequired": "Bitte füllen Sie alle Pflichtfelder aus.",
+    "firstName": "Vorname",
+    "invalidAmount": "Ungültiger Betrag.",
+    "lastName": "Name",
+    "monthly": "Monatlich",
+    "mtnMomo": "MTN MoMo",
+    "mtnNotice": "MTN Mobile Money – Benachrichtigung an Ihr Mobiltelefon gesendet",
+    "oneTime": "Pünktlich",
+    "orangeMoney": "Orangefarbenes Geld",
+    "orangeNotice": "Orange Money – Benachrichtigung an Ihr Mobiltelefon gesendet",
+    "other": "Andere",
+    "payByCard": "Bezahlen Sie mit Karte",
+    "payByMobile": "Bezahlen Sie mit mobilem Geld",
+    "paymentAccepted": "Akzeptierte Zahlungen: Kreditkarte (Visa, Mastercard), Orange Money, MTN Mobile Money.",
+    "paymentError": "Fehler beim Initialisieren der Zahlung.",
+    "paymentMethod": "Zahlungsart",
+    "phoneNotice": "Sie erhalten eine {method}-Benachrichtigung zur Bestätigung der Zahlung.",
+    "phonePlaceholder": "Telefonnummer (z. B. 237 6XX XXX XXX)",
+    "phoneRequired": "Telefonnummer für mobiles Bezahlen erforderlich.",
+    "supportedProject": "Unterstütztes Projekt",
+    "yourInfo": "Ihre Informationen",
+    "amount": "Menge"
+  },
+  "error": {
+    "backHome": "Zurück nach Hause",
+    "code": "500",
+    "description": "Unsere Teams wurden benachrichtigt. Bitte versuchen Sie es erneut oder kommen Sie später noch einmal vorbei.",
+    "retry": "Versuchen Sie es erneut",
+    "title": "Es ist ein Fehler aufgetreten"
+  },
+  "footer": {
+    "becomeVolunteer": "Werden Sie Freiwilliger",
+    "connect": "Verbinden",
+    "contactUs": "Kontaktieren Sie uns",
+    "copyright": "© 2026 Krankenschwester Hilfe Menschen International. Alle Rechte vorbehalten.",
+    "donate": "Spenden Sie",
+    "explore": "Erkunden",
+    "faqGovernance": "FAQs",
+    "give": "Geben",
+    "governanceTransparency": "Regierungsführung",
+    "impact": "Auswirkungen",
+    "legalNotice": "Rechtliche Hinweise",
+    "news": "Nachrichten",
+    "newsletterBtn": "Abonnieren",
+    "newsletterDesc": "Erhalten Sie unsere neuesten Nachrichten, Berichte und Handlungsaufforderungen.",
+    "newsletterNote": "Mit der Registrierung stimmen Sie unserer Datenschutzerklärung zu.",
+    "newsletterTitle": "Abonnieren Sie E-News",
+    "orgDescription": "Gemeinnützige humanitäre Organisation. Spenden tragen zur Finanzierung unserer Gesundheits-, Würde- und Unterstützungsprogramme für gefährdete Gemeinschaften bei.",
+    "ourMission": "Unsere Mission",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "projectsCauses": "Projekte",
+    "recurringDonation": "Wiederkehrende Spende",
+    "social": "Sozial",
+    "tagline": "Gemeinsam für eine zugängliche und menschenwürdige Pflege. Transparenz, Würde und messbare Wirkung leiten unser gesamtes Handeln.",
+    "termsOfUse": "Nutzungsbedingungen",
+    "theme": "Thema"
+  },
+  "home": {
+    "becomeMember": "Werden Sie Mitglied →",
+    "blogEyebrow": "Blog / Nachrichten",
+    "blogTitle": "Unsere neuesten Nachrichten",
+    "chooseAmount": "Wählen Sie einen Betrag",
+    "ctaDesc": "Jeder Beitrag finanziert die Grundversorgung, Hygienepakete und die Schulung lokaler Teams.",
+    "ctaTitle": "Aufruf zum Handeln",
+    "discoverPositions": "Entdecken Sie die Positionen →",
+    "donateBtn": "Spenden Sie",
+    "downloadReport": "Laden Sie den Bericht herunter",
+    "employment": "Arbeit",
+    "employmentDesc": "Greifen Sie auf unsere Angebote, Kurse und zertifizierten Schulungsmodule zu.",
+    "eventsEyebrow": "Veranstaltungen",
+    "eventsTitle": "Mobilisieren Sie Gemeinschaften",
+    "governance": "Regierungsführung",
+    "heroActFor": "Wir handeln danach",
+    "heroCaregivers": "Betreuer",
+    "heroCommunities": "Gemeinschaften",
+    "heroDescription": "Wir finanzieren Gesundheits-, Präventions- und lokale Resilienzprogramme mit transparenter Wirkungsüberwachung.",
+    "heroEyebrow": "Gemeinsam für eine barrierefreie Pflege",
+    "heroTitle": "Sorgen Sie für gefährdete Gemeinschaften, schützen Sie sie und geben Sie ihnen Hoffnung zurück.",
+    "heroVolunteers": "die Freiwilligen",
+    "impactAccessDesc": "In unseren Interventionsbereichen wurde eine durchschnittliche Verbesserung beobachtet.",
+    "impactAccessRate": "Zugangsrate zur Pflege",
+    "impactAlert": "92 % der Begünstigten berichten von einem besseren Zugang zur Gesundheitsversorgung und 75 % der Partnergemeinden haben lokale Gesundheitskomitees eingerichtet.",
+    "impactEmergencies": "Für Notfälle wird gesorgt",
+    "impactEmergenciesDesc": "Fälle werden über mobile Kliniken und Außenposten bearbeitet.",
+    "impactEyebrow": "Auswirkungen",
+    "impactMap": "Wirkungskarte",
+    "impactMapDesc": "Sehen Sie sich unsere Interventionen nach Land und Thema an.",
+    "impactPartners": "Lokale Partner",
+    "impactPartnersDesc": "Unterstützte NGOs, Gesundheitszentren und Gemeinden.",
+    "impactTitle": "Messbare Ergebnisse",
+    "involveEyebrow": "Mitmachen",
+    "involveTitle": "Treten Sie unserer Bewegung bei",
+    "membership": "Mitgliedschaft",
+    "missionApproach": "Unser Ansatz",
+    "missionApproachDesc": "Gesundheit der Gemeinschaft, Prävention und gezielte Maßnahmen entsprechend den lokalen Bedürfnissen.",
+    "missionDescription": "Wir arbeiten mit Gemeinden zusammen, um lokale Kapazitäten aufzubauen, den Zugang zur Gesundheitsversorgung zu verbessern und effektiv auf Notfälle zu reagieren.",
+    "missionEyebrow": "Vision • Mission • Werte",
+    "missionTitle": "Würdevolle Pflege, nachhaltiges Handeln vor Ort.",
+    "missionValues": "Werte",
+    "missionValuesDesc": "Mitgefühl, Inklusion, Integrität und messbare Wirkung.",
+    "newsletterBtn": "Abonnieren",
+    "newsletterDesc": "Eine E-Mail pro Monat mit unseren Kennzahlen, Geschichten und Engagementmöglichkeiten.",
+    "partnersEyebrow": "Partner",
+    "partnersTitle": "Allianzen, die Wirkung verstärken",
+    "partnerships": "Partnerschaften",
+    "partnershipsDesc": "Unternehmen, Institutionen und Organisationen können Impact-Programme mitgestalten, Kampagnen sponsern oder Kompetenzsponsoring anbieten.",
+    "priorities2026": "Prioritäten 2026",
+    "prioritiesNote": "Unsere Roadmaps und Indikatoren werden in unseren Jahresberichten veröffentlicht.",
+    "priority1": "Stärkung von 12 mobilen Kliniken in ländlichen Gebieten.",
+    "priority2": "Einrichtung von 4 Zentren für Müttergesundheit.",
+    "priority3": "Bilden Sie 300 kommunale Gesundheitshelfer aus.",
+    "projectObjective": "Objektiv",
+    "projectRegion": "Region",
+    "projectsExplore": "Entdecken Sie alle Projekte",
+    "projectsEyebrow": "Ursachen / Projekte",
+    "projectsTitle": "Aktuelle Programme",
+    "proposePartnership": "Schlagen Sie eine Partnerschaft vor",
+    "quickDonate": "Schnelle Spende",
+    "quickDonateDesc": "30 € finanzieren einen mobilen Arztbesuch. Mit 100€ wird die Ausbildung einer örtlichen Pflegekraft unterstützt.",
+    "readBlog": "Lesen Sie den Artikel",
+    "report2025": "Bericht 2025",
+    "report2025Desc": "Finanzielle Zusammenfassung, Indikatoren und Fallstudien.",
+    "seeOpportunities": "Möglichkeiten anzeigen →",
+    "seeProject": "Sehen Sie sich das Projekt an",
+    "seeReports": "Sehen Sie sich unsere Berichte an",
+    "statFunds": "Mittel mobilisiert",
+    "statPeople": "Begleitete Personen",
+    "statPrograms": "Aktive Programme",
+    "subscribe": "Registrieren",
+    "supportCause": "Unterstützen Sie",
+    "supportProject": "Aufrechterhalten",
+    "volunteerBtn": "Werden Sie Freiwilliger",
+    "volunteeringDesc": "Nutzen Sie Ihre Zeit ehrenamtlich vor Ort, aus der Ferne oder für einmalige Missionen.",
+    "newsletterTitle": "Erhalten Sie unsere Berichte, sobald sie verfügbar sind",
+    "volunteering": "Aktives ehrenamtliches Engagement",
+    "membershipDesc": "Werden Sie Mitglied und verpassen Sie keine unserer Neuigkeiten, Berichte und Engagementmöglichkeiten."
+  },
+  "impact": {
+    "byCountry": {
+      "description": "Die folgenden Zahlen spiegeln unsere Aktivitäten im Jahr 2025 nach Hauptinterventionsbereich wider.",
+      "imageAlt": "Intervention in {country}",
+      "labels": {
+        "clinics": "aktive mobile Kliniken",
+        "patients": "begleitete Patienten",
+        "professionals": "ausgebildete Fachkräfte"
+      },
+      "title": "Auswirkungen nach Ländern"
+    },
+    "byProgram": {
+      "description": "Unsere Teams überwachen spezifische Indikatoren nach Handlungsfeldern, um die Wirksamkeit von Interventionen zu messen.",
+      "title": "Auswirkungen nach Programm"
+    },
+    "countries": {
+      "burkinaFaso": {
+        "clinics": "14",
+        "name": "Burkina Faso",
+        "patients": "32.400",
+        "professionals": "280"
+      },
+      "cameroun": {
+        "clinics": "16",
+        "name": "Kamerun",
+        "patients": "35.900",
+        "professionals": "310"
+      },
+      "coteIvoire": {
+        "clinics": "12",
+        "name": "Elfenbeinküste",
+        "patients": "28.700",
+        "professionals": "240"
+      },
+      "rdc": {
+        "clinics": "10",
+        "name": "Demokratische Republik Kongo",
+        "patients": "35.480",
+        "professionals": "230"
+      },
+      "guinee_conakry": {
+        "clinics": "12",
+        "name": "Guinea-Conakry",
+        "patients": "28.700",
+        "professionals": "240"
+      },
+      "senegal": {
+        "clinics": "14",
+        "name": "Senegal",
+        "patients": "32.400",
+        "professionals": "280"
+      }
+    },
+    "hero": {
+      "description": "Unsere Indikatoren werden vierteljährlich überwacht und in unseren Berichten veröffentlicht, um vollständige Transparenz zu gewährleisten.",
+      "eyebrow": "Auswirkungen",
+      "title": "Messbare und transparente Ergebnisse"
+    },
+    "kpis": {
+      "consultations": "Beratungen 2025",
+      "mobileClinics": "Aktive mobile Kliniken",
+      "patients": "Begleitete Patienten",
+      "professionals": "Ausgebildete Fachkräfte"
+    },
+    "lastUpdated": "Letzte Aktualisierung: {date}",
+    "methodology": {
+      "ctaPrimary": "Unterstützen Sie unsere Aktionen",
+      "ctaSecondary": "Werden Sie Partner",
+      "items": [
+        "Monatliche Felddatenerfassung.",
+        "Gegenkontrollen durch externe Audits.",
+        "Jährliche Veröffentlichung und vierteljährliche Zusammenfassungen."
+      ],
+      "title": "Methodik"
+    },
+    "newsletter": {
+      "description": "Klare Zahlen und konkrete Ergebnisse, jeden Monat.",
+      "eyebrow": "Newsletter",
+      "note": "Mit der Registrierung stimmen Sie unserer Datenschutzerklärung zu.",
+      "title": "Befolgen Sie unsere Wirkungsindikatoren"
+    },
+    "programs": {
+      "emergency": {
+        "focus": "4.200 Notfalleinsätze",
+        "teams": "12 Schnellreaktionszellen",
+        "title": "Humanitäre Notfälle"
+      },
+      "maternal": {
+        "focus": "9.600 vorgeburtliche Beratungen",
+        "teams": "18 mobile Teams",
+        "title": "Mütterliche Gesundheit"
+      },
+      "nutrition": {
+        "focus": "18.500 Vorführungen",
+        "teams": "22 Community-Kampagnen",
+        "title": "Ernährung"
+      }
+    },
+    "reports": {
+      "description": "Laden Sie unsere Jahresberichte und Finanzberichte herunter, um zu verstehen, wie die Mittel verwendet werden.",
+      "items": {
+        "annual2024": "Bericht 2024 (PDF)",
+        "annual2025": "Bericht 2025 (PDF)",
+        "financial2025": "Finanzbericht 2025"
+      },
+      "title": "Wirkungsberichte"
+    },
+    "stories": {
+      "cta": "Lesen Sie die Geschichte",
+      "ctaPrimary": "Lesen Sie unsere Neuigkeiten",
+      "ctaSecondary": "Spenden Sie",
+      "description": "Ein Überblick über die dank Ihrer Unterstützung erzielten Ergebnisse.",
+      "items": [
+        {
+          "title": "Müttergesundheit in ländlichen Gebieten",
+          "desc": "Nach einem schweren Motorradunfall mit Mehrfachtrauma befand sich eines der Opfer in einem kritischen Zustand. Um sein Leben zu retten, war eine Amputation seines Beines unumgänglich. Dank des schnellen Eingreifens und der Professionalität des medizinischen Teams von Nurse Hilfe Menschen Internationale konnte die Operation unter Bedingungen durchgeführt werden, die es ihr ermöglichten, ihr Leben zu retten und ihr eine Chance auf eine Zukunft zu geben."
+        }
+      ],
+      "title": "Wirkungsgeschichten"
+    }
+  },
+  "involve": {
+    "cards": {
+      "fundraisers": {
+        "cta": "Starten Sie eine Sammlung",
+        "description": "Erstellen Sie eine Kampagne, legen Sie ein Ziel fest und mobilisieren Sie Ihr Netzwerk.",
+        "imageAlt": "Spendensammlung für Solidarität",
+        "title": "Solidaritätssammlungen"
+      },
+      "partnerships": {
+        "cta": "Werden Sie Partner",
+        "description": "Unternehmen, Institutionen, lokale Stiftungen und Medien.",
+        "imageAlt": "Partnerschaft zwischen Organisationen",
+        "title": "Partnerschaften"
+      },
+      "volunteering": {
+        "cta": "Entdecken Sie die Rollen",
+        "description": "Ad-hoc-Missionen, kommunale Gesundheit, Logistik und administrative Unterstützung.",
+        "imageAlt": "Team von Freiwilligen auf Mission",
+        "title": "Freiwilligenarbeit"
+      }
+    },
+    "contact": {
+      "description": "Geben Sie Ihr Profil und Ihre Verfügbarkeit an. Unser Team wird sich innerhalb von 72 Arbeitsstunden mit Ihnen in Verbindung setzen.",
+      "items": [
+        "Freiwilligenarbeit vor Ort oder Fernunterstützung.",
+        "Partnerschaften",
+        "Solidaritätsaktionen und Veranstaltungen."
+      ],
+      "title": "Lassen Sie uns Ihr Engagement besprechen"
+    },
+    "hero": {
+      "description": "Ehrenamtliches Engagement, Partnerschaften und Solidaritätskollekten: Wählen Sie die Form des Engagements, die zu Ihnen passt.",
+      "eyebrow": "Mitmachen",
+      "title": "Handeln Sie mit uns vor Ort"
+    },
+    "newsletter": {
+      "description": "Aufrufe zu Freiwilligen, Partnerschaften und Feldaktionen.",
+      "eyebrow": "Bleiben Sie informiert",
+      "note": "Mit der Registrierung stimmen Sie unserer Datenschutzerklärung zu.",
+      "title": "Erhalten Sie unsere Engagement-Möglichkeiten"
+    },
+    "stats": {
+      "fundraisers": {
+        "description": "Gestartet im Jahr 2025.",
+        "label": "Sammlungen"
+      },
+      "partners": {
+        "description": "Institutionen",
+        "label": "Partner"
+      },
+      "responseTime": {
+        "description": "Um eine Bewerbung zu bestätigen.",
+        "label": "durchschnittliche Zeit"
+      },
+      "volunteers": {
+        "description": "In lokalen und Feldeinsätzen.",
+        "label": "aktive Freiwillige"
+      }
+    },
+    "support": {
+      "ctaPrimary": "Spenden Sie",
+      "ctaSecondary": "Auswirkungsstufen anzeigen",
+      "description": "Wiederkehrende Spenden gewährleisten die Kontinuität der Pflege und eine langfristige Planung.",
+      "highlightsTitle": "Was Sie aktivieren",
+      "highlights": [
+        "Lieferung von medizinischen Kits.",
+        "Schulung lokaler Gesundheitshelfer.",
+        "Schnelle Reaktion im Notfall."
+      ],
+      "note": "Brauchen Sie einen direkten Austausch? Nutzen Sie das untenstehende Formular oder senden Sie uns eine E-Mail an info@nurseinternationale.com.",
+      "title": "Nachhaltig unterstützen"
+    }
+  },
+  "legal": {
+    "cta": {
+      "primary": "Kontaktieren Sie den Manager",
+      "secondary": "Regierungsführung"
+    },
+    "hero": {
+      "description": "Hier finden Sie die Regelungen zum Verein, Datenschutz und Nutzungsbedingungen.",
+      "eyebrow": "Rechtliche Informationen",
+      "lastUpdated": "Letzte Aktualisierung: {date}",
+      "title": "Rechtliche Hinweise"
+    },
+    "legalNotice": {
+      "description": "Firmenname, Adresse, Herausgeber, Registrierungsnummern und offizielle Kontakte.",
+      "items": [
+        "Organisation: Krankenschwester Hilfe Menschen Internationale.",
+        "Offizieller Kontakt: info@nurseinternationale.com",
+        "Gastgeber: noch auszufüllen."
+      ],
+      "title": "Rechtliche Hinweise"
+    },
+    "privacy": {
+      "description": "Erhebung, Nutzung, Speicherung und Rechte der Nutzer hinsichtlich ihrer personenbezogenen Daten.",
+      "items": [
+        "Zweck: Spendenmanagement und Kommunikation.",
+        "Dauer: Die Erhaltung ist auf das unbedingt Notwendige beschränkt.",
+        "Rechte: Zugriff, Berichtigung, Löschung."
+      ],
+      "title": "Datenschutzrichtlinie"
+    },
+    "terms": {
+      "description": "Regeln für die Nutzung der Website, Haftungsbeschränkungen und geistiges Eigentum.",
+      "items": [
+        "Persönliche, nicht kommerzielle Nutzung der Inhalte.",
+        "Vervielfältigung ohne Genehmigung verboten.",
+        "Die Haftung beschränkt sich auf die veröffentlichten Informationen."
+      ],
+      "title": "Nutzungsbedingungen"
+    }
+  },
+  "metadata": {
+    "description": "Humanitäre Stiftung, die sich der Fürsorge, Würde und Unterstützung gefährdeter Gemeinschaften widmet.",
+    "ogDescription": "Sorgen Sie für gefährdete Gemeinschaften, schützen Sie sie und geben Sie ihnen Hoffnung zurück.",
+    "title": "Krankenschwester Hilfe Menschen International",
+    "titleTemplate": "%s | NHMI"
+  },
+  "mission": {
+    "approach": {
+      "localTraining": {
+        "desc": "Zertifizierungssitzungen und Mentoring über 6 Monate.",
+        "title": "Lokale Ausbildung"
+      },
+      "mobileCare": {
+        "desc": "30 bis 45 Missionstage pro Quartal, um abgelegene Gebiete zu erreichen.",
+        "title": "Mobile Pflege"
+      },
+      "prevention": {
+        "desc": "Vierteljährliche Screening- und Familienüberwachungskampagnen.",
+        "title": "Verhütung"
+      }
+    },
+    "approachDescription": "Jede Mission wird gemeinsam mit den örtlichen Gemeinden konzipiert, um eine Kontinuität der Pflege und dauerhafte Ergebnisse sicherzustellen.",
+    "approachTitle": "Unser Ansatz",
+    "description": "Wir stärken lokale Gesundheitssysteme durch mobile Kliniken, Teamtraining und Prävention. Unser Ansatz basiert auf Nähe, Ethik und messbarer Wirkung.",
+    "eyebrow": "Auftrag",
+    "impactBtn": "Sehen Sie unsere Wirkung",
+    "involveBtn": "Mitmachen",
+    "newsletter": {
+      "description": "Berichte, Missionen und Erfahrungsberichte in Ihrem Posteingang.",
+      "eyebrow": "Newsletter",
+      "note": "Mit der Registrierung stimmen Sie unserer Datenschutzerklärung zu.",
+      "title": "Erhalten Sie unsere Fortschritte auf diesem Gebiet"
+    },
+    "stats": {
+      "activeMissions": "Aktive mobile Missionen.",
+      "avgPerQuarter": "Durchschnittlich pro Quartal.",
+      "clinics": "Kliniken",
+      "communities": "Gemeinschaften",
+      "consultations": "Beratungen",
+      "continuousTraining": "Kontinuierliche Aktualisierung.",
+      "countries": "Länder",
+      "covered": "Abgedeckt durch unsere Teams.",
+      "trainedCaregivers": "geschulte Betreuer"
+    },
+    "title": "Zugängliche, menschliche und nachhaltige Pflege",
+    "values": {
+      "dignity": {
+        "desc": "Einwilligungsprotokolle und patientenzentrierter Ansatz.",
+        "title": "Würde"
+      },
+      "efficiency": {
+        "desc": "90 % der Mittel werden direkt für Feldprogramme verwendet.",
+        "title": "Effizienz"
+      },
+      "transparency": {
+        "desc": "Vierteljährliche Berichte und jährliche Prüfung verfügbar.",
+        "title": "Transparenz"
+      }
+    },
+    "valuesTitle": "Werte",
+    "zones": {
+      "emergency": "Humanitäre Notfälle",
+      "maternal": "Mütterliche Gesundheit",
+      "countries": "Senegal, Guinea Conakry, Kamerun."
+    },
+    "zonesDescription": "West- und Zentralafrika: Schwerpunkt auf ländlichen, stadtnahen und Nachkrisengebieten.",
+    "zonesTitle": "Interventionsbereiche"
+  },
+  "nav": {
+    "about": "Uns",
+    "blog": "Nachrichten",
+    "donate": "Spenden Sie",
+    "foundation": "Stiftung",
+    "getInvolved": "Mitmachen",
+    "impact": "Auswirkungen",
+    "mission": "Auftrag",
+    "openMenu": "Menü öffnen",
+    "projects": "Anliegen/Projekte",
+    "search": "Zur Recherche"
+  },
+  "newsletter": {
+    "defaultButton": "Abonnieren",
+    "emailError": "Geben Sie eine gültige E-Mail-Adresse ein",
+    "errorMessage": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "loading": "Im Gange...",
+    "successMessage": "Vielen Dank für Ihre Registrierung."
+  },
+  "notFound": {
+    "backHome": "Zurück nach Hause",
+    "code": "404",
+    "description": "Die gesuchte Seite wurde möglicherweise verschoben oder gelöscht.",
+    "search": "Zur Recherche",
+    "title": "Diese Seite existiert nicht"
+  },
+  "projectDetail": {
+    "backToProjects": "← Zurück zu Projekten",
+    "cta": {
+      "description": "Mit Ihrem Beitrag finanzieren Sie direkt die Aktivitäten dieses Programms.",
+      "primary": "Spenden Sie",
+      "secondary": "Alle Projekte ansehen",
+      "title": "Unterstützen Sie dieses Projekt"
+    },
+    "labels": {
+      "budget": "Budget",
+      "impact": "Auswirkungen"
+    },
+    "notFound": "Projekt nicht gefunden",
+    "sections": {
+      "activities": "Aktivitäten",
+      "objectives": "Ziele"
+    }
+  },
+  "projects": {
+    "cards": {
+      "support": "Aufrechterhalten",
+      "viewProject": "Sehen Sie sich das Projekt an"
+    },
+    "cta": {
+      "description": "Jede Spende wird einem Programm zugeordnet und durch transparente Indikatoren überwacht.",
+      "eyebrow": "Handeln Sie jetzt",
+      "primary": "Spenden Sie",
+      "secondary": "Monatliche Spende",
+      "title": "Unterstützen Sie ein wirkungsvolles Projekt"
+    },
+    "hero": {
+      "description": "Entdecken Sie unsere Interventionen nach Thema und Region. Jedes Projekt wird von Wirkungsindikatoren und klaren Zielen begleitet.",
+      "eyebrow": "Projekte",
+      "title": "Programme, die in den lokalen Bedürfnissen verankert sind"
+    },
+    "labels": {
+      "objective": "Objektiv:",
+      "region": "Region:"
+    },
+    "map": {
+      "description": "Sehen Sie sich Projekte nach Land, Thema und Dringlichkeitsgrad an.",
+      "imageAlt": "Karte der Interventionen nach Ländern",
+      "title": "Interventionskarte"
+    },
+    "tracking": {
+      "cta": "Berichte anzeigen",
+      "description": "Dashboards, Indikatoren und Berichte nach Projekt.",
+      "items": [
+        "Pflegedeckungsgrad",
+        "Verbesserung der mütterlichen Indikatoren",
+        "Widerstandsfähigkeit der Gemeinschaft"
+      ],
+      "title": "Wirkungsüberwachung"
+    }
+  },
+  "search": {
+    "ariaLabel": "Nach Inhalten suchen",
+    "close": "Suche schließen",
+    "heading": "Inhalte finden",
+    "noResults": "Keine Ergebnisse für „{query}“.",
+    "placeholder": "Zur Recherche...",
+    "title": "Forschung"
+  },
+  "searchIndex": {
+    "about": {
+      "excerpt": "Governance, Transparenz und menschliches Engagement der Stiftung.",
+      "tags": [
+        "Regierungsführung",
+        "Transparenz"
+      ],
+      "title": "Um"
+    },
+    "blog": {
+      "excerpt": "Feldartikel, humanitäre Notfälle und Jahresberichte.",
+      "tags": [
+        "Blog",
+        "Nachrichten",
+        "Berichte"
+      ],
+      "title": "Nachrichten"
+    },
+    "donate": {
+      "excerpt": "Eine dauerhafte, einmalige oder monatliche Wirkung. Wählen Sie Ihren Grad an Engagement.",
+      "tags": [
+        "Spende",
+        "monatlich",
+        "Wirkung"
+      ],
+      "title": "Spenden Sie"
+    },
+    "dons": {
+      "excerpt": "Eine dauerhafte, einmalige oder monatliche Wirkung. Wählen Sie Ihren Grad an Engagement.",
+      "tags": [
+        "Don",
+        "monatlich",
+        "Auswirkungen"
+      ],
+      "title": "Spenden Sie"
+    },
+    "impact": {
+      "excerpt": "Indikatoren, Interventionsländer und detaillierte Wirkungsberichte.",
+      "tags": [
+        "Indikatoren",
+        "Berichte",
+        "Land"
+      ],
+      "title": "Auswirkungen"
+    },
+    "involve": {
+      "excerpt": "Freiwilligenarbeit, Partnerschaften und Solidaritätssammlungen zur Unterstützung der Mission.",
+      "tags": [
+        "Freiwilligenarbeit",
+        "Partnerschaften",
+        "Sammlungen"
+      ],
+      "title": "Mitmachen"
+    },
+    "legal": {
+      "excerpt": "Rechtliche Hinweise, Vertraulichkeit und Nutzungsbedingungen.",
+      "tags": [
+        "legal",
+        "Vertraulichkeit"
+      ],
+      "title": "Rechtliche Hinweise"
+    },
+    "mission": {
+      "excerpt": "Zugängliche, menschenwürdige und nachhaltige Versorgung durch mobile Kliniken, Schulung und Prävention.",
+      "tags": [
+        "Pflege",
+        "Kliniken",
+        "Verhütung"
+      ],
+      "title": "Auftrag"
+    },
+    "projects": {
+      "excerpt": "Programme, die auf lokale Bedürfnisse ausgerichtet sind: ländliche Gesundheit, Mutterschaft, Notfälle.",
+      "tags": [
+        "Projekte",
+        "ländliche Gesundheit",
+        "Mutterschaft",
+        "Notfall"
+      ],
+      "title": "Ursachen"
+    },
+    "s-impliquer": {
+      "excerpt": "Freiwilligenarbeit, Partnerschaften und Solidaritätssammlungen zur Unterstützung der Mission.",
+      "tags": [
+        "Freiwilligenarbeit",
+        "Partnerschaften",
+        "Sammlungen"
+      ],
+      "title": "Mitmachen"
+    }
+  },
+  "flutterwave": {
+    "cancelled": "Zahlung storniert. Ihnen wurde keine Rechnung gestellt.",
+    "don": {
+      "fondation": "Spende an die Stiftung",
+      "project": "Spende für"
+    },
+    "error": "Bei der Zahlung ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+    "pending": "Zahlung ausstehend. Wir benachrichtigen Sie, sobald sich der Status ändert.",
+    "success": "Zahlung erfolgreich! Vielen Dank für Ihre Unterstützung."
+  }
+}
