@@ -199,7 +199,7 @@ export default function Newsletter({
     return (
       <section className={`bg-base-200/60 ${className ?? ""}`.trim()}>
         <div className="w-full p-2 ">
-          <div className="flex flex-col gap-3 md:items-center md:justify-between w-full max-w-6xl mx-auto">
+          <div className="flex flex-col gap-3 md:items-center md:justify-between w-full max-w-10/12 mx-auto">
             <div>
               {eyebrow ? (
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary w-full">
@@ -284,7 +284,7 @@ export default function Newsletter({
 
   return (
     <section id={id} className={`bg-base-200/60 ${className ?? ""}`.trim()}>
-      <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
+      <div className="mx-auto w-full max-w-10/12 px-4 py-16 md:py-20">
         <div className="card bg-base-100 shadow">
           <div className="card-body md:flex-row md:items-center md:justify-between">
             <div>

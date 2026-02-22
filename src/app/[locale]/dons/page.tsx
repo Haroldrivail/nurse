@@ -69,9 +69,9 @@ export default function DonsPage() {
 
       {/* --- SECTION IMPACT : Montants dynamiques --- */}
       <section id="formulaire" className="bg-base-100 py-20">
-        <div className="mx-auto max-w-6xl px-4">
-          <div className="flex flex-col lg:flex-row gap-12 items-stretch">
-            <div className="lg:w-3/5">
+        <div className="mx-auto max-w-10/12 px-4">
+          <div className="flex flex-col lg:flex-row items-center justify-center">
+            <div className="lg:w-full">
               <Reveal from="left">
                 <div className="card bg-base-200 shadow-xl border border-base-300">
                   <div className="card-body p-4 md:p-10">
@@ -81,31 +81,13 @@ export default function DonsPage() {
               </Reveal>
             </div>
 
-            <div className="lg:w-2/5 flex flex-col justify-center">
-              <Reveal from="right">
-                <h3 className="text-3xl font-bold mb-6">{t("impact.title")}</h3>
-                <div className="space-y-4">
-                  {[0, 1, 2].map((idx) => (
-                    <div
-                      key={idx}
-                      className="flex gap-4 items-start p-4 bg-base-200/50 rounded-xl hover:bg-base-200 transition-colors"
-                    >
-                      <span className="text-primary font-bold text-lg min-w-[80px]">
-                        {formatter.format(amounts[idx] || 0)}
-                      </span>
-                      <p className="text-sm">{t(`impact.items.${idx}`)}</p>
-                    </div>
-                  ))}
-                </div>
-              </Reveal>
-            </div>
           </div>
         </div>
       </section>
 
       {/* --- SECTION NIVEAUX : Prix des cartes dynamiques --- */}
       <section id="niveaux" className="bg-base-200/60 py-20">
-        <div className="mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-10/12 px-4">
           <div className="text-center mb-16">
             <Reveal from="up">
               <h2 className="mt-4 text-4xl font-bold">{t("tiers.title")}</h2>

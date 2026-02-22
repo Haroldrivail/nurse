@@ -36,12 +36,6 @@ export default function SimpliquerPage() {
       desc: t("stats.partners.description"),
     },
     {
-      label: t("stats.fundraisers.label"),
-      value: 26,
-      suffix: "",
-      desc: t("stats.fundraisers.description"),
-    },
-    {
       label: t("stats.responseTime.label"),
       value: 72,
       suffix: "h",
@@ -66,13 +60,13 @@ export default function SimpliquerPage() {
           nodeCount={35}
         />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-20">
           <div className="max-w-3xl">
             <Reveal from="left">
               <span className="text-primary font-bold uppercase tracking-[0.4em] text-xs mb-4 block">
                 {t("hero.eyebrow")}
               </span>
-              <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tighter mb-6">
+              <h1 className="text-5xl md:text-6xl font-black leading-tight tracking-tighter mb-6">
                 {t("hero.title")}
               </h1>
               <p className="text-xl text-base-content/70 leading-relaxed">
@@ -84,7 +78,7 @@ export default function SimpliquerPage() {
           {/* Stats Floating Grid */}
           <Stagger
             from="up"
-            className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
+            className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
             {stats.map((s, i) => (
               <div
@@ -110,7 +104,7 @@ export default function SimpliquerPage() {
 
       {/* --- MODES D'ENGAGEMENT : Cartes Action --- */}
       <section className="bg-base-100 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <Stagger from="up" className="grid gap-8 md:grid-cols-3">
             {[
               {
@@ -122,8 +116,8 @@ export default function SimpliquerPage() {
                 img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80",
               },
               {
-                key: "fundraisers",
-                img: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80",
+                key: "membership",
+                img: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a",
               },
             ].map((item) => (
               <div
@@ -133,7 +127,7 @@ export default function SimpliquerPage() {
                 <figure className="relative h-56 overflow-hidden">
                   <Image
                     src={item.img}
-                    alt=""
+                    alt={t(`cards.${item.key}.imageAlt`)}
                     fill
                     className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
                   />
@@ -161,67 +155,11 @@ export default function SimpliquerPage() {
         </div>
       </section>
 
-      {/* --- SUPPORT FINANCIER : Bloc Focus --- */}
-      <section className="bg-neutral text-neutral-content py-24 overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
-
-        <div className="mx-auto w-full max-w-6xl px-4 relative z-10">
-          <div className="grid gap-16 lg:grid-cols-2 items-center">
-            <Reveal from="left">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-black mb-6">
-                  {t("support.title")}
-                </h2>
-                <p className="text-lg opacity-80 leading-relaxed mb-8">
-                  {t("support.description")}
-                </p>
-                <div className="flex flex-wrap gap-4 mb-8">
-                  <Link
-                    className="btn btn-primary btn-lg px-10 rounded-full"
-                    href="/dons"
-                  >
-                    {t("support.ctaPrimary")}
-                  </Link>
-                  <Link
-                    className="btn btn-outline btn-primary btn-lg px-10 rounded-full"
-                    href="/dons#niveaux"
-                  >
-                    {t("support.ctaSecondary")}
-                  </Link>
-                </div>
-                <p className="text-xs opacity-50 italic">
-                  * {t("support.note")}
-                </p>
-              </div>
-            </Reveal>
-
-            <Reveal from="right">
-              <div className="bg-white/5 backdrop-blur-md rounded-[2.5rem] p-10 border border-white/10 shadow-inner">
-                <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
-                  <span className="w-10 h-1 bg-primary rounded-full" />
-                  {t("support.highlightsTitle")}
-                </h3>
-                <ul className="space-y-6">
-                  {[0, 1, 2].map((i) => (
-                    <li key={i} className="flex items-start gap-4 group">
-                      <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary shrink-0 group-hover:scale-110 transition-transform">
-                        ✓
-                      </div>
-                      <p className="text-sm md:text-base opacity-80 group-hover:opacity-100 transition-opacity">
-                        {t(`support.highlights.${i}`)}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
+      
 
       {/* --- CONTACT : Formulaire épuré --- */}
-      <section id="contact" className="bg-base-100 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+      <section id="contact" className="bg-base-200/6 py-24">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="grid gap-16 lg:grid-cols-[0.8fr_1.2fr]">
             <Reveal from="left">
               <div className="sticky top-24">

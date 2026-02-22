@@ -38,12 +38,12 @@ export default async function ProjectsPage() {
           nodeCount={30}
         />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-24">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-24">
           <Reveal from="left">
             <span className="text-primary font-bold uppercase tracking-[0.4em] text-xs">
               {t("hero.eyebrow")}
             </span>
-            <h1 className="mt-4 text-5xl md:text-7xl font-black tracking-tight">
+            <h1 className="mt-4 text-5xl md:text-6xl font-black tracking-tight">
               {t("hero.title")}
             </h1>
             <p className="mt-6 max-w-2xl text-lg md:text-xl text-base-content/80 leading-relaxed">
@@ -55,7 +55,7 @@ export default async function ProjectsPage() {
 
       {/* --- FILTRES & GRILLE (Simulée) --- */}
       <section className="bg-base-100 pb-24 -mt-10">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <Stagger
             from="up"
             className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
@@ -125,7 +125,7 @@ export default async function ProjectsPage() {
 
       {/* --- CTA FINAL : Design "Boxed Impact" --- */}
       <section className="bg-base-100 pb-20">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <Reveal from="down">
             <div className="relative overflow-hidden rounded-[2.5rem] bg-neutral text-neutral-content p-10 md:p-16">
               {/* Cercles décoratifs en arrière-plan */}

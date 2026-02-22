@@ -54,17 +54,17 @@ export default async function Home() {
           <FloatingParticles className="z-0 opacity-40" count={120} />
         </div>
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-20">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             {/* Colonne gauche : Texte */}
-            <div className="max-w-2xl">
+            <div className="max-w-6xl">
               <Reveal from="left">
                 <span className="badge badge-primary badge-outline mb-4 font-bold tracking-widest px-4 py-3">
                   {t("heroEyebrow")}
                 </span>
               </Reveal>
               <Reveal from="left" delay={0.1}>
-                <h1 className="text-5xl font-bold leading-[1.1] md:text-7xl mb-6">
+                <h1 className="text-5xl font-bold leading-[1.1] md:text-6xl mb-6">
                   {t("heroTitle")}
                 </h1>
               </Reveal>
@@ -267,7 +267,7 @@ export default async function Home() {
       </section>
 
       <section id="impact" className="bg-base-100 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="text-center mb-16">
             <Reveal from="up">
               <p className="text-xs font-bold uppercase tracking-[0.4em] text-primary mb-3">
@@ -328,7 +328,7 @@ export default async function Home() {
       </section>
 
       <section id="impliquer" className="bg-base-200/60 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div className="max-w-xl">
               <Reveal from="left">
@@ -394,7 +394,7 @@ export default async function Home() {
 
       {/* --- SECTION PARTENAIRES : Minimalisme --- */}
       <section id="partenaires" className="bg-base-100 py-20">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="text-center mb-12">
             <p className="text-[10px] font-black uppercase tracking-[0.5em] opacity-40 mb-2">
               {t("partnersEyebrow")}
@@ -427,10 +427,10 @@ export default async function Home() {
       </section>
 
       <section id="evenements" className="bg-base-200/40 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4 text-center mb-16">
+        <div className="mx-auto w-full max-w-10/12 px-4 text-center mb-16">
           <h3 className="text-4xl font-bold">{t("eventsTitle")}</h3>
         </div>
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <Stagger from="down" className="grid gap-8 md:grid-cols-3">
             {/* Utilisation de cartes avec "Date Badge" flottant */}
             {[
@@ -476,7 +476,7 @@ export default async function Home() {
       </section>
 
       <section id="blog" className="bg-base-100">
-        <div className="mx-auto w-full max-w-6xl px-4 py-16 md:py-20">
+        <div className="mx-auto w-full max-w-10/12 px-4 py-16 md:py-20">
           <Reveal from="left">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary">
               {t("blogEyebrow")}
@@ -487,7 +487,7 @@ export default async function Home() {
           </Reveal>
           <Stagger
             from="down"
-            className="mx-auto grid w-full max-w-6xl gap-6 px-4 py-16 md:grid-cols-3 md:py-20"
+            className="mx-auto grid w-full max-w-10/12 gap-6 px-4 py-16 md:grid-cols-3 md:py-20"
           >
             {latestPosts.map((post) => (
               <article

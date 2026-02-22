@@ -95,7 +95,7 @@
     "readBlog": "Read the article",
     "newsletterTitle": "Receive our reports as soon as available",
     "volunteering": "Active volunteering",
-    "membershipDesc": "Become a member and don't miss any of our news, reports and engagement opportunities."
+    "membershipDesc": "Become a member."
   },
   "footer": {
     "explore": "Explore",
@@ -744,10 +744,6 @@
         "label": "partners",
         "description": "Engaged institutions and companies."
       },
-      "fundraisers": {
-        "label": "fundraisers",
-        "description": "Launched in 2025."
-      },
       "responseTime": {
         "label": "average response time",
         "description": "To confirm an application."
@@ -766,25 +762,12 @@
         "cta": "Become a partner",
         "imageAlt": "Partnership between organizations"
       },
-      "fundraisers": {
-        "title": "Solidarity fundraisers",
-        "description": "Create a campaign, set a goal and mobilize your network.",
-        "cta": "Start a fundraiser",
-        "imageAlt": "Solidarity fundraising"
+      "membership": {
+        "cta": "Become a member",
+        "description": "Become part of our mission and help us transform lives sustainably.",
+        "imageAlt": "Membership at Nurse Internationale",
+        "title": "Membership"
       }
-    },
-    "support": {
-      "title": "Support sustainably",
-      "description": "Recurring donations ensure continuity of care and long-term planning.",
-      "ctaPrimary": "Donate",
-      "ctaSecondary": "See impact tiers",
-      "note": "Need a direct exchange? Use the form below or email info@nurseinternationale.com.",
-      "highlightsTitle": "What you enable",
-      "highlights": [
-        "Supply of medical kits.",
-        "Training local health workers.",
-        "Rapid response in emergencies."
-      ]
     },
     "contact": {
       "title": "Let's discuss your engagement",
@@ -806,7 +789,7 @@
     "hero": {
       "eyebrow": "Donate",
       "title": "Lasting impact, one-time or monthly",
-      "description": "Choose an amount, support a specific project and receive a tax receipt where applicable. Recurring giving ensures continuity of care, team training and rapid emergency response.",
+      "description": "Choose an amount and help us provide medical care where it is needed most.",
       "paymentNote": "Accepted payments: credit card (Visa, Mastercard), Orange Money, MTN Mobile Money.",
       "ctaPrimary": "Go to the donation form",
       "ctaSecondary": "See impact tiers"
@@ -929,5 +912,37 @@
     "error": "An error occurred during payment. \nPlease try again.",
     "pending": "Payment pending. \nWe will notify you as soon as the status changes.",
     "success": "Payment successful! \nThank you for your support."
+  },
+  "donationForm": {
+    "support": "Support",
+    "errors": {
+      "requiredFields": "Please fill out all required fields.",
+      "invalidPhone": "Invalid phone number. Please enter a valid number.",
+      "generic": "An error occurred. Please try again."
+    },
+    "detailsTitle": "Donation Details",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "amount": "Amount",
+    "paymentMethod": "Payment Method",
+    "firstNamePlaceholder": "Enter your first name",
+    "lastNamePlaceholder": "Enter your last name",
+    "emailPlaceholder": "Enter your email address",
+    "phonePlaceholder": "Enter your phone number",
+    "card": "Credit Card",
+    "mtn": "Mobile Money",
+    "orange": "Orange Money",
+    "donationAmount": "Donation Amount",
+    "donationAmountPlaceholder": "Enter the donation amount",
+    "frequency": "Donation Frequency",
+    "once": "One-time",
+    "monthly": "Monthly",
+    "allocation": "Fund Allocation",
+    "project1": "Emergency & First Aid",
+    "project2": "Maternal Health",
+    "project3": "Mobile Clinics",
+    "project4": "Nutrition & Prevention"
   }
 }

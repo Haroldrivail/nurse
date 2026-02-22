@@ -54,7 +54,7 @@ export default async function AdminDonationsPage({ params }: Props) {
   };
 
   return (
-    <div className="mx-auto w-full max-w-6xl">
+    <div className="mx-auto w-full max-w-10/12">
       <div>
         <h1 className="flex items-center gap-2 text-2xl font-semibold">
           <Coins className="size-5 text-primary" />

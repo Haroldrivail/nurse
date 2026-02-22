@@ -37,8 +37,8 @@ export default function MissionPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-base-300 via-base-300/60 to-transparent md:bg-gradient-to-r md:from-base-300 md:to-transparent" />
         <FloatingCross className="absolute right-0 top-0 z-0 h-full w-2/5 opacity-40 hidden md:block" />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20">
-          <div className="max-w-2xl">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-20">
+          <div className="max-w-5xl">
             <Reveal from="left">
               <span className="badge badge-primary badge-outline font-bold tracking-widest px-4 py-3 mb-4 uppercase">
                 {t("eyebrow")}
@@ -111,7 +111,7 @@ export default function MissionPage() {
 
       {/* --- SECTION APPROCHE : Focus Visuel --- */}
       <section className="bg-base-100 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="grid gap-16 md:grid-cols-[1fr_auto_1fr] items-center">
             <Reveal from="left">
               <div>
@@ -198,13 +198,13 @@ export default function MissionPage() {
 
       {/* --- SECTION VALEURS : Cartes Épurées --- */}
       <section className="bg-base-200/60 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4 text-center mb-16">
+        <div className="mx-auto w-full max-w-10/12 px-4 text-center mb-16">
           <Reveal from="up">
             <h2 className="text-4xl font-bold">{t("valuesTitle")}</h2>
           </Reveal>
         </div>
 
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <Stagger from="down" className="grid gap-8 md:grid-cols-3">
             {[
               {

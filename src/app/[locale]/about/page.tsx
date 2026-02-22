@@ -43,7 +43,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-base-300 via-base-300/80 to-transparent" />
         <FloatingParticles className="z-0 opacity-40" count={80} />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-20">
           <div className="max-w-2xl">
             <Reveal from="left">
               <span className="badge badge-primary badge-outline font-bold tracking-widest px-4 py-3 mb-4 uppercase">
@@ -76,7 +76,7 @@ export default function AboutPage() {
 
       {/* --- NOTRE HISTOIRE & PRINCIPES : Grille Équilibrée --- */}
       <section className="bg-base-100 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="grid gap-16 lg:grid-cols-[1.2fr_0.8fr] items-start">
             <div>
               <Reveal from="left">
@@ -149,7 +149,7 @@ export default function AboutPage() {
 
       {/* --- GOUVERNANCE : Cartes Portraits --- */}
       <section className="bg-base-200/40 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-xl">
               <Reveal from="left">
@@ -204,7 +204,7 @@ export default function AboutPage() {
 
       {/* --- ÉTHIQUE : Minimalisme Radical --- */}
       <section className="bg-base-100 py-24 border-t border-base-200">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <Reveal from="left">
               <div>

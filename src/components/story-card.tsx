@@ -70,7 +70,7 @@ export default function StoryCard({ title, img, desc, cta }: StoryCardProps) {
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-6xl bg-base-100 rounded-[2.5rem] shadow-2xl flex flex-col md:flex-row overflow-hidden max-h-[90vh]"
+              className="relative w-full max-w-10/12 bg-base-100 rounded-[2.5rem] shadow-2xl flex flex-col md:flex-row overflow-hidden max-h-[90vh]"
             >
               {/* Bouton Fermer flottant */}
               <button

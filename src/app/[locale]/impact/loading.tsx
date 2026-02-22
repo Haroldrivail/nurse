@@ -3,7 +3,7 @@ export default function Loading() {
     <div className="animate-pulse">
       {/* --- HERO SKELETON : Globe & Titres --- */}
       <section className="relative min-h-[60vh] flex items-center bg-base-300/50 overflow-hidden">
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-20">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
               {/* Badge Eyebrow */}
@@ -45,7 +45,7 @@ export default function Loading() {
 
       {/* --- SECTION PAYS SKELETON --- */}
       <section className="bg-base-100 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="flex flex-col items-center mb-16 space-y-4">
             <div className="skeleton h-10 w-64 rounded-xl" />
             <div className="skeleton h-4 w-96 rounded-md opacity-60" />
@@ -68,7 +68,7 @@ export default function Loading() {
 
       {/* --- SECTION RÉCITS SKELETON --- */}
       <section className="bg-base-200 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="flex justify-between items-end mb-16">
             <div className="skeleton h-10 w-72 rounded-xl" />
             <div className="flex gap-4">

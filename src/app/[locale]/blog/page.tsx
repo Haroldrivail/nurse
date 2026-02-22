@@ -51,12 +51,12 @@ export default async function BlogPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-base-100 via-base-100/40 to-transparent" />
         <FloatingParticles className="z-0 opacity-40" count={80} />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-20">
           <Reveal from="left">
             <span className="text-primary font-black uppercase tracking-[0.4em] text-xs mb-4 block">
               {t("hero.eyebrow")}
             </span>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">
+            <h1 className="text-5xl md:text-6xl font-black tracking-tighter mb-6">
               {t("hero.title")}
             </h1>
             <p className="text-xl text-base-content/70 max-w-2xl leading-relaxed italic">
@@ -68,7 +68,7 @@ export default async function BlogPage() {
 
       {/* --- GRID : Articles Style Magazine --- */}
       <section className="bg-base-100 pb-24">
-        <div className="mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-10/12 px-4">
           <Stagger
             from="up"
             className="grid gap-12 md:grid-cols-2 lg:grid-cols-3"

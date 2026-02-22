@@ -80,7 +80,7 @@
     "employmentDesc": "Accédez à nos offres, stages et modules de formation certifiants.",
     "discoverPositions": "Découvrir les postes →",
     "membership": "Adhésion",
-    "membershipDesc": "Devenez membre et ne manquez aucune de nos actualités, rapports et opportunités d'engagement.",
+    "membershipDesc": "Devenez membre",
     "becomeMember": "Devenir membre →",
     "partnerships": "Partenariats & parrainages",
     "partnershipsDesc": "Entreprises, institutions et organisations peuvent co-construire des programmes d'impact, sponsoriser des campagnes ou offrir du mécénat de compétences.",
@@ -494,18 +494,6 @@
         "treasurer": "Comptable/Trésorier"
       }
     },
-    "reports": {
-      "eyebrow": "Transparence",
-      "title": "Rapports et audits",
-      "items": {
-        "annual2025": "Rapport annuel 2025",
-        "annual2024": "Rapport annuel 2024",
-        "financial2025": "Bilan financier 2025"
-      },
-      "cardDescription": "Téléchargement PDF avec indicateurs clés et budgets.",
-      "download": "Télécharger",
-      "auditNote": "Les audits indépendants et documents juridiques sont disponibles sur demande."
-    },
     "ethics": {
       "eyebrow": "Éthique & conformité",
       "title": "Engagements envers nos donateurs",
@@ -615,7 +603,7 @@
   },
   "projects": {
     "hero": {
-      "eyebrow": "Projets & causes",
+      "eyebrow": "Projets",
       "title": "Des programmes ancrés dans les besoins locaux",
       "description": "Explorez nos interventions par thématique et par région. Chaque projet est accompagné d'indicateurs d'impact et d'objectifs clairs."
     },
@@ -696,7 +684,7 @@
   },
   "involve": {
     "hero": {
-      "eyebrow": "S'impliquer",
+      "eyebrow": "Montrer votre soutien",
       "title": "Agissez avec nous sur le terrain",
       "description": "Bénévolat, partenariats et collectes solidaires : choisissez la forme d'engagement qui vous ressemble."
     },
@@ -708,10 +696,6 @@
       "partners": {
         "label": "partenaires",
         "description": "Institutions & entreprises engagées."
-      },
-      "fundraisers": {
-        "label": "collectes",
-        "description": "Lancées en 2025."
       },
       "responseTime": {
         "label": "délai moyen",
@@ -731,25 +715,12 @@
         "cta": "Devenir partenaire",
         "imageAlt": "Partenariat entre organisations"
       },
-      "fundraisers": {
-        "title": "Collectes solidaires",
-        "description": "Créez une campagne, fixez un objectif et mobilisez votre réseau.",
-        "cta": "Lancer une collecte",
-        "imageAlt": "Collecte de fonds solidaire"
+      "membership": {
+        "cta": "Devenir membre",
+        "description": "Devenez membre de notre mission et aidez-nous à transformer durablement des vies.",
+        "imageAlt": "Adhésion à Nurse Internationale",
+        "title": "Adhésion"
       }
-    },
-    "support": {
-      "title": "Soutenir durablement",
-      "description": "Les dons récurrents permettent d'assurer la continuité des soins et la planification sur le long terme.",
-      "ctaPrimary": "Faire un don",
-      "ctaSecondary": "Voir les niveaux d'impact",
-      "note": "Besoin d'un échange direct ? Utilisez le formulaire ci-dessous ou écrivez-nous à info@nurseinternationale.com.",
-      "highlightsTitle": "Ce que vous activez",
-      "highlights": [
-        "Approvisionnement en kits médicaux.",
-        "Formation d'agents de santé locaux.",
-        "Réponse rapide en cas d'urgence."
-      ]
     },
     "contact": {
       "title": "Échangeons sur votre engagement",
@@ -771,7 +742,7 @@
     "hero": {
       "eyebrow": "Faire un don",
       "title": "Un impact durable, ponctuel ou mensuel",
-      "description": "Choisissez un montant, soutenez un projet précis et recevez un reçu fiscal selon la législation applicable. Le don régulier assure la continuité des soins, la formation des équipes locales et la réponse rapide aux urgences.",
+      "description": "Choisissez un montant et aidez-nous à fournir des soins médicaux là où ils sont le plus nécessaires.",
       "paymentNote": "Paiements acceptés : carte bancaire (Visa, Mastercard), Orange Money, MTN Mobile Money.",
       "ctaPrimary": "Accéder au formulaire de don",
       "ctaSecondary": "Voir les niveaux d'impact"
@@ -894,5 +865,37 @@
     "cancelled": "Paiement annulé. Vous n'avez pas été facturé.",
     "pending": "Paiement en attente. Nous vous informerons dès que le statut changera.",
     "error": "Une erreur est survenue lors du paiement. Veuillez réessayer."
+  },
+  "donationForm": {
+    "support": "Soutien",
+    "errors": {
+      "requiredFields": "Veuillez remplir tous les champs obligatoires.",
+      "invalidPhone": "Numéro de téléphone invalide. Veuillez entrer un numéro valide.",
+      "generic": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "detailsTitle": "Informations sur le don",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "email": "E-mail",
+    "phone": "Numéro de téléphone",
+    "amount": "Montant",
+    "paymentMethod": "Méthode de paiement",
+    "firstNamePlaceholder": "Entrez votre prénom",
+    "lastNamePlaceholder": "Entrez votre nom",
+    "emailPlaceholder": "Entrez votre adresse e-mail",
+    "phonePlaceholder": "Entrez votre numéro de téléphone",
+    "card": "Carte de crédit",
+    "mtn": "Mobile Money",
+    "orange": "Orange Money",
+    "donationAmount": "Montant du don",
+    "donationAmountPlaceholder": "Entrez le montant du don",
+    "frequency": "Fréquence du don",
+    "one": "Unique",
+    "monthly": "Mensuel",
+    "allocation": "Affectation des fonds",
+    "project1": "Aide d'urgence & premiers secours",
+    "project2": "Santé maternelle",
+    "project3": "Cliniques mobiles",
+    "project4": "Nutrition & prévention"
   }
 }

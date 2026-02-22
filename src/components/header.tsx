@@ -146,7 +146,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-base-200 bg-base-100">
-      <div className="mx-auto w-full max-w-6xl px-4">
+      <div className="mx-auto w-full max-w-10/12 px-4">
         <div className="navbar">
           <div className="navbar-start">
             <div className="flex items-center gap-3">

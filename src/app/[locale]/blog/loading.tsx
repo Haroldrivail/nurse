@@ -3,7 +3,7 @@ export default function Loading() {
     <div className="animate-pulse">
       {/* --- HERO SKELETON : Style Éditorial --- */}
       <section className="bg-base-300/50 py-20 min-h-[40vh] flex items-center">
-        <div className="mx-auto w-full max-w-6xl px-4 space-y-6">
+        <div className="mx-auto w-full max-w-10/12 px-4 space-y-6">
           {/* Eyebrow */}
           <div className="skeleton h-4 w-32 rounded opacity-50" />
           {/* Title (2 lignes) */}
@@ -17,7 +17,7 @@ export default function Loading() {
 
       {/* --- GRID SKELETON : Style Magazine --- */}
       <section className="py-20 bg-base-100">
-        <div className="mx-auto max-w-6xl px-4 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto max-w-10/12 px-4 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
           {Array.from({ length: 6 }).map((_, i) => (
             <div key={i} className="flex flex-col space-y-6">
               {/* Image Arrondie (rounded-[2rem]) */}

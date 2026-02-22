@@ -37,7 +37,7 @@ export default async function AdminContactsPage({ params }: Props) {
   const t = await getTranslations("admin");
 
   return (
-    <div className="mx-auto w-full max-w-6xl">
+    <div className="mx-auto w-full max-w-10/12">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h1 className="text-2xl font-semibold">
           {t("nav.contacts")}

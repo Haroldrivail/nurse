@@ -4,17 +4,20 @@ import { useState, useEffect, type FormEvent } from "react";
 import { CreditCard, Smartphone } from "lucide-react";
 import { toast } from "react-toastify";
 import { useCurrency } from "@/hooks/use-currency"; // Import du hook de localisation
-
-const PROJECTS = [
-  "Urgence & premiers secours",
-  "Santé maternelle",
-  "Cliniques mobiles",
-  "Nutrition & prévention",
-];
+import { useTranslations } from "next-intl";
 
 type PaymentMethod = "card" | "orange_money" | "mtn_mobile_money";
 
 export default function DonationForm() {
+  const t = useTranslations("donationForm");
+
+  const PROJECTS = [
+    "project1",
+    "project2",
+    "project3",
+    "project4",
+  ];
+
   // --- Utilisation du hook de monnaie ---
   const { formatter, amounts: suggestedAmounts, currency } = useCurrency();
 
@@ -52,11 +55,11 @@ export default function DonationForm() {
     e.preventDefault();
 
     if (!firstName || !lastName || !email) {
-      toast.error("Veuillez remplir tous les champs obligatoires.");
+      toast.error(t("errors.requiredFields"));
       return;
     }
     if (isMobileMoney && (!phone || phone.length < 8)) {
-      toast.error("Numéro de téléphone valide requis.");
+      toast.error(t("errors.invalidPhone"));
       return;
     }
 
@@ -85,7 +88,7 @@ export default function DonationForm() {
       if (!res.ok) throw new Error(data.error);
       if (data.paymentLink) window.location.href = data.paymentLink;
     } catch (err) {
-      const message = err instanceof Error ? err.message : "Une erreur est survenue.";
+      const message = err instanceof Error ? err.message : t("errors.generic");
       toast.error(message);
     } finally {
       setLoading(false);
@@ -95,7 +98,7 @@ export default function DonationForm() {
   return (
     <form onSubmit={handleSubmit} className="card-body gap-6">
       <div className="border-b border-base-300 pb-2">
-        <h3 className="text-xl font-bold">Détails du don</h3>
+        <h3 className="text-xl font-bold">{t("detailsTitle")}</h3>
       </div>
 
       {/* --- Informations Personnelles --- */}
@@ -105,7 +108,7 @@ export default function DonationForm() {
             className="label text-xs font-semibold uppercase"
             htmlFor="donation-firstname"
           >
-            Prénom <span className="text-error">*</span>
+            {t("firstName")} <span className="text-error">*</span>
           </label>
           <input
             id="donation-firstname"
@@ -114,7 +117,7 @@ export default function DonationForm() {
             onChange={(e) => setFirstName(e.target.value)}
             required
             autoComplete="given-name"
-            placeholder="Votre prénom"
+            placeholder={t("firstNamePlaceholder")}
           />
         </div>
         <div className="form-control">
@@ -122,7 +125,7 @@ export default function DonationForm() {
             className="label text-xs font-semibold uppercase"
             htmlFor="donation-lastname"
           >
-            Nom <span className="text-error">*</span>
+            {t("lastName")} <span className="text-error">*</span>
           </label>
           <input
             id="donation-lastname"
@@ -131,7 +134,7 @@ export default function DonationForm() {
             onChange={(e) => setLastName(e.target.value)}
             required
             autoComplete="family-name"
-            placeholder="Votre nom"
+            placeholder={t("lastNamePlaceholder")}
           />
         </div>
         <div className="form-control sm:col-span-2">
@@ -139,7 +142,7 @@ export default function DonationForm() {
             className="label text-xs font-semibold uppercase"
             htmlFor="donation-email"
           >
-            Email <span className="text-error">*</span>
+            {t("email")} <span className="text-error">*</span>
           </label>
           <input
             id="donation-email"
@@ -149,7 +152,7 @@ export default function DonationForm() {
             onChange={(e) => setEmail(e.target.value)}
             required
             autoComplete="email"
-            placeholder="ex: nom@domaine.com"
+            placeholder={t("emailPlaceholder")}
           />
         </div>
       </div>
@@ -157,13 +160,13 @@ export default function DonationForm() {
       {/* --- Mode de Paiement --- */}
       <div className="form-control">
         <label className="label text-xs font-semibold uppercase mb-2">
-          Mode de paiement
+          {t("paymentMethod")}
         </label>
         <div className="grid gap-3 sm:grid-cols-3">
           {[
-            { id: "card", label: "Carte", icon: CreditCard },
-            { id: "orange_money", label: "Orange", icon: Smartphone },
-            { id: "mtn_mobile_money", label: "MTN", icon: Smartphone },
+            { id: "card", label: t("card"), icon: CreditCard },
+            { id: "orange_money", label: t("orange"), icon: Smartphone },
+            { id: "mtn_mobile_money", label: t("mtn"), icon: Smartphone },
           ].map((method) => (
             <label
               key={method.id}
@@ -192,11 +195,11 @@ export default function DonationForm() {
       {isMobileMoney && (
         <div className="form-control animate-in fade-in slide-in-from-top-2 flex md:flex-row gap-4">
           <label className="label text-xs font-semibold uppercase">
-            Téléphone
+            {t("phone")}
           </label>
           <input
             className="input input-primary border-2"
-            placeholder="+237 6xx xxx xxx"
+            placeholder={t("phonePlaceholder")}
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
@@ -208,7 +211,7 @@ export default function DonationForm() {
       {/* --- Montant Dynamique --- */}
       <div className="form-control">
         <label className="label text-xs font-semibold uppercase mb-2">
-          Montant du don ({currency})
+          {t("donationAmount", { currency })}
         </label>
         <div className="flex flex-wrap gap-2">
           {suggestedAmounts.map((val) => (
@@ -240,7 +243,7 @@ export default function DonationForm() {
       <div className="grid gap-6 sm:grid-cols-2">
         <div className="form-control flex md:flex-row gap-4 md:items-center">
           <label className="label text-xs font-semibold uppercase">
-            Fréquence
+            {t("frequency")}
           </label>
           <div className="join">
             <button
@@ -248,20 +251,20 @@ export default function DonationForm() {
               className={`join-item btn btn-sm flex-1 ${donationType === "ponctuel" ? "btn-active btn-primary" : ""}`}
               onClick={() => setDonationType("ponctuel")}
             >
-              Une fois
+              {t("once")}
             </button>
             <button
               type="button"
               className={`join-item btn btn-sm flex-1 ${donationType === "mensuel" ? "btn-active btn-primary" : ""}`}
               onClick={() => setDonationType("mensuel")}
             >
-              Mensuel
+              {t("monthly")}
             </button>
           </div>
         </div>
         <div className="form-control">
           <label className="label text-xs font-semibold uppercase">
-            Affectation
+            {t("allocation")}
           </label>
           <select
             className="select select-bordered select-sm w-full"
@@ -269,7 +272,7 @@ export default function DonationForm() {
             onChange={(e) => setProject(e.target.value)}
           >
             {PROJECTS.map((p) => (
-              <option key={p}>{p}</option>
+              <option key={p}>{t(p)}</option>
             ))}
           </select>
         </div>
@@ -285,7 +288,7 @@ export default function DonationForm() {
           {loading ? (
             <span className="loading loading-spinner" />
           ) : (
-            `Soutenir`
+            t("support")
           )}
         </button>
       </div>

@@ -16,7 +16,7 @@
       "ctaPrimary": "Unterstützen Sie die Mission",
       "ctaSecondary": "Berichte anzeigen",
       "description": "Nurse Hilfe Menschen Internationale setzt auf klare Governance, regelmäßige Audits und eine zugängliche Wirkungsüberwachung, um das Vertrauen der Spender und die Relevanz der Maßnahmen zu gewährleisten.",
-      "eyebrow": "Um",
+      "eyebrow": "Über uns",
       "imageAlt": "Humanitäres Team trifft sich",
       "title": "Governance, Transparenz und menschliches Engagement"
     },
@@ -196,7 +196,7 @@
     "backToBlog": "← Zurück zum Blog",
     "cta": {
       "description": "Jeder Beitrag stärkt unsere Teams vor Ort.",
-      "primary": "Spenden Sie",
+      "primary": "Jetzt spenden",
       "secondary": "Alle Artikel ansehen",
       "title": "Unterstützen Sie unsere Missionen"
     },
@@ -272,12 +272,12 @@
       "title": "Alles, was Sie über regelmäßige Spenden wissen müssen"
     },
     "hero": {
-      "ctaPrimary": "Greifen Sie auf das Spendenformular zu",
+      "ctaPrimary": "Spendenformular anzeigen",
       "ctaSecondary": "Auswirkungsstufen anzeigen",
-      "description": "Wählen Sie einen Betrag, unterstützen Sie ein bestimmtes Projekt und erhalten Sie eine Steuerbescheinigung gemäß der geltenden Gesetzgebung. Regelmäßige Spenden gewährleisten die Kontinuität der Pflege, die Schulung der Teams vor Ort und eine schnelle Reaktion auf Notfälle.",
-      "eyebrow": "Spenden Sie",
+      "description": "Wählen Sie einen Betrag und helfen Sie uns, medizinische Versorgung dort zu ermöglichen, wo sie am dringendsten gebraucht wird.",
+      "eyebrow": "Jetzt spenden",
       "paymentNote": "Akzeptierte Zahlungen: Kreditkarte (Visa, Mastercard), Orange Money, MTN Mobile Money.",
-      "title": "Eine dauerhafte, einmalige oder monatliche Wirkung"
+      "title": "Einmalige oder monatliche"
     },
     "impact": {
       "description": "Regelmäßige Spenden stabilisieren unsere Programme und stärken die Teams vor Ort.",
@@ -375,8 +375,8 @@
     "becomeVolunteer": "Werden Sie Freiwilliger",
     "connect": "Verbinden",
     "contactUs": "Kontaktieren Sie uns",
-    "copyright": "© 2026 Krankenschwester Hilfe Menschen International. Alle Rechte vorbehalten.",
-    "donate": "Spenden Sie",
+    "copyright": "© 2026 Nurse Hilfe Menschen Internationale e.V. Alle Rechte vorbehalten.",
+    "donate": "Jetzt spenden",
     "explore": "Erkunden",
     "faqGovernance": "FAQs",
     "give": "Geben",
@@ -406,7 +406,7 @@
     "ctaDesc": "Jeder Beitrag finanziert die Grundversorgung, Hygienepakete und die Schulung lokaler Teams.",
     "ctaTitle": "Aufruf zum Handeln",
     "discoverPositions": "Entdecken Sie die Positionen →",
-    "donateBtn": "Spenden Sie",
+    "donateBtn": "Jetzt spenden",
     "downloadReport": "Laden Sie den Bericht herunter",
     "employment": "Arbeit",
     "employmentDesc": "Greifen Sie auf unsere Angebote, Kurse und zertifizierten Schulungsmodule zu.",
@@ -476,7 +476,7 @@
     "volunteeringDesc": "Nutzen Sie Ihre Zeit ehrenamtlich vor Ort, aus der Ferne oder für einmalige Missionen.",
     "newsletterTitle": "Erhalten Sie unsere Berichte, sobald sie verfügbar sind",
     "volunteering": "Aktives ehrenamtliches Engagement",
-    "membershipDesc": "Werden Sie Mitglied und verpassen Sie keine unserer Neuigkeiten, Berichte und Engagementmöglichkeiten."
+    "membershipDesc": "Mitglied werden."
   },
   "impact": {
     "byCountry": {
@@ -588,7 +588,7 @@
     "stories": {
       "cta": "Lesen Sie die Geschichte",
       "ctaPrimary": "Lesen Sie unsere Neuigkeiten",
-      "ctaSecondary": "Spenden Sie",
+      "ctaSecondary": "Jetzt spenden",
       "description": "Ein Überblick über die dank Ihrer Unterstützung erzielten Ergebnisse.",
       "items": [
         {
@@ -601,11 +601,11 @@
   },
   "involve": {
     "cards": {
-      "fundraisers": {
-        "cta": "Starten Sie eine Sammlung",
-        "description": "Erstellen Sie eine Kampagne, legen Sie ein Ziel fest und mobilisieren Sie Ihr Netzwerk.",
-        "imageAlt": "Spendensammlung für Solidarität",
-        "title": "Solidaritätssammlungen"
+      "membership": {
+        "cta": "Mitglied werden",
+        "description": "Werden Sie Teil unserer Mission und helfen Sie uns, nachhaltig Leben zu verändern.",
+        "imageAlt": "Mitgliedschaft bei Nurse Internationale",
+        "title": "Mitgliedschaft"
       },
       "partnerships": {
         "cta": "Werden Sie Partner",
@@ -617,7 +617,7 @@
         "cta": "Entdecken Sie die Rollen",
         "description": "Ad-hoc-Missionen, kommunale Gesundheit, Logistik und administrative Unterstützung.",
         "imageAlt": "Team von Freiwilligen auf Mission",
-        "title": "Freiwilligenarbeit"
+        "title": "Active Freiwilligenarbeit"
       }
     },
     "contact": {
@@ -631,7 +631,7 @@
     },
     "hero": {
       "description": "Ehrenamtliches Engagement, Partnerschaften und Solidaritätskollekten: Wählen Sie die Form des Engagements, die zu Ihnen passt.",
-      "eyebrow": "Mitmachen",
+      "eyebrow": "Engagement zeigen",
       "title": "Handeln Sie mit uns vor Ort"
     },
     "newsletter": {
@@ -641,10 +641,6 @@
       "title": "Erhalten Sie unsere Engagement-Möglichkeiten"
     },
     "stats": {
-      "fundraisers": {
-        "description": "Gestartet im Jahr 2025.",
-        "label": "Sammlungen"
-      },
       "partners": {
         "description": "Institutionen",
         "label": "Partner"
@@ -657,19 +653,6 @@
         "description": "In lokalen und Feldeinsätzen.",
         "label": "aktive Freiwillige"
       }
-    },
-    "support": {
-      "ctaPrimary": "Spenden Sie",
-      "ctaSecondary": "Auswirkungsstufen anzeigen",
-      "description": "Wiederkehrende Spenden gewährleisten die Kontinuität der Pflege und eine langfristige Planung.",
-      "highlightsTitle": "Was Sie aktivieren",
-      "highlights": [
-        "Lieferung von medizinischen Kits.",
-        "Schulung lokaler Gesundheitshelfer.",
-        "Schnelle Reaktion im Notfall."
-      ],
-      "note": "Brauchen Sie einen direkten Austausch? Nutzen Sie das untenstehende Formular oder senden Sie uns eine E-Mail an info@nurseinternationale.com.",
-      "title": "Nachhaltig unterstützen"
     }
   },
   "legal": {
@@ -734,8 +717,8 @@
     },
     "approachDescription": "Jede Mission wird gemeinsam mit den örtlichen Gemeinden konzipiert, um eine Kontinuität der Pflege und dauerhafte Ergebnisse sicherzustellen.",
     "approachTitle": "Unser Ansatz",
-    "description": "Wir stärken lokale Gesundheitssysteme durch mobile Kliniken, Teamtraining und Prävention. Unser Ansatz basiert auf Nähe, Ethik und messbarer Wirkung.",
-    "eyebrow": "Auftrag",
+    "description": "Ziel unseres Projektes ist die nachhaltige Stärkung der Gesundheitssysteme in Entwicklungsländern, um den Zugang zu qualitativ hochwertiger medizinischer Versorgung langfristig zu verbessern. In vielen Regionen fehlen grundlegende medizinische Infrastruktur, moderne Diagnosemöglichkeiten sowie ausreichend geschultes Fachpersonal. Dies führt dazu, dass vermeidbare Erkrankungen unbehandelt bleiben und Menschen keinen Zugang zu lebensrettenden Therapien erhalten.",
+    "eyebrow": "Unsere Mission",
     "impactBtn": "Sehen Sie unsere Wirkung",
     "involveBtn": "Mitmachen",
     "newsletter": {
@@ -755,7 +738,7 @@
       "covered": "Abgedeckt durch unsere Teams.",
       "trainedCaregivers": "geschulte Betreuer"
     },
-    "title": "Zugängliche, menschliche und nachhaltige Pflege",
+    "title": "Stärkung der Gesundheitssysteme in Entwicklungsländern",
     "values": {
       "dignity": {
         "desc": "Einwilligungsprotokolle und patientenzentrierter Ansatz.",
@@ -780,16 +763,16 @@
     "zonesTitle": "Interventionsbereiche"
   },
   "nav": {
-    "about": "Uns",
+    "about": "Über Uns",
     "blog": "Nachrichten",
-    "donate": "Spenden Sie",
+    "donate": "Jetzt spenden",
     "foundation": "Stiftung",
-    "getInvolved": "Mitmachen",
+    "getInvolved": "Werden Sie aktiv",
     "impact": "Auswirkungen",
-    "mission": "Auftrag",
+    "mission": "Unsere Mission",
     "openMenu": "Menü öffnen",
-    "projects": "Anliegen/Projekte",
-    "search": "Zur Recherche"
+    "projects": "Projekte",
+    "search": "Recherchieren"
   },
   "newsletter": {
     "defaultButton": "Abonnieren",
@@ -809,7 +792,7 @@
     "backToProjects": "← Zurück zu Projekten",
     "cta": {
       "description": "Mit Ihrem Beitrag finanzieren Sie direkt die Aktivitäten dieses Programms.",
-      "primary": "Spenden Sie",
+      "primary": "Jetzt spenden",
       "secondary": "Alle Projekte ansehen",
       "title": "Unterstützen Sie dieses Projekt"
     },
@@ -831,7 +814,7 @@
     "cta": {
       "description": "Jede Spende wird einem Programm zugeordnet und durch transparente Indikatoren überwacht.",
       "eyebrow": "Handeln Sie jetzt",
-      "primary": "Spenden Sie",
+      "primary": "Jetzt spenden",
       "secondary": "Monatliche Spende",
       "title": "Unterstützen Sie ein wirkungsvolles Projekt"
     },
@@ -887,22 +870,22 @@
       "title": "Nachrichten"
     },
     "donate": {
-      "excerpt": "Eine dauerhafte, einmalige oder monatliche Wirkung. Wählen Sie Ihren Grad an Engagement.",
+      "excerpt": "Einmalige oder monatliche wirkung",
       "tags": [
         "Spende",
         "monatlich",
         "Wirkung"
       ],
-      "title": "Spenden Sie"
+      "title": "Jetzt spenden"
     },
     "dons": {
-      "excerpt": "Eine dauerhafte, einmalige oder monatliche Wirkung. Wählen Sie Ihren Grad an Engagement.",
+      "excerpt": "Einmalige oder monatliche Wirkung.",
       "tags": [
         "Don",
         "monatlich",
         "Auswirkungen"
       ],
-      "title": "Spenden Sie"
+      "title": "Jetzt spenden"
     },
     "impact": {
       "excerpt": "Indikatoren, Interventionsländer und detaillierte Wirkungsberichte.",
@@ -937,7 +920,7 @@
         "Kliniken",
         "Verhütung"
       ],
-      "title": "Auftrag"
+      "title": "Unsere Mission"
     },
     "projects": {
       "excerpt": "Programme, die auf lokale Bedürfnisse ausgerichtet sind: ländliche Gesundheit, Mutterschaft, Notfälle.",
@@ -968,5 +951,37 @@
     "error": "Bei der Zahlung ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
     "pending": "Zahlung ausstehend. Wir benachrichtigen Sie, sobald sich der Status ändert.",
     "success": "Zahlung erfolgreich! Vielen Dank für Ihre Unterstützung."
+  },
+  "donationForm": {
+    "support": "Spenden",
+    "errors": {
+      "requiredFields": "Bitte füllen Sie alle Pflichtfelder aus.",
+      "invalidPhone": "Ungültige Telefonnummer. Bitte geben Sie eine gültige Nummer ein.",
+      "generic": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "detailsTitle": "Spendeninformationen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefonnummer",
+    "amount": "Betrag",
+    "paymentMethod": "Zahlungsmethode",
+    "firstNamePlaceholder": "Geben Sie Ihren Vornamen ein",
+    "lastNamePlaceholder": "Geben Sie Ihren Nachnamen ein",
+    "emailPlaceholder": "Geben Sie Ihre E-Mail-Adresse ein",
+    "phonePlaceholder": "Geben Sie Ihre Telefonnummer ein",
+    "card": "Kreditkarte",
+    "mtn": "Mobiles Money",
+    "orange": "Orange Money",
+    "donationAmount": "Spendenbetrag",
+    "donationAmountPlaceholder": "Geben Sie den Spendenbetrag ein",
+    "frequency": "Spendenfrequenz",
+    "once": "Einmalig",
+    "monthly": "Monatlich",
+    "allocation": "Mittelzuweisung",
+    "project1": "Dringende Hilfe & Erste Hilfe",
+    "project2": "Mutterschaftsgesundheit",
+    "project3": "Mobile Kliniken",
+    "project4": "Ernährung & Prävention"
   }
 }

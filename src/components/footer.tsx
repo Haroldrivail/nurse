@@ -45,7 +45,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-base-200 bg-base-100 px-4 py-12">
-      <div className="mx-auto w-full max-w-6xl">
+      <div className="mx-auto w-full max-w-10/12">
         <div className="flex flex-col items-evenly gap-5 lg:flex-row lg:items-start lg:justify-between">
           <div className="hidden md:flex md:gap-3 md:flex-row md:items-start md:justify-evenly flex-1 lg:pr-4">
             <div className="text-sm">

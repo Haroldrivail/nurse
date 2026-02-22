@@ -67,14 +67,14 @@ export default function ImpactPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-base-300 via-base-300/80 to-transparent" />
         <FloatingParticles className="z-0 opacity-40" count={120} />
 
-        <div className="relative z-10 mx-auto w-full max-w-6xl px-4 py-20">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="relative z-10 mx-auto w-full max-w-10/12 px-4 py-20">
+          <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <Reveal from="left">
                 <span className="badge badge-primary badge-outline font-bold tracking-widest px-4 py-3 mb-6 uppercase">
                   {t("hero.eyebrow")}
                 </span>
-                <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tighter">
+                <h1 className="text-5xl md:text-6xl font-black leading-tight tracking-tighter">
                   {t("hero.title")}
                 </h1>
                 <p className="mt-6 text-xl text-base-content/70 leading-relaxed max-w-xl">
@@ -119,7 +119,7 @@ export default function ImpactPage() {
 
       {/* --- IMPACT PAR PAYS : Cartographie de l'Action --- */}
       <section className="bg-base-100 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4 text-center mb-16">
+        <div className="mx-auto w-full max-w-10/12 px-4 text-center mb-16">
           <Reveal from="up">
             <h2 className="text-4xl font-black mb-4">{t("byCountry.title")}</h2>
             <p className="max-w-2xl mx-auto opacity-70 italic">
@@ -128,7 +128,7 @@ export default function ImpactPage() {
           </Reveal>
         </div>
 
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <Stagger from="left" className="grid gap-10 md:grid-cols-3">
             {impactByCountry.map((item) => (
               <div key={item.key} className="group flex flex-col">
@@ -180,7 +180,7 @@ export default function ImpactPage() {
 
       {/* --- SECTION RÉCITS DE VIE (Page Impact corrigée) --- */}
       <section className="bg-base-200 py-24">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-xl">
               <Reveal from="left">

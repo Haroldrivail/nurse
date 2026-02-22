@@ -3,7 +3,7 @@ export default function Loading() {
     <div className="animate-pulse">
       {/* --- HERO SKELETON : Reflet du style Cinématique --- */}
       <section className="relative min-h-[50vh] flex items-center bg-base-300/50">
-        <div className="mx-auto w-full max-w-6xl px-4 py-24">
+        <div className="mx-auto w-full max-w-10/12 px-4 py-24">
           <div className="max-w-2xl space-y-6">
             {/* Badge eyebrow */}
             <div className="skeleton h-6 w-32 rounded-full opacity-50" />
@@ -23,7 +23,7 @@ export default function Loading() {
 
       {/* --- PROJECTS GRID SKELETON : Avec l'effet d'Overlap --- */}
       <section className="bg-base-100 pb-24 -mt-10">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {Array.from({ length: 6 }).map((_, index) => (
               <div
@@ -60,7 +60,7 @@ export default function Loading() {
 
       {/* --- CTA SKELETON : Forme arrondie (Boxed Impact) --- */}
       <section className="bg-base-100 pb-20">
-        <div className="mx-auto w-full max-w-6xl px-4">
+        <div className="mx-auto w-full max-w-10/12 px-4">
           <div className="skeleton h-64 w-full rounded-[2.5rem] opacity-40" />
         </div>
       </section>
