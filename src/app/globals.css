@@ -33,6 +33,57 @@ body {
   gap: 80px;
 }
 
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: #ffffff;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  letter-spacing: 0.02em;
+}
+
+.brand__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-link {
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #0f172a;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.home-link:hover {
+  background: #f8fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+.brand__name {
+  font-size: 14px;
+  color: #475569;
+}
+
 .hero {
   display: grid;
   gap: 24px;
@@ -111,6 +162,15 @@ h1 {
   .cta:hover {
     transform: none;
     box-shadow: 0 14px 30px rgba(37, 99, 235, 0.2);
+  }
+
+  .home-link {
+    transition: none;
+  }
+
+  .home-link:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
 

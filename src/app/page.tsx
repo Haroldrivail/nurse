@@ -1,6 +1,24 @@
+import Link from "next/link";
+import { Home as HomeIcon } from "lucide-react";
+
 export default function Home() {
   return (
     <main className="page">
+      <header className="topbar">
+        <div className="brand">
+          <div className="logo" aria-hidden="true">
+            NH
+          </div>
+          <div className="brand__meta">
+            <Link className="home-link" href="/" aria-label="Retour à l'accueil">
+              <HomeIcon aria-hidden="true" />
+            </Link>
+            <span className="brand__name">
+              Nurse Hilfe Menschen Internationale
+            </span>
+          </div>
+        </div>
+      </header>
       <section className="hero">
         <p className="badge">Fondation solidaire</p>
         <h1>
